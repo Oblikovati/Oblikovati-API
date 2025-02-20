@@ -2,13 +2,13 @@ OblikovatiRootDirectory = os.getenv("OBLIKOVATI_DIR")
 
 include (path.join(OblikovatiRootDirectory, "lib_vendor_source", "Coral", "Coral.Managed"))
 
-project "Oblikovati-API"
+project "Oblikovati.API"
 	kind "SharedLib"
 	language "C#"
 	dotnetframework "net9.0"
 	clr "Unsafe"
-	targetdir "%{OblikovatiRootDirectory}/oblikovati_runtime/Resources/Scripts"
-	objdir "%{OblikovatiRootDirectory}/oblikovati_runtime/Resources/Scripts/Intermediates"
+	targetdir "%{OblikovatiRootDirectory}/Oblikovati/Resources/Scripts"
+	objdir "%{OblikovatiRootDirectory}/Oblikovati/Resources/Scripts/Intermediates"
 
 	links {
 		"Coral.Managed"
