@@ -14,12 +14,12 @@ project "Oblikovati.API"
 		"Coral.Managed"
 	}
 
-	--vsprops {
-	--	AppendTargetFrameworkToOutputPath = "false",
-	--	Nullable = "enable",
-	--	CopyLocalLockFileAssemblies = "true",
-	--	EnableDynamicLoading = "true",
-	--}
+	vsprops {
+		AppendTargetFrameworkToOutputPath = "false",
+		Nullable = "enable",
+		CopyLocalLockFileAssemblies = "true",
+		EnableDynamicLoading = "true",
+	}
 
 	files {
 		"%{OblikovatiRootDirectory}/lib_internal_source/Oblikovati-API/source/**.cs",
