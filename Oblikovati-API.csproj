@@ -4,6 +4,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <TargetFramework>net9.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Configurations>Debug;Debug-AS;Release</Configurations>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -16,6 +17,10 @@
     <DefineConstants>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SPDLOG_USE_STD_FORMAT;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_CALLSTACK=10</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
     <NoWarn>4068</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-AS|AnyCPU' ">
@@ -28,6 +33,10 @@
     <DefineConstants>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SPDLOG_USE_STD_FORMAT;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_CALLSTACK=10</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
     <NoWarn>4068</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -40,6 +49,10 @@
     <DefineConstants>_CRT_SECURE_NO_WARNINGS;NOMINMAX;SPDLOG_USE_STD_FORMAT;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_CALLSTACK=10</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
     <NoWarn>4068</NoWarn>
   </PropertyGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
