@@ -40,7 +40,7 @@ public interface IRxFileLocations
     /// <param name="pnPaths">pnPaths</param>
     /// <param name="pppNames">pppNames</param>
     /// <param name="ppbstrPaths">ppbstrPaths</param>
-    void Locals([Out] out int pnPaths, [Out] out IntPtr pppNames, [Out] out IntPtr ppbstrPaths);
+    void Locals([In] [Out] ref int pnPaths, [Out] out IntPtr pppNames, [Out] out IntPtr ppbstrPaths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -59,7 +59,7 @@ public interface IRxFileLocations
     /// <param name="pnPaths">pnPaths</param>
     /// <param name="ppbstrNames">ppbstrNames</param>
     /// <param name="ppbstrPaths">ppbstrPaths</param>
-    void Workgroups([Out] out int pnPaths, [Out] out IntPtr ppbstrNames, [Out] out IntPtr ppbstrPaths);
+    void Workgroups([In] [Out] ref int pnPaths, [Out] out IntPtr ppbstrNames, [Out] out IntPtr ppbstrPaths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -78,7 +78,7 @@ public interface IRxFileLocations
     /// <param name="pnPaths">pnPaths</param>
     /// <param name="ppbstrNames">ppbstrNames</param>
     /// <param name="ppbstrPaths">ppbstrPaths</param>
-    void Libraries([Out] out int pnPaths, [Out] out IntPtr ppbstrNames, [Out] out IntPtr ppbstrPaths);
+    void Libraries([In] [Out] ref int pnPaths, [Out] out IntPtr ppbstrNames, [Out] out IntPtr ppbstrPaths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

@@ -10,5 +10,5 @@ public interface IRxStrokesOld
     /// <param name="ppVertices">ppVertices</param>
     /// <param name="pdwNumSegments">pdwNumSegments</param>
     /// <param name="ppVertexIndices">ppVertexIndices</param>
-    void GetStrokes([In] double ChordalHeightTol, [Out] out uint pdwNumVertices, [Out] out IntPtr ppVertices, [Out] out uint pdwNumSegments, [Out] out IntPtr ppVertexIndices);
+    void GetStrokes([In] double ChordalHeightTol, [In] [Out] ref uint pdwNumVertices, [Out] out IntPtr ppVertices, [In] [Out] ref uint pdwNumSegments, [Out] out IntPtr ppVertexIndices);
 }

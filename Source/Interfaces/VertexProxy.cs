@@ -62,14 +62,14 @@ public interface VertexProxy
     /// </summary>
     /// <param name="Point">Point</param>
     [PreserveSig]
-    void GetPoint([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Point);
+    void GetPoint([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Point);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Method that gets the source vertex that has been overridden by this vertex. The method returns Nothing if this vertex is not an override. An error is returned if this method is called on a vertex in a part.
     /// </summary>

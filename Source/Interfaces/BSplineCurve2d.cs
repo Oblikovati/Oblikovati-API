@@ -31,7 +31,7 @@ public interface BSplineCurve2d
     /// <param name="Knots">Knots</param>
     /// <param name="Weights">Weights</param>
     [PreserveSig]
-    void GetBSplineData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Poles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Knots, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Weights);
+    void GetBSplineData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Knots, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -41,7 +41,7 @@ public interface BSplineCurve2d
     /// <param name="Weights">Weights</param>
     /// <param name="IsPeriodic">IsPeriodic</param>
     [PreserveSig]
-    void PutBSplineInfoAndData([In] int Order, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Poles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Knots, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Weights, [In] bool IsPeriodic);
+    void PutBSplineInfoAndData([In] int Order, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Knots, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights, [In] bool IsPeriodic);
     /// <summary>
     /// Creates a copy of this BSplineCurve2d object.&nbsp;The result is entirely independent and can be edited without affecting the original BSplineCurve2d object.
     /// </summary>

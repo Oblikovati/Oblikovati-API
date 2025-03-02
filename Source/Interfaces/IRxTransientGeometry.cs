@@ -84,7 +84,7 @@ public interface IRxTransientGeometry
     /// <param name="pPoles">pPoles</param>
     /// <param name="pKnots">pKnots</param>
     /// <param name="pWeights">pWeights</param>
-    IRxBSplineCurve CreateBSplineCurve([In] uint nOrder, [In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [In] sbyte bIsPeriodic, [In] ref double pPoles, [In] ref double pKnots, [Out] out double pWeights);
+    IRxBSplineCurve CreateBSplineCurve([In] uint nOrder, [In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [In] sbyte bIsPeriodic, [In] ref double pPoles, [In] ref double pKnots, [In] [Out] ref double pWeights);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -96,7 +96,7 @@ public interface IRxTransientGeometry
     /// <param name="pPoles">pPoles</param>
     /// <param name="pKnots">pKnots</param>
     /// <param name="pWeights">pWeights</param>
-    IRxBSplineCurve2d CreateBSplineCurve2d([In] uint nOrder, [In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [In] sbyte bIsPeriodic, [Out] out double pPoles, [Out] out double pKnots, [Out] out double pWeights);
+    IRxBSplineCurve2d CreateBSplineCurve2d([In] uint nOrder, [In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [In] sbyte bIsPeriodic, [Out] out double pPoles, [Out] out double pKnots, [In] [Out] ref double pWeights);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -138,5 +138,5 @@ public interface IRxTransientGeometry
     /// <param name="pKnotsU">pKnotsU</param>
     /// <param name="pKnotsV">pKnotsV</param>
     /// <param name="pWeights">pWeights</param>
-    IRxBSplineSurface CreateBSplineSurface([In] [MarshalAs(UnmanagedType.LPArray)] uint[,] pnOrder, [In] uint nNumPolesUXV, [In] uint nKnotsU, [In] uint nKnotsV, [In] uint nWeights, [In] [MarshalAs(UnmanagedType.LPArray)] sbyte[,] pbIsPeriodic, [In] ref double pPoles, [In] ref double pKnotsU, [In] ref double pKnotsV, [Out] out double pWeights);
+    IRxBSplineSurface CreateBSplineSurface([In] [MarshalAs(UnmanagedType.LPArray)] UInt32[] pnOrder, [In] uint nNumPolesUXV, [In] uint nKnotsU, [In] uint nKnotsV, [In] uint nWeights, [In] [MarshalAs(UnmanagedType.LPArray)] SByte[] pbIsPeriodic, [In] ref double pPoles, [In] ref double pKnotsU, [In] ref double pKnotsV, [In] [Out] ref double pWeights);
 }

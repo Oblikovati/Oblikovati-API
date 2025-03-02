@@ -42,21 +42,21 @@ public interface SurfaceEvaluator
     /// <param name="Params">Params</param>
     /// <param name="SolutionNatures">SolutionNatures</param>
     [PreserveSig]
-    void GetParamAtPoint([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Points, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] GuessParams, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MaxDeviations, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out SolutionNatureEnum[,] SolutionNatures);
+    void GetParamAtPoint([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Points, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] GuessParams, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MaxDeviations, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref SolutionNatureEnum[] SolutionNatures);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="Points">Points</param>
     [PreserveSig]
-    void GetPointAtParam([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Points);
+    void GetPointAtParam([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Points);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="Normals">Normals</param>
     [PreserveSig]
-    void GetNormal([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Normals);
+    void GetNormal([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Normals);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -64,7 +64,7 @@ public interface SurfaceEvaluator
     /// <param name="UTangents">UTangents</param>
     /// <param name="VTangents">VTangents</param>
     [PreserveSig]
-    void GetTangents([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] UTangents, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VTangents);
+    void GetTangents([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] UTangents, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] VTangents);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -73,7 +73,7 @@ public interface SurfaceEvaluator
     /// <param name="MaxCurvatures">MaxCurvatures</param>
     /// <param name="MinCurvatures">MinCurvatures</param>
     [PreserveSig]
-    void GetCurvatures([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MaxTangents, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MaxCurvatures, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MinCurvatures);
+    void GetCurvatures([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MaxTangents, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MaxCurvatures, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MinCurvatures);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -81,7 +81,7 @@ public interface SurfaceEvaluator
     /// <param name="UPartials">UPartials</param>
     /// <param name="VPartials">VPartials</param>
     [PreserveSig]
-    void GetFirstDerivatives([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] UPartials, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VPartials);
+    void GetFirstDerivatives([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] UPartials, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] VPartials);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -90,7 +90,7 @@ public interface SurfaceEvaluator
     /// <param name="UVPartials">UVPartials</param>
     /// <param name="VVPartials">VVPartials</param>
     [PreserveSig]
-    void GetSecondDerivatives([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] UUPartials, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] UVPartials, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VVPartials);
+    void GetSecondDerivatives([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] UUPartials, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] UVPartials, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] VVPartials);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -98,7 +98,7 @@ public interface SurfaceEvaluator
     /// <param name="UUUPartials">UUUPartials</param>
     /// <param name="VVVPartials">VVVPartials</param>
     [PreserveSig]
-    void GetThirdDerivatives([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] UUUPartials, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VVVPartials);
+    void GetThirdDerivatives([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] UUUPartials, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] VVVPartials);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -110,7 +110,7 @@ public interface SurfaceEvaluator
     /// <param name="SingularitiesV">SingularitiesV</param>
     /// <param name="UnboundedParams">UnboundedParams</param>
     [PreserveSig]
-    void GetParamAnomaly([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] PeriodicityU, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] PeriodicityV, [Out] out int NumEndSingularitiesU, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] SingularitiesU, [Out] out int NumEndSingularitiesV, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] SingularitiesV, [Out] [MarshalAs(UnmanagedType.SafeArray)] out bool[,] UnboundedParams);
+    void GetParamAnomaly([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] PeriodicityU, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] PeriodicityV, [Out] out int NumEndSingularitiesU, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] SingularitiesU, [Out] out int NumEndSingularitiesV, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] SingularitiesV, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref bool[] UnboundedParams);
     /// <summary>
     /// Function that calculates the equivalent 3D curve for a 2D curve defined in the parametric space of the surface associated with the evaluator.&nbsp;The resulting transient geometry 3D curve is returned.&nbsp;The type of curve(s) returned is dependent on the shape of the input curve and the surface.
     /// </summary>
@@ -132,5 +132,5 @@ public interface SurfaceEvaluator
     /// <param name="Points">Points</param>
     /// <param name="Normals">Normals</param>
     [PreserveSig]
-    void GetNormalAtPoint([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Points, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Normals);
+    void GetNormalAtPoint([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Points, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Normals);
 }

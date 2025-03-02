@@ -18,7 +18,7 @@ public interface DataIO
     /// <param name="Format">Format</param>
     /// <param name="Stream">Stream</param>
     [PreserveSig]
-    void WriteDataToStream([In] [MarshalAs(UnmanagedType.BStr)] string Format, [Out] [MarshalAs(UnmanagedType.IUnknown)] out object Stream);
+    void WriteDataToStream([In] [MarshalAs(UnmanagedType.BStr)] string Format, [In] [Out] [MarshalAs(UnmanagedType.IUnknown)] ref object Stream);
     /// <summary>
     /// Reads in the specifically formatted contents of a file into the supporting object.
     /// </summary>
@@ -39,12 +39,12 @@ public interface DataIO
     /// <param name="Formats">Formats</param>
     /// <param name="StorageTypes">StorageTypes</param>
     [PreserveSig]
-    void GetOutputFormats([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Formats, [Out] [MarshalAs(UnmanagedType.SafeArray)] out StorageTypeEnum[,] StorageTypes);
+    void GetOutputFormats([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Formats, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref StorageTypeEnum[] StorageTypes);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Formats">Formats</param>
     /// <param name="StorageTypes">StorageTypes</param>
     [PreserveSig]
-    void GetInputFormats([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Formats, [Out] [MarshalAs(UnmanagedType.SafeArray)] out StorageTypeEnum[,] StorageTypes);
+    void GetInputFormats([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Formats, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref StorageTypeEnum[] StorageTypes);
 }

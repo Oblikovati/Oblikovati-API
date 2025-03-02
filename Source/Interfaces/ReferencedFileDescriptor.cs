@@ -58,13 +58,13 @@ public interface ReferencedFileDescriptor
     /// </summary>
     /// <returns></returns>
     [PreserveSig]
-    byte[,] GetCustomLogicalFileName();
+    byte[] GetCustomLogicalFileName();
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="CustomLogicalFileName">CustomLogicalFileName</param>
     [PreserveSig]
-    void PutCustomLogicalFileName([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] CustomLogicalFileName);
+    void PutCustomLogicalFileName([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] CustomLogicalFileName);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

@@ -65,7 +65,7 @@ public interface AttributeSet : IEnumerable
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Copies the Attribute Set to another object. Returns reference to the copied Attribute Set.
     /// </summary>
@@ -82,5 +82,5 @@ public interface AttributeSet : IEnumerable
     /// <param name="Values">Values</param>
     /// <param name="ReplaceExisting">ReplaceExisting</param>
     [PreserveSig]
-    AttributesEnumerator AddAttributes([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] AttributeNames, [In] [MarshalAs(UnmanagedType.SafeArray)] ref ValueTypeEnum[,] ValueTypes, [In] [MarshalAs(UnmanagedType.SafeArray)] ref object[,] Values, [In] bool ReplaceExisting);
+    AttributesEnumerator AddAttributes([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] AttributeNames, [In] [MarshalAs(UnmanagedType.SafeArray)] ref ValueTypeEnum[] ValueTypes, [In] [MarshalAs(UnmanagedType.SafeArray)] ref object[] Values, [In] bool ReplaceExisting);
 }

@@ -248,7 +248,7 @@ public interface TransientGeometry
     /// <param name="Weights">Weights</param>
     /// <param name="IsPeriodic">IsPeriodic</param>
     [PreserveSig]
-    BSplineCurve CreateBSplineCurve([In] int Order, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Poles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Knots, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Weights, [In] bool IsPeriodic);
+    BSplineCurve CreateBSplineCurve([In] int Order, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Knots, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights, [In] bool IsPeriodic);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -258,7 +258,7 @@ public interface TransientGeometry
     /// <param name="Weights">Weights</param>
     /// <param name="IsPeriodic">IsPeriodic</param>
     [PreserveSig]
-    BSplineCurve2d CreateBSplineCurve2d([In] int Order, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Poles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Knots, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Weights, [In] bool IsPeriodic);
+    BSplineCurve2d CreateBSplineCurve2d([In] int Order, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Knots, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights, [In] bool IsPeriodic);
     /// <summary>
     /// Method that creates a new Plane object. A plane object is infinite. The object created is a transient mathematical object and is not displayed graphically.
     /// </summary>
@@ -346,7 +346,7 @@ public interface TransientGeometry
     /// <param name="Weights">Weights</param>
     /// <param name="IsPeriodic">IsPeriodic</param>
     [PreserveSig]
-    BSplineSurface CreateBSplineSurface([In] [MarshalAs(UnmanagedType.SafeArray)] ref int[,] Order, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] Poles, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] KnotsU, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] KnotsV, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] Weights, [In] [MarshalAs(UnmanagedType.SafeArray)] ref bool[,] IsPeriodic);
+    BSplineSurface CreateBSplineSurface([In] [MarshalAs(UnmanagedType.SafeArray)] ref int[] Order, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] KnotsU, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] KnotsV, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights, [In] [MarshalAs(UnmanagedType.SafeArray)] ref bool[] IsPeriodic);
     /// <summary>
     /// Method that creates a new BSplineCurve2dDefinition object. This method creates an empty object. Use the methods/properties on this object to populate it and then use it as the argument in the CreateFittedBSplineCurve2d method.
     /// </summary>

@@ -67,7 +67,7 @@ public interface TutorialsManager
     /// <param name="FilePath">FilePath</param>
     /// <param name="SceneDoc">SceneDoc</param>
     [PreserveSig]
-    void FlushDocument([In] [MarshalAs(UnmanagedType.BStr)] string FilePath, [Out] [MarshalAs(UnmanagedType.Interface)] out _Document SceneDoc);
+    void FlushDocument([In] [MarshalAs(UnmanagedType.BStr)] string FilePath, [In] [Out] [MarshalAs(UnmanagedType.Interface)] ref _Document SceneDoc);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

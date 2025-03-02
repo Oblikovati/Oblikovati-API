@@ -11,7 +11,7 @@ public interface FileSaveAs
     /// <param name="Document">Document</param>
     /// <param name="OwningDocuments">OwningDocuments</param>
     [PreserveSig]
-    void _WhereUsed([In] [MarshalAs(UnmanagedType.IUnknown)] object Document, [Out] [MarshalAs(UnmanagedType.SafeArray)] out object[,] OwningDocuments);
+    void _WhereUsed([In] [MarshalAs(UnmanagedType.IUnknown)] object Document, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref object[] OwningDocuments);
     /// <summary>
     /// Adds a document, taken from within this tree, to the set of documents to be saved. Please note: Saving of files in Apprentice is not allowed on files that require migration (any file that has not already been migrated to the same version of the Apprentice server). The current document's NeedsMigrating property must return False before the FileSaveAs object can successfully be returned.
     /// </summary>

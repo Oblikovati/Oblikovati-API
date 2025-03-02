@@ -106,7 +106,7 @@ public interface FamilyManager
     /// <param name="ColumnsIds">ColumnsIds</param>
     /// <param name="LibraryId">LibraryId</param>
     [PreserveSig]
-    string[,] GetEvaluatedRows([In] [MarshalAs(UnmanagedType.BStr)] string FamilyId, [In] [MarshalAs(UnmanagedType.Struct)] object RowIds, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] ColumnsIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "");
+    string[] GetEvaluatedRows([In] [MarshalAs(UnmanagedType.BStr)] string FamilyId, [In] [MarshalAs(UnmanagedType.Struct)] object RowIds, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] ColumnsIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "");
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -115,7 +115,7 @@ public interface FamilyManager
     /// <param name="RowIds">RowIds</param>
     /// <param name="LibraryId">LibraryId</param>
     [PreserveSig]
-    string[,] GetEvaluatedColumns([In] [MarshalAs(UnmanagedType.BStr)] string FamilyId, [In] [MarshalAs(UnmanagedType.Struct)] object ColumnIds, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] RowIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "");
+    string[] GetEvaluatedColumns([In] [MarshalAs(UnmanagedType.BStr)] string FamilyId, [In] [MarshalAs(UnmanagedType.Struct)] object ColumnIds, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] RowIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "");
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -163,7 +163,7 @@ public interface FamilyManager
     /// <param name="LibraryId">LibraryId</param>
     /// <param name="CachedOnly">CachedOnly</param>
     [PreserveSig]
-    string[,] GetFamilyThumbnails([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] FamilyIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "", [In] bool? CachedOnly = false);
+    string[] GetFamilyThumbnails([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] FamilyIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "", [In] bool? CachedOnly = false);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

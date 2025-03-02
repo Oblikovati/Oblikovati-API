@@ -156,7 +156,7 @@ public interface TextBox
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -165,7 +165,7 @@ public interface TextBox
     /// <param name="VertexCoordinates">VertexCoordinates</param>
     /// <param name="VertexIndices">VertexIndices</param>
     [PreserveSig]
-    void GetFacetsInfo([Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices);
+    void GetFacetsInfo([Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices);
     /// <summary>
     /// Method that converts the text box to sketch geometries.
     /// </summary>

@@ -48,7 +48,7 @@ public interface IRxReferencedFileDescriptor
     /// </summary>
     /// <param name="pnSize">pnSize</param>
     /// <param name="ppCustomLogicalFileName">ppCustomLogicalFileName</param>
-    void GetCustomLogicalFileName([Out] out int pnSize, [Out] out IntPtr ppCustomLogicalFileName);
+    void GetCustomLogicalFileName([In] [Out] ref int pnSize, [Out] out IntPtr ppCustomLogicalFileName);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

@@ -33,7 +33,7 @@ public interface Torus
     /// <param name="MajorRadius">MajorRadius</param>
     /// <param name="MinorRadius">MinorRadius</param>
     [PreserveSig]
-    void GetTorusData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] CenterPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] out double MajorRadius, [Out] out double MinorRadius);
+    void GetTorusData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] CenterPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [Out] out double MajorRadius, [Out] out double MinorRadius);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -42,7 +42,7 @@ public interface Torus
     /// <param name="MajorRadius">MajorRadius</param>
     /// <param name="MinorRadius">MinorRadius</param>
     [PreserveSig]
-    void PutTorusData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] CenterPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [In] double MajorRadius, [In] double MinorRadius);
+    void PutTorusData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] CenterPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] double MajorRadius, [In] double MinorRadius);
     /// <summary>
     /// Creates a copy of this Torus object.&nbsp;The result is entirely independent and can be edited without affecting the original Torus object.
     /// </summary>

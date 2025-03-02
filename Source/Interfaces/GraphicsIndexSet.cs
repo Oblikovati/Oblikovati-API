@@ -44,11 +44,11 @@ public interface GraphicsIndexSet
     /// </summary>
     /// <param name="IndexValues">IndexValues</param>
     [PreserveSig]
-    void GetIndices([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] IndexValues);
+    void GetIndices([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] IndexValues);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="IndexValues">IndexValues</param>
     [PreserveSig]
-    void PutIndices([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] IndexValues);
+    void PutIndices([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] IndexValues);
 }

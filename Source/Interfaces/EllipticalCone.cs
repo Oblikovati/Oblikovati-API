@@ -43,7 +43,7 @@ public interface EllipticalCone
     /// <param name="HalfAngle">HalfAngle</param>
     /// <param name="IsExpanding">IsExpanding</param>
     [PreserveSig]
-    void GetEllipticalConeData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [Out] out double MinorMajorRatio, [Out] out double HalfAngle, [Out] out bool IsExpanding);
+    void GetEllipticalConeData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [Out] out double MinorMajorRatio, [Out] out double HalfAngle, [Out] out bool IsExpanding);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -54,7 +54,7 @@ public interface EllipticalCone
     /// <param name="HalfAngle">HalfAngle</param>
     /// <param name="IsExpanding">IsExpanding</param>
     [PreserveSig]
-    void PutEllipticalConeData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [In] double MinorMajorRatio, [In] double HalfAngle, [In] bool IsExpanding);
+    void PutEllipticalConeData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [In] double MinorMajorRatio, [In] double HalfAngle, [In] bool IsExpanding);
     /// <summary>
     /// Creates a copy of this EllipticalCone object.&nbsp;The result is entirely independent and can be edited without affecting the original EllipticalCone object.
     /// </summary>

@@ -39,7 +39,7 @@ public interface IRxSurfaceEvaluator
     /// <param name="pMaxDeviations">pMaxDeviations</param>
     /// <param name="pParams">pParams</param>
     /// <param name="pSolTypes">pSolTypes</param>
-    void GetParamAtPoint([In] uint nPoints, [In] ref double pPoints, [Out] out double pGuessParams, [Out] out double pMaxDeviations, [Out] out double pParams, [Out] out SolutionNatureEnum pSolTypes);
+    void GetParamAtPoint([In] uint nPoints, [In] ref double pPoints, [In] [Out] ref double pGuessParams, [In] [Out] ref double pMaxDeviations, [In] [Out] ref double pParams, [In] [Out] ref SolutionNatureEnum pSolTypes);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -70,7 +70,7 @@ public interface IRxSurfaceEvaluator
     /// <param name="pMaxTangents">pMaxTangents</param>
     /// <param name="pMaxCurvatures">pMaxCurvatures</param>
     /// <param name="pMinCurvatures">pMinCurvatures</param>
-    void GetCurvatures([In] uint nParams, [In] ref double pParams, [Out] out double pMaxTangents, [Out] out double pMaxCurvatures, [Out] out double pMinCurvatures);
+    void GetCurvatures([In] uint nParams, [In] ref double pParams, [In] [Out] ref double pMaxTangents, [In] [Out] ref double pMaxCurvatures, [In] [Out] ref double pMinCurvatures);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -83,7 +83,7 @@ public interface IRxSurfaceEvaluator
     /// <param name="pVVPartials">pVVPartials</param>
     /// <param name="pUUUPartials">pUUUPartials</param>
     /// <param name="pVVVPartials">pVVVPartials</param>
-    void GetDerivatives([In] uint nParams, [In] ref double pParams, [Out] out double pUPartials, [Out] out double pVPartials, [Out] out double pUUPartials, [Out] out double pUVPartials, [Out] out double pVVPartials, [Out] out double pUUUPartials, [Out] out double pVVVPartials);
+    void GetDerivatives([In] uint nParams, [In] ref double pParams, [In] [Out] ref double pUPartials, [In] [Out] ref double pVPartials, [In] [Out] ref double pUUPartials, [In] [Out] ref double pUVPartials, [In] [Out] ref double pVVPartials, [In] [Out] ref double pUUUPartials, [In] [Out] ref double pVVVPartials);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -94,5 +94,5 @@ public interface IRxSurfaceEvaluator
     /// <param name="pnEndSingularityV">pnEndSingularityV</param>
     /// <param name="pSingularityV">pSingularityV</param>
     /// <param name="pUnboundedParam">pUnboundedParam</param>
-    void GetParamAnomaly([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pPeriodicityU, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pPeriodicityV, [Out] out uint pnEndSingularityU, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pSingularityU, [Out] out uint pnEndSingularityV, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pSingularityV, [Out] [MarshalAs(UnmanagedType.LPArray)] out sbyte[,] pUnboundedParam);
+    void GetParamAnomaly([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pPeriodicityU, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pPeriodicityV, [Out] out uint pnEndSingularityU, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pSingularityU, [Out] out uint pnEndSingularityV, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pSingularityV, [Out] [MarshalAs(UnmanagedType.LPArray)] out SByte[] pUnboundedParam);
 }

@@ -10,10 +10,10 @@ public interface IRxMatrix
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="pCells">pCells</param>
-    void GetMatrixData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pCells);
+    void GetMatrixData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pCells);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="pCells">pCells</param>
-    void PutMatrixData([In] [MarshalAs(UnmanagedType.LPArray)] double[,] pCells);
+    void PutMatrixData([In] [MarshalAs(UnmanagedType.LPArray)] double[] pCells);
 }

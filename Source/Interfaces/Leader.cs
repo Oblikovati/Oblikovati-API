@@ -47,7 +47,7 @@ public interface Leader
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Method that adds a leader branch with the input points. This is the equivalent of the 'Add Leader' command in the user interface. This method will succeed only if the HasRootNode property returns False (i.e. there are no existing leader segments). If there are existing leader segments, this method will fail you should use the LeaderNode.AddLeader method instead.
     /// </summary>

@@ -27,5 +27,5 @@ public interface ContentTableRows : IEnumerable
     /// <param name="RowData">RowData</param>
     /// <param name="Position">Position</param>
     [PreserveSig]
-    ContentTableRow Add([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] RowData, [In] int? Position = default);
+    ContentTableRow Add([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] RowData, [In] int? Position = default);
 }

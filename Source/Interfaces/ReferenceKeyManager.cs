@@ -24,7 +24,7 @@ public interface ReferenceKeyManager
     /// <param name="KeyContext">KeyContext</param>
     /// <param name="MatchType">MatchType</param>
     [PreserveSig]
-    object BindKeyToObject([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey);
+    object BindKeyToObject([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -32,7 +32,7 @@ public interface ReferenceKeyManager
     /// <param name="KeyContext">KeyContext</param>
     /// <param name="MatchType">MatchType</param>
     [PreserveSig]
-    object BindKeyToObject([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int KeyContext, [Out] [MarshalAs(UnmanagedType.Struct)] out object MatchType);
+    object BindKeyToObject([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int KeyContext, [Out] [MarshalAs(UnmanagedType.Struct)] out object MatchType);
     /// <summary>
     /// Method to create a key context to use in the creation of reference keys.
     /// </summary>
@@ -45,26 +45,26 @@ public interface ReferenceKeyManager
     /// <param name="KeyContext">KeyContext</param>
     /// <param name="Result">Result</param>
     [PreserveSig]
-    void SaveContextToArray([In] int KeyContext, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] Result);
+    void SaveContextToArray([In] int KeyContext, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Result);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ContextData">ContextData</param>
     [PreserveSig]
-    int LoadContextFromArray([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ContextData);
+    int LoadContextFromArray([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ContextData);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ReferenceKey">ReferenceKey</param>
     [PreserveSig]
-    string KeyToString([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey);
+    string KeyToString([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ReferenceKeyString">ReferenceKeyString</param>
     /// <param name="ReferenceKey">ReferenceKey</param>
     [PreserveSig]
-    void StringToKey([In] [MarshalAs(UnmanagedType.BStr)] string ReferenceKeyString, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey);
+    void StringToKey([In] [MarshalAs(UnmanagedType.BStr)] string ReferenceKeyString, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -73,7 +73,7 @@ public interface ReferenceKeyManager
     /// <param name="Object">Object</param>
     /// <param name="Context">Context</param>
     [PreserveSig]
-    bool CanBindKeyToObject([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey);
+    bool CanBindKeyToObject([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -82,7 +82,7 @@ public interface ReferenceKeyManager
     /// <param name="Object">Object</param>
     /// <param name="Context">Context</param>
     [PreserveSig]
-    bool CanBindKeyToObject([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int KeyContext, [Out] [MarshalAs(UnmanagedType.Struct)] out object Object, [Out] [MarshalAs(UnmanagedType.Struct)] out object Context);
+    bool CanBindKeyToObject([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int KeyContext, [Out] [MarshalAs(UnmanagedType.Struct)] out object Object, [Out] [MarshalAs(UnmanagedType.Struct)] out object Context);
     /// <summary>
     /// Specifies a key context to release.
     /// </summary>

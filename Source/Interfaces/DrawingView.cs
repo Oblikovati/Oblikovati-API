@@ -478,7 +478,7 @@ public interface DrawingView
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Method that creates the origin indicator for ordinate dimensions and hole tables. The specified input GeometryIntent object must be associated with this drawing view, otherwise this method will fail.
     /// </summary>

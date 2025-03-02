@@ -116,13 +116,13 @@ public interface TriangleStripGraphics
     /// </summary>
     /// <param name="StripLengths">StripLengths</param>
     [PreserveSig]
-    void GetStripLengths([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] StripLengths);
+    void GetStripLengths([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] StripLengths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="StripLengths">StripLengths</param>
     [PreserveSig]
-    void PutStripLengths([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] StripLengths);
+    void PutStripLengths([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] StripLengths);
     /// <summary>
     /// Sets the view transformation settings (e.g. pixel scaling and front facing).
     /// </summary>

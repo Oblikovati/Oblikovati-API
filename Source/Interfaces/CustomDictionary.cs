@@ -44,7 +44,7 @@ public interface CustomDictionary
     /// </summary>
     /// <param name="Words">Words</param>
     [PreserveSig]
-    void GetWords([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Words);
+    void GetWords([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Words);
     /// <summary>
     /// Method that removes the CustomDictionary from the custom dictionaries.
     /// </summary>

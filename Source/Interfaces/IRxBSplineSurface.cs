@@ -21,7 +21,7 @@ public interface IRxBSplineSurface
     /// <param name="pbIsClosed">pbIsClosed</param>
     /// <param name="pbIsPlanar">pbIsPlanar</param>
     /// <param name="pPlaneVector">pPlaneVector</param>
-    void GetBSplineInfo([Out] [MarshalAs(UnmanagedType.LPArray)] out uint[,] pnOrder, [Out] [MarshalAs(UnmanagedType.LPArray)] out uint[,] pnNumPoles, [Out] [MarshalAs(UnmanagedType.LPArray)] out uint[,] pnNumKnots, [Out] out sbyte pbIsRational, [Out] [MarshalAs(UnmanagedType.LPArray)] out sbyte[,] pbIsPeriodic, [Out] [MarshalAs(UnmanagedType.LPArray)] out sbyte[,] pbIsClosed, [Out] out sbyte pbIsPlanar, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pPlaneVector);
+    void GetBSplineInfo([Out] [MarshalAs(UnmanagedType.LPArray)] out UInt32[] pnOrder, [Out] [MarshalAs(UnmanagedType.LPArray)] out UInt32[] pnNumPoles, [Out] [MarshalAs(UnmanagedType.LPArray)] out UInt32[] pnNumKnots, [Out] out sbyte pbIsRational, [Out] [MarshalAs(UnmanagedType.LPArray)] out SByte[] pbIsPeriodic, [Out] [MarshalAs(UnmanagedType.LPArray)] out SByte[] pbIsClosed, [Out] out sbyte pbIsPlanar, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pPlaneVector);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -33,7 +33,7 @@ public interface IRxBSplineSurface
     /// <param name="pKnotsU">pKnotsU</param>
     /// <param name="pKnotsV">pKnotsV</param>
     /// <param name="pWeights">pWeights</param>
-    void GetBSplineData([In] uint nPoles, [In] uint nKnotsU, [In] uint nKnotsV, [In] uint nWeights, [Out] out double pPoles, [Out] out double pKnotsU, [Out] out double pKnotsV, [Out] out double pWeights);
+    void GetBSplineData([In] uint nPoles, [In] uint nKnotsU, [In] uint nKnotsV, [In] uint nWeights, [Out] out double pPoles, [Out] out double pKnotsU, [Out] out double pKnotsV, [In] [Out] ref double pWeights);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -47,5 +47,5 @@ public interface IRxBSplineSurface
     /// <param name="pKnotsU">pKnotsU</param>
     /// <param name="pKnotsV">pKnotsV</param>
     /// <param name="pWeights">pWeights</param>
-    void PutBSplineInfoAndData([In] [MarshalAs(UnmanagedType.LPArray)] uint[,] pnOrder, [In] uint nNumPolesUXV, [In] uint nKnotsU, [In] uint nKnotsV, [In] uint nWeights, [In] [MarshalAs(UnmanagedType.LPArray)] sbyte[,] pbIsPeriodic, [In] ref double pPoles, [In] ref double pKnotsU, [In] ref double pKnotsV, [Out] out double pWeights);
+    void PutBSplineInfoAndData([In] [MarshalAs(UnmanagedType.LPArray)] UInt32[] pnOrder, [In] uint nNumPolesUXV, [In] uint nKnotsU, [In] uint nKnotsV, [In] uint nWeights, [In] [MarshalAs(UnmanagedType.LPArray)] SByte[] pbIsPeriodic, [In] ref double pPoles, [In] ref double pKnotsU, [In] ref double pKnotsV, [In] [Out] ref double pWeights);
 }

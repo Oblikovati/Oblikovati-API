@@ -36,7 +36,7 @@ public interface ModelDatumDefinition
     /// <summary>
     /// Gets and sets the model datum targets’ indices.
     /// </summary>
-    int[,] DatumTargetIndices { get; set; }
+    int[] DatumTargetIndices { get; set; }
     /// <summary>
     /// Gets and sets the datum target type.
     /// </summary>
@@ -56,15 +56,15 @@ public interface ModelDatumDefinition
     /// <summary>
     /// Gets and sets the datum target area diameter values.
     /// </summary>
-    double[,] DatumTargetAreaDiameters { get; set; }
+    double[] DatumTargetAreaDiameters { get; set; }
     /// <summary>
     /// Gets and sets the datum target area width values.
     /// </summary>
-    double[,] DatumTargetAreaWidths { get; set; }
+    double[] DatumTargetAreaWidths { get; set; }
     /// <summary>
     /// Gets and sets the datum target area height values.
     /// </summary>
-    double[,] DatumTargetAreaHeights { get; set; }
+    double[] DatumTargetAreaHeights { get; set; }
     /// <summary>
     /// Creates a copy of this ModelDatumDefinition object.
     /// </summary>

@@ -33,7 +33,7 @@ public interface EllipticalCylinder
     /// <param name="MajorAxis">MajorAxis</param>
     /// <param name="MinorMajorRatio">MinorMajorRatio</param>
     [PreserveSig]
-    void GetEllipticalCylinderData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [Out] out double MinorMajorRatio);
+    void GetEllipticalCylinderData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [Out] out double MinorMajorRatio);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -42,7 +42,7 @@ public interface EllipticalCylinder
     /// <param name="MajorAxis">MajorAxis</param>
     /// <param name="MinorMajorRatio">MinorMajorRatio</param>
     [PreserveSig]
-    void PutEllipticalCylinderData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [In] double MinorMajorRatio);
+    void PutEllipticalCylinderData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [In] double MinorMajorRatio);
     /// <summary>
     /// Creates a copy of this EllipticalCylinder object.&nbsp;The result is entirely independent and can be edited without affecting the original EllipticalCylinder object.
     /// </summary>

@@ -19,11 +19,11 @@ public interface IRxPlane
     /// </summary>
     /// <param name="pRootPoint">pRootPoint</param>
     /// <param name="pNormal">pNormal</param>
-    void GetPlaneData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pRootPoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pNormal);
+    void GetPlaneData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pRootPoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pNormal);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="pRootPoint">pRootPoint</param>
     /// <param name="pNormal">pNormal</param>
-    void PutPlaneData([In] [MarshalAs(UnmanagedType.LPArray)] double[,] pRootPoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[,] pNormal);
+    void PutPlaneData([In] [MarshalAs(UnmanagedType.LPArray)] double[] pRootPoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[] pNormal);
 }

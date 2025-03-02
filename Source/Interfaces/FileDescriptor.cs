@@ -82,13 +82,13 @@ public interface FileDescriptor
     /// </summary>
     /// <returns></returns>
     [PreserveSig]
-    byte[,] GetCustomLogicalFileName();
+    byte[] GetCustomLogicalFileName();
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Value">Value</param>
     [PreserveSig]
-    void PutCustomLogicalFileName([In] [MarshalAs(UnmanagedType.SafeArray)] ref byte[,] Value);
+    void PutCustomLogicalFileName([In] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Value);
     /// <summary>
     /// Method that replaces the referenced file.
     /// </summary>

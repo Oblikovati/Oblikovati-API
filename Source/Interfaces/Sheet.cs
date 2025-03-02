@@ -229,7 +229,7 @@ public interface Sheet
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Method that creates a GeometryIntent object for use in various annotation and view creations.
     /// </summary>
@@ -272,7 +272,7 @@ public interface Sheet
     /// <param name="View">Input DrawingView object from which to get the names of the model document’s design views that can be used to get the retrievable annotations.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetAvailableDesignViewsToRetrieve3DAnnotations([In] [MarshalAs(UnmanagedType.Interface)] DrawingView View);
+    string[] GetAvailableDesignViewsToRetrieve3DAnnotations([In] [MarshalAs(UnmanagedType.Interface)] DrawingView View);
     /// <summary>
     /// Returns a collection of objects that represent the valid set of model dimensions that can be retrieved into the input drawing view.
     /// </summary>

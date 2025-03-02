@@ -29,7 +29,7 @@ public interface IRxReferenceKeyManager
     /// <param name="ppPrimaryMatch">ppPrimaryMatch</param>
     /// <param name="pMatchType">pMatchType</param>
     /// <param name="ppAllMatches">ppAllMatches</param>
-    void BindKeyToInterface([In] uint hKeyContext, [In] ref Guid ObjectInterfaceIID, [In] uint dwKeySize, [In] ref byte pKey, [Out] out IntPtr ppPrimaryMatch, [Out] out SolutionNatureEnum pMatchType, [Out] [MarshalAs(UnmanagedType.Interface)] out IEnumUnknown ppAllMatches);
+    void BindKeyToInterface([In] uint hKeyContext, [In] ref Guid ObjectInterfaceIID, [In] uint dwKeySize, [In] ref byte pKey, [Out] out IntPtr ppPrimaryMatch, [Out] out SolutionNatureEnum pMatchType, [In] [Out] [MarshalAs(UnmanagedType.Interface)] ref IEnumUnknown ppAllMatches);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -47,12 +47,12 @@ public interface IRxReferenceKeyManager
     /// <param name="pMatchType">pMatchType</param>
     /// <param name="pdwNumMatches">pdwNumMatches</param>
     /// <param name="ppAllMatches">ppAllMatches</param>
-    void GetTransientKeyFromKey([In] uint hKeyContext, [In] uint dwKeySize, [In] ref byte pKey, [Out] out int pPrimaryTransientKey, [Out] out SolutionNatureEnum pMatchType, [Out] out uint pdwNumMatches, [Out] out IntPtr ppAllMatches);
+    void GetTransientKeyFromKey([In] uint hKeyContext, [In] uint dwKeySize, [In] ref byte pKey, [Out] out int pPrimaryTransientKey, [Out] out SolutionNatureEnum pMatchType, [In] [Out] ref uint pdwNumMatches, [In] [Out] ref IntPtr ppAllMatches);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="TransientKey">TransientKey</param>
     /// <param name="hKeyContext">hKeyContext</param>
     /// <param name="pdwKeySize">pdwKeySize</param>
-    IntPtr GetKeyFromTransientKey([In] int TransientKey, [In] uint hKeyContext, [Out] out uint pdwKeySize);
+    IntPtr GetKeyFromTransientKey([In] int TransientKey, [In] uint hKeyContext, [In] [Out] ref uint pdwKeySize);
 }

@@ -30,7 +30,7 @@ public interface _AppPerformanceMonitor
     /// </summary>
     /// <param name="LODTolerances">LODTolerances</param>
     [PreserveSig]
-    void SetGraphicsLOD([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] LODTolerances);
+    void SetGraphicsLOD([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] LODTolerances);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

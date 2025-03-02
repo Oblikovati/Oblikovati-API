@@ -38,7 +38,7 @@ public interface Cone
     /// <param name="HalfAngle">HalfAngle</param>
     /// <param name="IsExpanding">IsExpanding</param>
     [PreserveSig]
-    void GetConeData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] out double Radius, [Out] out double HalfAngle, [Out] out bool IsExpanding);
+    void GetConeData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [Out] out double Radius, [Out] out double HalfAngle, [Out] out bool IsExpanding);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -48,7 +48,7 @@ public interface Cone
     /// <param name="HalfAngle">HalfAngle</param>
     /// <param name="IsExpanding">IsExpanding</param>
     [PreserveSig]
-    void PutConeData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [In] double Radius, [In] double HalfAngle, [In] bool IsExpanding);
+    void PutConeData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] double Radius, [In] double HalfAngle, [In] bool IsExpanding);
     /// <summary>
     /// Creates a copy of this Cone object.&nbsp;The result is entirely independent and can be edited without affecting the original Cone object.
     /// </summary>

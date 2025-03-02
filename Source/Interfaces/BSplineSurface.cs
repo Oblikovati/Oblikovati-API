@@ -25,7 +25,7 @@ public interface BSplineSurface
     /// <param name="IsPlanar">IsPlanar</param>
     /// <param name="PlaneVector">PlaneVector</param>
     [PreserveSig]
-    void GetBSplineInfo([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] Order, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] NumPoles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] NumKnots, [Out] out bool IsRational, [Out] [MarshalAs(UnmanagedType.SafeArray)] out bool[,] IsPeriodic, [Out] [MarshalAs(UnmanagedType.SafeArray)] out bool[,] IsClosed, [Out] out bool IsPlanar, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] PlaneVector);
+    void GetBSplineInfo([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] Order, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] NumPoles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] NumKnots, [Out] out bool IsRational, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref bool[] IsPeriodic, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref bool[] IsClosed, [Out] out bool IsPlanar, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] PlaneVector);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -34,7 +34,7 @@ public interface BSplineSurface
     /// <param name="KnotsV">KnotsV</param>
     /// <param name="Weights">Weights</param>
     [PreserveSig]
-    void GetBSplineData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Poles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] KnotsU, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] KnotsV, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Weights);
+    void GetBSplineData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] KnotsU, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] KnotsV, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -45,7 +45,7 @@ public interface BSplineSurface
     /// <param name="Weights">Weights</param>
     /// <param name="IsPeriodic">IsPeriodic</param>
     [PreserveSig]
-    void PutBSplineInfoAndData([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] Order, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Poles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] KnotsU, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] KnotsV, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Weights, [Out] [MarshalAs(UnmanagedType.SafeArray)] out bool[,] IsPeriodic);
+    void PutBSplineInfoAndData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] Order, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Poles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] KnotsU, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] KnotsV, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Weights, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref bool[] IsPeriodic);
     /// <summary>
     /// Creates a copy of this BSplineSurface object.&nbsp;The result is entirely independent and can be edited without affecting the original BSplineSurface object.
     /// </summary>

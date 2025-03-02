@@ -525,7 +525,7 @@ public interface Application
     /// <summary>
     /// Read-only property that returns an array of strings indicating the versions can be used to compare the commands with selected version.
     /// </summary>
-    string[,] AvailableComparisonVersions { get; }
+    string[] AvailableComparisonVersions { get; }
     /// <summary>
     /// Read-write property that gets and sets the comparison version for commands. When set a comparison version, the commands will show additional info against the version (like whether a command is introduced/updated later than the version). The AvailableComparison.
     /// </summary>

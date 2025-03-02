@@ -44,11 +44,11 @@ public interface GraphicsNormalSet
     /// </summary>
     /// <param name="Normals">Normals</param>
     [PreserveSig]
-    void GetNormals([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Normals);
+    void GetNormals([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Normals);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Normals">Normals</param>
     [PreserveSig]
-    void PutNormals([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Normals);
+    void PutNormals([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Normals);
 }

@@ -22,7 +22,7 @@ public interface Polyline2d
     /// </summary>
     /// <param name="Points">Points</param>
     [PreserveSig]
-    void GetPoints([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Points);
+    void GetPoints([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] Points);
     /// <summary>
     /// Method that sets all of the coordinates of the polyline.
     /// </summary>

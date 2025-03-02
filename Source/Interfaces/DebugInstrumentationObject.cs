@@ -27,7 +27,7 @@ public interface DebugInstrumentationObject
     /// </summary>
     /// <param name="Cookies">Cookies</param>
     [PreserveSig]
-    void GetLiveObjects([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] Cookies);
+    void GetLiveObjects([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] Cookies);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

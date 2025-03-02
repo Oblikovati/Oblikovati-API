@@ -31,14 +31,14 @@ public interface LineSegment
     /// <param name="StartPoint">StartPoint</param>
     /// <param name="EndPoint">EndPoint</param>
     [PreserveSig]
-    void GetLineSegmentData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] StartPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] EndPoint);
+    void GetLineSegmentData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] StartPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] EndPoint);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="StartPoint">StartPoint</param>
     /// <param name="EndPoint">EndPoint</param>
     [PreserveSig]
-    void PutLineSegmentData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] StartPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] EndPoint);
+    void PutLineSegmentData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] StartPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] EndPoint);
     /// <summary>
     /// Method that returns the distance to the specified point.
     /// </summary>

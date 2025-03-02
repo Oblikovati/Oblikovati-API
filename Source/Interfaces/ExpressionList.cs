@@ -43,7 +43,7 @@ public interface ExpressionList : IEnumerable
     /// </summary>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetExpressionList();
+    string[] GetExpressionList();
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -51,5 +51,5 @@ public interface ExpressionList : IEnumerable
     /// <param name="ChangeCurrentValue">ChangeCurrentValue</param>
     /// <param name="CurrentValueIndex">CurrentValueIndex</param>
     [PreserveSig]
-    void SetExpressionList([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] ExpressionList, [In] bool? ChangeCurrentValue = false, [In] int? CurrentValueIndex = default);
+    void SetExpressionList([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] ExpressionList, [In] bool? ChangeCurrentValue = false, [In] int? CurrentValueIndex = default);
 }

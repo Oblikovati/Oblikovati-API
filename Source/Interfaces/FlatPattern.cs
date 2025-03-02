@@ -229,7 +229,7 @@ public interface FlatPattern
     /// <param name="ProximityTolerance">ProximityTolerance</param>
     /// <param name="VisibleObjectsOnly">VisibleObjectsOnly</param>
     [PreserveSig]
-    ObjectsEnumerator FindUsingPoint([In] [MarshalAs(UnmanagedType.Interface)] Point Point, [In] [MarshalAs(UnmanagedType.SafeArray)] ref SelectionFilterEnum[,] ObjectTypes, [In] [MarshalAs(UnmanagedType.Struct)] object? ProximityTolerance = default, [In] bool? VisibleObjectsOnly = true);
+    ObjectsEnumerator FindUsingPoint([In] [MarshalAs(UnmanagedType.Interface)] Point Point, [In] [MarshalAs(UnmanagedType.SafeArray)] ref SelectionFilterEnum[] ObjectTypes, [In] [MarshalAs(UnmanagedType.Struct)] object? ProximityTolerance = default, [In] bool? VisibleObjectsOnly = true);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -246,7 +246,7 @@ public interface FlatPattern
     /// <param name="VisibleObjectsOnly">VisibleObjectsOnly</param>
     /// <param name="LocationPoints">LocationPoints</param>
     [PreserveSig]
-    ObjectsEnumerator FindUsingVector([In] [MarshalAs(UnmanagedType.Interface)] Point OriginPoint, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector Direction, [In] [MarshalAs(UnmanagedType.SafeArray)] ref SelectionFilterEnum[,] ObjectTypes, [In] bool? UseCylinder = true, [In] [MarshalAs(UnmanagedType.Struct)] object? ProximityTolerance = default);
+    ObjectsEnumerator FindUsingVector([In] [MarshalAs(UnmanagedType.Interface)] Point OriginPoint, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector Direction, [In] [MarshalAs(UnmanagedType.SafeArray)] ref SelectionFilterEnum[] ObjectTypes, [In] bool? UseCylinder = true, [In] [MarshalAs(UnmanagedType.Struct)] object? ProximityTolerance = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -258,7 +258,7 @@ public interface FlatPattern
     /// <param name="VisibleObjectsOnly">VisibleObjectsOnly</param>
     /// <param name="LocationPoints">LocationPoints</param>
     [PreserveSig]
-    ObjectsEnumerator FindUsingVector([In] [MarshalAs(UnmanagedType.Interface)] Point OriginPoint, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector Direction, [In] [MarshalAs(UnmanagedType.SafeArray)] ref SelectionFilterEnum[,] ObjectTypes, [In] bool UseCylinder, [In] [MarshalAs(UnmanagedType.Struct)] object ProximityTolerance, [In] bool VisibleObjectsOnly, [Out] [MarshalAs(UnmanagedType.Struct)] out object LocationPoints);
+    ObjectsEnumerator FindUsingVector([In] [MarshalAs(UnmanagedType.Interface)] Point OriginPoint, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector Direction, [In] [MarshalAs(UnmanagedType.SafeArray)] ref SelectionFilterEnum[] ObjectTypes, [In] bool UseCylinder, [In] [MarshalAs(UnmanagedType.Struct)] object ProximityTolerance, [In] bool VisibleObjectsOnly, [Out] [MarshalAs(UnmanagedType.Struct)] out object LocationPoints);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

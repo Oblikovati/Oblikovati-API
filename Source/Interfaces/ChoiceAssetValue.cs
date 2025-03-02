@@ -43,5 +43,5 @@ public interface ChoiceAssetValue
     /// <param name="Names">Names</param>
     /// <param name="Choices">Choices</param>
     [PreserveSig]
-    void GetChoices([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Choices);
+    void GetChoices([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] Choices);
 }

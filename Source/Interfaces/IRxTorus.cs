@@ -29,7 +29,7 @@ public interface IRxTorus
     /// <param name="pAxisVector">pAxisVector</param>
     /// <param name="pMajorRadius">pMajorRadius</param>
     /// <param name="pMinorRadius">pMinorRadius</param>
-    void GetTorusData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pCenterPoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pAxisVector, [Out] out double pMajorRadius, [Out] out double pMinorRadius);
+    void GetTorusData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pCenterPoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pAxisVector, [Out] out double pMajorRadius, [Out] out double pMinorRadius);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -37,5 +37,5 @@ public interface IRxTorus
     /// <param name="pAxisVector">pAxisVector</param>
     /// <param name="MajorRadius">MajorRadius</param>
     /// <param name="MinorRadius">MinorRadius</param>
-    void PutTorusData([In] [MarshalAs(UnmanagedType.LPArray)] double[,] pCenterPoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[,] pAxisVector, [In] double MajorRadius, [In] double MinorRadius);
+    void PutTorusData([In] [MarshalAs(UnmanagedType.LPArray)] double[] pCenterPoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[] pAxisVector, [In] double MajorRadius, [In] double MinorRadius);
 }

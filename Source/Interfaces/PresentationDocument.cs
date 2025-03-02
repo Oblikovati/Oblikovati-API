@@ -5,6 +5,9 @@ namespace Oblikovati.API;
 /// </summary>
 public interface PresentationDocument : Document
 {
+    /// <summary>
+    /// Property that returns the DisabledCommandList object. This object allows the document to disable specific commands. This list contains commands that are disabled in addition to those specified by the DisabledCommandTypes property.
+    /// </summary>
     DisabledCommandList DisabledCommandList { get; }
     /// <summary>
     /// </summary>

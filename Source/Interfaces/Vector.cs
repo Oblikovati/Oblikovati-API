@@ -26,13 +26,13 @@ public interface Vector
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void GetVectorData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void GetVectorData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void PutVectorData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void PutVectorData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Transform this vector by the specified matrix.
     /// </summary>

@@ -11,5 +11,5 @@ public interface IRxFacetsOld
     /// <param name="ppNormals">ppNormals</param>
     /// <param name="pdwNumFacets">pdwNumFacets</param>
     /// <param name="ppVertexIndices">ppVertexIndices</param>
-    void GetFacets([In] double ChordalHeightTol, [Out] out uint pdwNumVertices, [Out] out IntPtr ppVertices, [Out] out IntPtr ppNormals, [Out] out uint pdwNumFacets, [Out] out IntPtr ppVertexIndices);
+    void GetFacets([In] double ChordalHeightTol, [In] [Out] ref uint pdwNumVertices, [Out] out IntPtr ppVertices, [Out] out IntPtr ppNormals, [In] [Out] ref uint pdwNumFacets, [Out] out IntPtr ppVertexIndices);
 }

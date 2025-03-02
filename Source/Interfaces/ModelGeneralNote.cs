@@ -71,7 +71,7 @@ public interface ModelGeneralNote
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Method that deletes the ModelDimension.
     /// </summary>
@@ -89,7 +89,7 @@ public interface ModelGeneralNote
     /// <param name="VertexCount">VertexCount</param>
     /// <param name="VertexCoordinates">VertexCoordinates</param>
     [PreserveSig]
-    void GetDisplayGeometry([In] [MarshalAs(UnmanagedType.Interface)] Camera Camera, [Out] out int GroupCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] PolylinesPerGroup, [Out] [MarshalAs(UnmanagedType.SafeArray)] out bool[,] FilledGroups, [Out] out int PolylineCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] PolylineLengths, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates);
+    void GetDisplayGeometry([In] [MarshalAs(UnmanagedType.Interface)] Camera Camera, [Out] out int GroupCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] PolylinesPerGroup, [Out] [MarshalAs(UnmanagedType.SafeArray)] out bool[] FilledGroups, [Out] out int PolylineCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] PolylineLengths, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -103,7 +103,7 @@ public interface ModelGeneralNote
     /// <param name="SymbolVertexCoordinates">SymbolVertexCoordinates</param>
     /// <param name="SymbolVertexIndices">SymbolVertexIndices</param>
     [PreserveSig]
-    void GetFilledAreaFacetsInfo([In] [MarshalAs(UnmanagedType.Interface)] Camera Camera, [Out] out int TextVertexCount, [Out] out int TextFacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] TextVertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] TextVertexIndices, [Out] out int SymbolVertexCount, [Out] out int SymbolFacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] SymbolVertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] SymbolVertexIndices);
+    void GetFilledAreaFacetsInfo([In] [MarshalAs(UnmanagedType.Interface)] Camera Camera, [Out] out int TextVertexCount, [Out] out int TextFacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] TextVertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] TextVertexIndices, [Out] out int SymbolVertexCount, [Out] out int SymbolFacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] SymbolVertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] SymbolVertexIndices);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

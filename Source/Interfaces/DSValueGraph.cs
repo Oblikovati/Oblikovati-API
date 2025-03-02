@@ -30,7 +30,7 @@ public interface DSValueGraph
     /// </summary>
     /// <param name="TimeValueArray">TimeValueArray</param>
     [PreserveSig]
-    void GetValueArray([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] TimeValueArray);
+    void GetValueArray([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] TimeValueArray);
     /// <summary>
     /// Sets the interpolation method used for the specified curve segment.&nbsp;A curve segment is defined as the curve between two of the value points.&nbsp;There are PointCount-1 segments.
     /// </summary>
@@ -45,5 +45,5 @@ public interface DSValueGraph
     /// <param name="TimeValueArray">TimeValueArray</param>
     /// <param name="InterpolationType">InterpolationType</param>
     [PreserveSig]
-    void SetValueUsingArray([In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] TimeValueArray, [In] DSGraphInterpolationTypeEnum? InterpolationType = DSGraphInterpolationTypeEnum.kLinearRampInterpolationType);
+    void SetValueUsingArray([In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] TimeValueArray, [In] DSGraphInterpolationTypeEnum? InterpolationType = DSGraphInterpolationTypeEnum.kLinearRampInterpolationType);
 }

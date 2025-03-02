@@ -28,7 +28,7 @@ public interface Cylinder
     /// <param name="AxisVector">AxisVector</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void GetCylinderData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] out double Radius);
+    void GetCylinderData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [Out] out double Radius);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -36,7 +36,7 @@ public interface Cylinder
     /// <param name="AxisVector">AxisVector</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void PutCylinderData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] BasePoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [In] double Radius);
+    void PutCylinderData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] BasePoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] double Radius);
     /// <summary>
     /// Creates a copy of this Cylinder object.&nbsp;The result is entirely independent and can be edited without affecting the original Cylinder object.
     /// </summary>

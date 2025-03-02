@@ -60,7 +60,7 @@ public interface FileLocations
     /// <param name="Names">Names</param>
     /// <param name="Paths">Paths</param>
     [PreserveSig]
-    void _Locals([Out] out int NumLocals, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Paths);
+    void _Locals([Out] out int NumLocals, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Names, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Paths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -82,7 +82,7 @@ public interface FileLocations
     /// <param name="Names">Names</param>
     /// <param name="Paths">Paths</param>
     [PreserveSig]
-    void Workgroups([Out] out int NumWorkGroups, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Paths);
+    void Workgroups([Out] out int NumWorkGroups, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Names, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Paths);
     /// <summary>
     /// Method that removes a given Workgroup path, given its name.
     /// </summary>
@@ -104,7 +104,7 @@ public interface FileLocations
     /// <param name="Names">Names</param>
     /// <param name="Paths">Paths</param>
     [PreserveSig]
-    void Libraries([Out] out int NumLibraries, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Paths);
+    void Libraries([Out] out int NumLibraries, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Names, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Paths);
     /// <summary>
     /// Method that removes a given Library path, given its name.
     /// </summary>
@@ -170,7 +170,7 @@ public interface FileLocations
     /// <param name="NumProjectFiles">NumProjectFiles</param>
     /// <param name="ProjectFileNamePaths">ProjectFileNamePaths</param>
     [PreserveSig]
-    void ProjectFiles([Out] out int NumProjectFiles, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] ProjectFileNamePaths);
+    void ProjectFiles([Out] out int NumProjectFiles, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] ProjectFileNamePaths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

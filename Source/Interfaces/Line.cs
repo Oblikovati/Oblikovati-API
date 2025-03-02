@@ -27,14 +27,14 @@ public interface Line
     /// <param name="RootPoint">RootPoint</param>
     /// <param name="Direction">Direction</param>
     [PreserveSig]
-    void GetLineData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] RootPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Direction);
+    void GetLineData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] RootPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Direction);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="RootPoint">RootPoint</param>
     /// <param name="Direction">Direction</param>
     [PreserveSig]
-    void PutLineData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] RootPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Direction);
+    void PutLineData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] RootPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Direction);
     /// <summary>
     /// Method that returns the distance to the specified point.
     /// </summary>

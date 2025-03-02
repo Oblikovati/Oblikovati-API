@@ -192,7 +192,7 @@ public interface AssemblyComponentDefinition : ComponentDefinition
     /// </summary>
     /// <param name="PositionalStates">PositionalStates</param>
     [PreserveSig]
-    void GetPositionalStates([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] PositionalStates);
+    void GetPositionalStates([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] PositionalStates);
     /// <summary>
     /// Method that converts an assembly to an iAssemblyFactory. The newly created iAssemblyFactory object will have an empty excel spreadsheet.
     /// </summary>

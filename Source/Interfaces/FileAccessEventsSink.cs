@@ -13,7 +13,7 @@ public interface FileAccessEventsSink
     /// <param name="FullFileName">FullFileName</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileResolution([In] [MarshalAs(UnmanagedType.BStr)] string RelativeFileName, [In] [MarshalAs(UnmanagedType.BStr)] string LibraryName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] CustomLogicalName, [In] EventTimingEnum BeforeOrAfter, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] [MarshalAs(UnmanagedType.BStr)] out string FullFileName, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileResolution([In] [MarshalAs(UnmanagedType.BStr)] string RelativeFileName, [In] [MarshalAs(UnmanagedType.BStr)] string LibraryName, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] CustomLogicalName, [In] EventTimingEnum BeforeOrAfter, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] [MarshalAs(UnmanagedType.BStr)] out string FullFileName, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -26,5 +26,5 @@ public interface FileAccessEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileDirty([In] [MarshalAs(UnmanagedType.BStr)] string RelativeFileName, [In] [MarshalAs(UnmanagedType.BStr)] string LibraryName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] CustomLogicalName, [In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [In] [MarshalAs(UnmanagedType.Interface)] _Document DocumentObject, [In] EventTimingEnum BeforeOrAfter, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileDirty([In] [MarshalAs(UnmanagedType.BStr)] string RelativeFileName, [In] [MarshalAs(UnmanagedType.BStr)] string LibraryName, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] CustomLogicalName, [In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [In] [MarshalAs(UnmanagedType.Interface)] _Document DocumentObject, [In] EventTimingEnum BeforeOrAfter, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
 }

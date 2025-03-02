@@ -29,7 +29,7 @@ public interface IRxBSplineCurve2d
     /// <param name="pPoles">pPoles</param>
     /// <param name="pKnots">pKnots</param>
     /// <param name="pWeights">pWeights</param>
-    void GetBSplineData([In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [Out] out double pPoles, [Out] out double pKnots, [Out] out double pWeights);
+    void GetBSplineData([In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [Out] out double pPoles, [Out] out double pKnots, [In] [Out] ref double pWeights);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -41,5 +41,5 @@ public interface IRxBSplineCurve2d
     /// <param name="pPoles">pPoles</param>
     /// <param name="pKnots">pKnots</param>
     /// <param name="pWeights">pWeights</param>
-    void PutBSplineInfoAndData([In] uint nOrder, [In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [In] sbyte bIsPeriodic, [In] ref double pPoles, [In] ref double pKnots, [Out] out double pWeights);
+    void PutBSplineInfoAndData([In] uint nOrder, [In] uint nPoles, [In] uint nKnots, [In] uint nWeights, [In] sbyte bIsPeriodic, [In] ref double pPoles, [In] ref double pKnots, [In] [Out] ref double pWeights);
 }

@@ -23,14 +23,14 @@ public interface Sphere
     /// <param name="CenterPoint">CenterPoint</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void GetSphereData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] CenterPoint, [Out] out double Radius);
+    void GetSphereData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] CenterPoint, [Out] out double Radius);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="CenterPoint">CenterPoint</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void PutSphereData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] CenterPoint, [In] double Radius);
+    void PutSphereData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] CenterPoint, [In] double Radius);
     /// <summary>
     /// Creates a copy of this Sphere object.&nbsp;The result is entirely independent and can be edited without affecting the original Sphere object.
     /// </summary>

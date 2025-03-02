@@ -85,7 +85,7 @@ public interface SweepFeatures : IEnumerable
     /// <param name="StartProfileNormal">StartProfileNormal</param>
     /// <param name="Params">Params</param>
     [PreserveSig]
-    ObjectsEnumerator GetProfileOrientationAtParam([In] [MarshalAs(UnmanagedType.IDispatch)] object PathCurve, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector StartProfileOrientation, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector StartProfileNormal, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] Params);
+    ObjectsEnumerator GetProfileOrientationAtParam([In] [MarshalAs(UnmanagedType.IDispatch)] object PathCurve, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector StartProfileOrientation, [In] [MarshalAs(UnmanagedType.Interface)] UnitVector StartProfileNormal, [In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

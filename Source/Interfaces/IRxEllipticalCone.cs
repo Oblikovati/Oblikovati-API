@@ -39,7 +39,7 @@ public interface IRxEllipticalCone
     /// <param name="pMinorMajorRatio">pMinorMajorRatio</param>
     /// <param name="pHalfAngle">pHalfAngle</param>
     /// <param name="pbIsExpanding">pbIsExpanding</param>
-    void GetEllipticalConeData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pBasePoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pAxisVector, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pMajorAxis, [Out] out double pMinorMajorRatio, [Out] out double pHalfAngle, [Out] out sbyte pbIsExpanding);
+    void GetEllipticalConeData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pBasePoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pAxisVector, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pMajorAxis, [Out] out double pMinorMajorRatio, [Out] out double pHalfAngle, [Out] out sbyte pbIsExpanding);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -49,5 +49,5 @@ public interface IRxEllipticalCone
     /// <param name="MinorMajorRatio">MinorMajorRatio</param>
     /// <param name="HalfAngle">HalfAngle</param>
     /// <param name="bIsExpanding">bIsExpanding</param>
-    void PutEllipticalConeData([In] [MarshalAs(UnmanagedType.LPArray)] double[,] pBasePoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[,] pAxisVector, [In] [MarshalAs(UnmanagedType.LPArray)] double[,] pMajorAxis, [In] double MinorMajorRatio, [In] double HalfAngle, [In] sbyte bIsExpanding);
+    void PutEllipticalConeData([In] [MarshalAs(UnmanagedType.LPArray)] double[] pBasePoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[] pAxisVector, [In] [MarshalAs(UnmanagedType.LPArray)] double[] pMajorAxis, [In] double MinorMajorRatio, [In] double HalfAngle, [In] sbyte bIsExpanding);
 }

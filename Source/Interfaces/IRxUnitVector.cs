@@ -18,10 +18,10 @@ public interface IRxUnitVector
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="pCoords">pCoords</param>
-    void GetUnitVectorData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pCoords);
+    void GetUnitVectorData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pCoords);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="pCoords">pCoords</param>
-    void PutUnitVectorData([In] [MarshalAs(UnmanagedType.LPArray)] double[,] pCoords);
+    void PutUnitVectorData([In] [MarshalAs(UnmanagedType.LPArray)] double[] pCoords);
 }

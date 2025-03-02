@@ -98,5 +98,5 @@ public interface MaterialAsset : IEnumerable
     /// <param name="assetBinary">assetBinary</param>
     /// <param name="referenceLabel">referenceLabel</param>
     [PreserveSig]
-    void _GetProteinAsset([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] assetBinary, [Out] [MarshalAs(UnmanagedType.BStr)] out string referenceLabel);
+    void _GetProteinAsset([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[] assetBinary, [Out] [MarshalAs(UnmanagedType.BStr)] out string referenceLabel);
 }

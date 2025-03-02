@@ -132,7 +132,7 @@ public interface AssemblyDocument : Document
     /// <param name="ContainingOccurrence">ContainingOccurrence</param>
     /// <param name="SelectedObject">SelectedObject</param>
     [PreserveSig]
-    void GetSelectedObject([In] [MarshalAs(UnmanagedType.Interface)] GenericObject Selection, [Out] out ObjectTypeEnum ObjectType, [Out] [MarshalAs(UnmanagedType.Interface)] out NameValueMap AdditionalData, [Out] [MarshalAs(UnmanagedType.Interface)] out ComponentOccurrence ContainingOccurrence, [Out] [MarshalAs(UnmanagedType.Struct)] out object SelectedObject);
+    void GetSelectedObject([In] [MarshalAs(UnmanagedType.Interface)] GenericObject Selection, [Out] out ObjectTypeEnum ObjectType, [Out] [MarshalAs(UnmanagedType.Interface)] out NameValueMap AdditionalData, [Out] [MarshalAs(UnmanagedType.Interface)] out ComponentOccurrence ContainingOccurrence, [In] [Out] [MarshalAs(UnmanagedType.Struct)] ref object SelectedObject);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

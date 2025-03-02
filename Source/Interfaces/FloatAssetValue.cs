@@ -64,7 +64,7 @@ public interface FloatAssetValue
     /// <summary>
     /// Gets and sets the values associated with this asset value. HasMultipleValues property indicates if this property will be returning more than one value.
     /// </summary>
-    double[,] Values { get; set; }
+    double[] Values { get; set; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

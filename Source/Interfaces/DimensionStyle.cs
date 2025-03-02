@@ -464,7 +464,7 @@ public interface DimensionStyle
     /// <summary>
     /// Returns the hole and thread type list.
     /// </summary>
-    string[,] HoleThreadTypeList { get; }
+    string[] HoleThreadTypeList { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -517,7 +517,7 @@ public interface DimensionStyle
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

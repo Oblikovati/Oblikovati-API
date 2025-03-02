@@ -23,14 +23,14 @@ public interface Circle2d
     /// <param name="Center">Center</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void GetCircleData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] out double Radius);
+    void GetCircleData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [Out] out double Radius);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Center">Center</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void PutCircleData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [In] double Radius);
+    void PutCircleData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] double Radius);
     /// <summary>
     /// Creates a copy of this Circle2d object.&nbsp;The result is entirely independent and can be edited without affecting the original Circle2d object.
     /// </summary>

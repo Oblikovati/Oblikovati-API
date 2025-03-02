@@ -22,13 +22,13 @@ public interface Point
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void GetPointData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void GetPointData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void PutPointData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void PutPointData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Transform this point by the specified matrix.
     /// </summary>

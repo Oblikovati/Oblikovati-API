@@ -19,7 +19,7 @@ public interface CurveEvaluator
     /// <param name="StartPoint">StartPoint</param>
     /// <param name="EndPoint">EndPoint</param>
     [PreserveSig]
-    void GetEndPoints([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] StartPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] EndPoint);
+    void GetEndPoints([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] StartPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] EndPoint);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -36,21 +36,21 @@ public interface CurveEvaluator
     /// <param name="Params">Params</param>
     /// <param name="SolTypes">SolTypes</param>
     [PreserveSig]
-    void GetParamAtPoint([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Points, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] GuessParams, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MaxDeviations, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out SolutionNatureEnum[,] SolTypes);
+    void GetParamAtPoint([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Points, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] GuessParams, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MaxDeviations, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref SolutionNatureEnum[] SolTypes);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="Points">Points</param>
     [PreserveSig]
-    void GetPointAtParam([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Points);
+    void GetPointAtParam([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Points);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="Tangents">Tangents</param>
     [PreserveSig]
-    void GetTangent([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Tangents);
+    void GetTangent([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Tangents);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -58,28 +58,28 @@ public interface CurveEvaluator
     /// <param name="Directions">Directions</param>
     /// <param name="Curvatures">Curvatures</param>
     [PreserveSig]
-    void GetCurvature([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Directions, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Curvatures);
+    void GetCurvature([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Directions, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Curvatures);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="FirstDerivs">FirstDerivs</param>
     [PreserveSig]
-    void GetFirstDerivatives([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] FirstDerivs);
+    void GetFirstDerivatives([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] FirstDerivs);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="SecondDerivs">SecondDerivs</param>
     [PreserveSig]
-    void GetSecondDerivatives([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] SecondDerivs);
+    void GetSecondDerivatives([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] SecondDerivs);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Params">Params</param>
     /// <param name="ThirdDerivs">ThirdDerivs</param>
     [PreserveSig]
-    void GetThirdDerivatives([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Params, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] ThirdDerivs);
+    void GetThirdDerivatives([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Params, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] ThirdDerivs);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -103,7 +103,7 @@ public interface CurveEvaluator
     /// <param name="IsSingular">IsSingular</param>
     /// <param name="UnboundedParam">UnboundedParam</param>
     [PreserveSig]
-    void GetParamAnomaly([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Periodicity, [Out] out bool IsSingular, [Out] out bool UnboundedParam);
+    void GetParamAnomaly([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Periodicity, [Out] out bool IsSingular, [Out] out bool UnboundedParam);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -113,5 +113,5 @@ public interface CurveEvaluator
     /// <param name="VertexCount">VertexCount</param>
     /// <param name="VertexCoordinates">VertexCoordinates</param>
     [PreserveSig]
-    void GetStrokes([In] double FromParam, [In] double ToParam, [In] double Tolerance, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates);
+    void GetStrokes([In] double FromParam, [In] double ToParam, [In] double Tolerance, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates);
 }

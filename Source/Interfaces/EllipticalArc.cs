@@ -56,7 +56,7 @@ public interface EllipticalArc
     /// <param name="StartAngle">StartAngle</param>
     /// <param name="SweepAngle">SweepAngle</param>
     [PreserveSig]
-    void GetEllipticalArcData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MinorAxis, [Out] out double MajorRadius, [Out] out double MinorRadius, [Out] out double StartAngle, [Out] out double SweepAngle);
+    void GetEllipticalArcData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MinorAxis, [Out] out double MajorRadius, [Out] out double MinorRadius, [Out] out double StartAngle, [Out] out double SweepAngle);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -68,7 +68,7 @@ public interface EllipticalArc
     /// <param name="StartAngle">StartAngle</param>
     /// <param name="SweepAngle">SweepAngle</param>
     [PreserveSig]
-    void PutEllipticalArcData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MinorAxis, [In] double MajorRadius, [In] double MinorRadius, [In] double StartAngle, [In] double SweepAngle);
+    void PutEllipticalArcData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MinorAxis, [In] double MajorRadius, [In] double MinorRadius, [In] double StartAngle, [In] double SweepAngle);
     /// <summary>
     /// Creates a copy of this EllipticalArc object.&nbsp;The result is entirely independent and can be edited without affecting the original EllipticalArc object.
     /// </summary>

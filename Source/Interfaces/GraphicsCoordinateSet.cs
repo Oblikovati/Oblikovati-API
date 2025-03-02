@@ -44,11 +44,11 @@ public interface GraphicsCoordinateSet
     /// </summary>
     /// <param name="Coordinates">Coordinates</param>
     [PreserveSig]
-    void GetCoordinates([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coordinates);
+    void GetCoordinates([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coordinates);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Coordinates">Coordinates</param>
     [PreserveSig]
-    void PutCoordinates([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coordinates);
+    void PutCoordinates([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coordinates);
 }

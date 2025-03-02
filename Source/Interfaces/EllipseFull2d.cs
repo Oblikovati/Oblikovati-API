@@ -28,7 +28,7 @@ public interface EllipseFull2d
     /// <param name="MajorAxis">MajorAxis</param>
     /// <param name="MinorMajorRatio">MinorMajorRatio</param>
     [PreserveSig]
-    void GetEllipseFullData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [Out] out double MinorMajorRatio);
+    void GetEllipseFullData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [Out] out double MinorMajorRatio);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -36,7 +36,7 @@ public interface EllipseFull2d
     /// <param name="MajorAxis">MajorAxis</param>
     /// <param name="MinorMajorRatio">MinorMajorRatio</param>
     [PreserveSig]
-    void PutEllipseFullData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MajorAxis, [In] double MinorMajorRatio);
+    void PutEllipseFullData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MajorAxis, [In] double MinorMajorRatio);
     /// <summary>
     /// Creates a copy of this EllipseFull2d object.&nbsp;The result is entirely independent and can be edited without affecting the original EllipseFull2d object.
     /// </summary>

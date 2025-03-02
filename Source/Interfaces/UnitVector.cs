@@ -22,13 +22,13 @@ public interface UnitVector
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void GetUnitVectorData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void GetUnitVectorData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void PutUnitVectorData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void PutUnitVectorData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Transform this vector by the specified matrix.
     /// </summary>

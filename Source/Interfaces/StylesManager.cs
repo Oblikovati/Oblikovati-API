@@ -28,5 +28,5 @@ public interface StylesManager
     /// <param name="InternalName">InternalName</param>
     /// <param name="DisplayName">DisplayName</param>
     [PreserveSig]
-    void GetStyleNameFromKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [Out] [MarshalAs(UnmanagedType.BStr)] out string InternalName, [Out] [MarshalAs(UnmanagedType.BStr)] out string DisplayName);
+    void GetStyleNameFromKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [Out] [MarshalAs(UnmanagedType.BStr)] out string InternalName, [Out] [MarshalAs(UnmanagedType.BStr)] out string DisplayName);
 }

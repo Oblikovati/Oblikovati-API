@@ -70,12 +70,12 @@ public interface PropertySet : IEnumerable
     /// <param name="Names">Names</param>
     /// <param name="Values">Values</param>
     [PreserveSig]
-    void GetPropertyInfo([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] Ids, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out object[,] Values);
+    void GetPropertyInfo([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] Ids, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] Names, [Out] [MarshalAs(UnmanagedType.SafeArray)] out object[] Values);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="PropertyNames">PropertyNames</param>
     /// <param name="PropertyValues">PropertyValues</param>
     [PreserveSig]
-    void SetPropertyValues([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] PropertyNames, [In] [MarshalAs(UnmanagedType.SafeArray)] ref object[,] PropertyValues);
+    void SetPropertyValues([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] PropertyNames, [In] [MarshalAs(UnmanagedType.SafeArray)] ref object[] PropertyValues);
 }

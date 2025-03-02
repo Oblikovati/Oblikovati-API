@@ -44,5 +44,5 @@ public interface FilenameAssetValue
     /// <summary>
     /// Gets and sets the values associated with this asset value. HasMultipleValues property indicates if this property will be returning more than one value.
     /// </summary>
-    string[,] Values { get; set; }
+    string[] Values { get; set; }
 }

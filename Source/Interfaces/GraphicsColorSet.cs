@@ -64,11 +64,11 @@ public interface GraphicsColorSet
     /// </summary>
     /// <param name="Colors">Colors</param>
     [PreserveSig]
-    void GetColors([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] Colors);
+    void GetColors([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Colors);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Colors">Colors</param>
     [PreserveSig]
-    void PutColors([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] Colors);
+    void PutColors([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Colors);
 }

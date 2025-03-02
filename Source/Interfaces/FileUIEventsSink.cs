@@ -21,7 +21,7 @@ public interface FileUIEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileOpenDialog([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] FileTypes, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileOpenDialog([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] FileTypes, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -32,7 +32,7 @@ public interface FileUIEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileSaveAsDialog([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] FileTypes, [In] bool SaveCopyAs, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileSaveAsDialog([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] FileTypes, [In] bool SaveCopyAs, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -48,7 +48,7 @@ public interface FileUIEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileInsertNewDialog([In] [MarshalAs(UnmanagedType.BStr)] string TemplateDir, [In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] FileTypes, [In] [MarshalAs(UnmanagedType.Interface)] _Document DocumentObject, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string TemplateFileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string RelativeFileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string LibraryName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] CustomLogicalName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileInsertNewDialog([In] [MarshalAs(UnmanagedType.BStr)] string TemplateDir, [In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] FileTypes, [In] [MarshalAs(UnmanagedType.Interface)] _Document DocumentObject, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string TemplateFileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string RelativeFileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string LibraryName, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] CustomLogicalName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -62,7 +62,7 @@ public interface FileUIEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileInsertDialog([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] FileTypes, [In] [MarshalAs(UnmanagedType.Interface)] _Document DocumentObject, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string RelativeFileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string LibraryName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] CustomLogicalName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileInsertDialog([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] FileTypes, [In] [MarshalAs(UnmanagedType.Interface)] _Document DocumentObject, [In] int ParentHWND, [Out] [MarshalAs(UnmanagedType.BStr)] out string FileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string RelativeFileName, [Out] [MarshalAs(UnmanagedType.BStr)] out string LibraryName, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] CustomLogicalName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -70,7 +70,7 @@ public interface FileUIEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileOpenFromMRU([Out] [MarshalAs(UnmanagedType.BStr)] out string FullFileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileOpenFromMRU([In] [Out] [MarshalAs(UnmanagedType.BStr)] ref string FullFileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -79,7 +79,7 @@ public interface FileUIEventsSink
     /// <param name="Context">Context</param>
     /// <param name="HandlingCode">HandlingCode</param>
     [PreserveSig]
-    void OnFileNew([In] DocumentTypeEnum DocumentType, [Out] [MarshalAs(UnmanagedType.BStr)] out string TemplateFileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
+    void OnFileNew([In] DocumentTypeEnum DocumentType, [In] [Out] [MarshalAs(UnmanagedType.BStr)] ref string TemplateFileName, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Context, [Out] out HandlingCodeEnum HandlingCode);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

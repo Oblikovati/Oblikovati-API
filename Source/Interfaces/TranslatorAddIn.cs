@@ -148,7 +148,7 @@ public interface TranslatorAddIn
     /// </summary>
     /// <param name="DocumentTypes">DocumentTypes</param>
     [PreserveSig]
-    void DocumentTypesSupported([Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] DocumentTypes);
+    void DocumentTypesSupported([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref int[] DocumentTypes);
     /// <summary>
     /// Show the open options for the specified data-source. This method is only called if True was returned from HasOpenOptions.
     /// </summary>

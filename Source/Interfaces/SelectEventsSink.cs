@@ -13,7 +13,7 @@ public interface SelectEventsSink
     /// <param name="ViewPosition">ViewPosition</param>
     /// <param name="View">View</param>
     [PreserveSig]
-    void OnPreSelect([Out] [MarshalAs(UnmanagedType.IDispatch)] out object PreSelectEntity, [Out] out bool DoHighlight, [Out] [MarshalAs(UnmanagedType.Interface)] out ObjectCollection MorePreSelectEntities, [In] SelectionDeviceEnum SelectionDevice, [In] [MarshalAs(UnmanagedType.Interface)] Point ModelPosition, [In] [MarshalAs(UnmanagedType.Interface)] Point2d ViewPosition, [In] [MarshalAs(UnmanagedType.Interface)] View View);
+    void OnPreSelect([In] [Out] [MarshalAs(UnmanagedType.IDispatch)] ref object PreSelectEntity, [Out] out bool DoHighlight, [In] [Out] [MarshalAs(UnmanagedType.Interface)] ref ObjectCollection MorePreSelectEntities, [In] SelectionDeviceEnum SelectionDevice, [In] [MarshalAs(UnmanagedType.Interface)] Point ModelPosition, [In] [MarshalAs(UnmanagedType.Interface)] Point2d ViewPosition, [In] [MarshalAs(UnmanagedType.Interface)] View View);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

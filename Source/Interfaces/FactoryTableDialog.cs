@@ -32,7 +32,7 @@ public interface FactoryTableDialog
     /// <summary>
     /// FactoryTable Dialog Custom Input Data.
     /// </summary>
-    string[,] CustomInput { get; }
+    string[] CustomInput { get; }
     /// <summary>
     /// FactoryTable Dialog Show Method.
     /// </summary>

@@ -18,7 +18,7 @@ public interface ThreadTableQuery
     /// </summary>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetAvailableThreadTypes();
+    string[] GetAvailableThreadTypes();
     /// <summary>
     /// Method that returns all the available thread sizes for a given thread type.
     /// </summary>
@@ -26,7 +26,7 @@ public interface ThreadTableQuery
     /// <param name="ThreadType">Thread type identifier string.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetAvailableThreadSizes([In] bool Internal, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadType);
+    string[] GetAvailableThreadSizes([In] bool Internal, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadType);
     /// <summary>
     /// Method that returns all the available thread designations for a thread type of a given size.
     /// </summary>
@@ -35,7 +35,7 @@ public interface ThreadTableQuery
     /// <param name="NominalSize">The description of the nominal size.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetAvailableDesignations([In] bool Internal, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadType, [In] [MarshalAs(UnmanagedType.BStr)] string NominalSize);
+    string[] GetAvailableDesignations([In] bool Internal, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadType, [In] [MarshalAs(UnmanagedType.BStr)] string NominalSize);
     /// <summary>
     /// Method that returns all the available classes for a thread type of a given thread designation.
     /// </summary>
@@ -44,7 +44,7 @@ public interface ThreadTableQuery
     /// <param name="ThreadDesignation">A string that contains the thread designation. This is the full thread designation that is used in a drawing for the thread callout.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetAvailableClasses([In] bool Internal, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadType, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadDesignation);
+    string[] GetAvailableClasses([In] bool Internal, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadType, [In] [MarshalAs(UnmanagedType.BStr)] string ThreadDesignation);
     /// <summary>
     /// Method that returns the non-localized thread type identifier given the localized thread type name
     /// </summary>

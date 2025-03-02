@@ -22,13 +22,13 @@ public interface Matrix
     /// </summary>
     /// <param name="Cells">Cells</param>
     [PreserveSig]
-    void GetMatrixData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Cells);
+    void GetMatrixData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Cells);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Cells">Cells</param>
     [PreserveSig]
-    void PutMatrixData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Cells);
+    void PutMatrixData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Cells);
     /// <summary>
     /// Invert this matrix.
     /// </summary>

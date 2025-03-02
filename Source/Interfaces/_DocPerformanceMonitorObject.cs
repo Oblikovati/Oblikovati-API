@@ -28,7 +28,7 @@ public interface _DocPerformanceMonitorObject
     /// <param name="NumberOfLODs">NumberOfLODs</param>
     /// <param name="LODTolerances">LODTolerances</param>
     [PreserveSig]
-    void GetGraphicsLOD([Out] out int NumberOfLODs, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] LODTolerances);
+    void GetGraphicsLOD([Out] out int NumberOfLODs, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] LODTolerances);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

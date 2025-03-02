@@ -75,5 +75,5 @@ public interface Transaction
     /// <param name="SuppressedEvents">SuppressedEvents</param>
     /// <param name="Suppressed">Suppressed</param>
     [PreserveSig]
-    void SuppressChangeNotifications([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] SuppressedEvents, [In] bool Suppressed);
+    void SuppressChangeNotifications([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] SuppressedEvents, [In] bool Suppressed);
 }

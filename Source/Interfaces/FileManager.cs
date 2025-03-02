@@ -65,7 +65,7 @@ public interface FileManager
     /// <param name="Identifier">Identifier</param>
     /// <param name="AbsolutePath">AbsolutePath</param>
     [PreserveSig]
-    void GetIdentifierFromFileName([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] Identifier, [In] [MarshalAs(UnmanagedType.BStr)] string? AbsolutePath = "");
+    void GetIdentifierFromFileName([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Identifier, [In] [MarshalAs(UnmanagedType.BStr)] string? AbsolutePath = "");
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -73,7 +73,7 @@ public interface FileManager
     /// <param name="FullFileName">FullFileName</param>
     /// <param name="AbsolutePath">AbsolutePath</param>
     [PreserveSig]
-    void GetFileNameFromIdentifier([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] Identifier, [Out] [MarshalAs(UnmanagedType.BStr)] out string FullFileName, [In] [MarshalAs(UnmanagedType.BStr)] string? AbsolutePath = "");
+    void GetFileNameFromIdentifier([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Identifier, [Out] [MarshalAs(UnmanagedType.BStr)] out string FullFileName, [In] [MarshalAs(UnmanagedType.BStr)] string? AbsolutePath = "");
     /// <summary>
     /// Returns the full document name which is a unique identifier for an open Document. The returned string is the full file name concatenated with the model state name for a part or assembly document.
     /// </summary>
@@ -101,20 +101,20 @@ public interface FileManager
     /// <param name="FullFileName">Input String that specifies the file (*.iam, *.ipt or *.idv) to retrieve the design view names from. A FullDocumentName can also be specified. If an idv file is specified, the private design views contained within it are returned.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetDesignViewRepresentations([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
+    string[] GetDesignViewRepresentations([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
     /// <summary>
     /// Method that returns the names of all the positional representations contained within the input assembly file.
     /// </summary>
     /// <param name="FullFileName">Input String that specifies the file to retrieve the positinal representations from.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetPositionalRepresentations([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
+    string[] GetPositionalRepresentations([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="FullFileName">FullFileName</param>
     [PreserveSig]
-    string[,] GetLevelOfDetailRepresentations([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
+    string[] GetLevelOfDetailRepresentations([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -134,7 +134,7 @@ public interface FileManager
     /// <param name="DocumentOrFileName">Input String that specifies the full document or file name.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetDWGDocumentReferences([In] [MarshalAs(UnmanagedType.Struct)] object DocumentOrFileName);
+    string[] GetDWGDocumentReferences([In] [MarshalAs(UnmanagedType.Struct)] object DocumentOrFileName);
     /// <summary>
     /// Method that returns whether the input file is an Oblikovati DWG file.
     /// </summary>
@@ -167,7 +167,7 @@ public interface FileManager
     /// <param name="FullFileName">Input String that specifies the full file name of the AutoCAD or Inventor DWG file from which to return the block definition names.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetAutoCADBlockDefinitions([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
+    string[] GetAutoCADBlockDefinitions([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
     /// <summary>
     /// Returns a value indicating the current state of the express graphics in the specified assembly.
     /// </summary>
@@ -236,14 +236,14 @@ public interface FileManager
     /// <param name="BigFont">Optional input Boolean value that specifies whether to get the big font name list or not. This default to False means to return the common SHX font name list, when set this to True the big font name list will be returned.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetSHXFontList([In] [MarshalAs(UnmanagedType.Struct)] object? BigFont = default);
+    string[] GetSHXFontList([In] [MarshalAs(UnmanagedType.Struct)] object? BigFont = default);
     /// <summary>
     /// Method that returns the names of all the model states contained within the input file.
     /// </summary>
     /// <param name="FullFileName">Input String value that specifies the full filename of a document. This can be a full filename of a part or assembly document.</param>
     /// <returns></returns>
     [PreserveSig]
-    string[,] GetModelStates([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
+    string[] GetModelStates([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName);
     /// <summary>
     /// Method that returns the name of the model state given its full document name.
     /// </summary>

@@ -29,7 +29,7 @@ public interface IRxEllipticalCylinder
     /// <param name="pAxisVector">pAxisVector</param>
     /// <param name="pMajorAxis">pMajorAxis</param>
     /// <param name="pMinorMajorRatio">pMinorMajorRatio</param>
-    void GetEllipticalCylinderData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pBasePoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pAxisVector, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pMajorAxis, [Out] out double pMinorMajorRatio);
+    void GetEllipticalCylinderData([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pBasePoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pAxisVector, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pMajorAxis, [Out] out double pMinorMajorRatio);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -37,5 +37,5 @@ public interface IRxEllipticalCylinder
     /// <param name="pAxisVector">pAxisVector</param>
     /// <param name="pMajorAxis">pMajorAxis</param>
     /// <param name="MinorMajorRatio">MinorMajorRatio</param>
-    void PutEllipticalCylinderData([In] [MarshalAs(UnmanagedType.LPArray)] double[,] pBasePoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[,] pAxisVector, [In] [MarshalAs(UnmanagedType.LPArray)] double[,] pMajorAxis, [In] double MinorMajorRatio);
+    void PutEllipticalCylinderData([In] [MarshalAs(UnmanagedType.LPArray)] double[] pBasePoint, [In] [MarshalAs(UnmanagedType.LPArray)] double[] pAxisVector, [In] [MarshalAs(UnmanagedType.LPArray)] double[] pMajorAxis, [In] double MinorMajorRatio);
 }

@@ -33,5 +33,5 @@ public interface LibraryManager
     /// </summary>
     /// <param name="LibraryIds">LibraryIds</param>
     [PreserveSig]
-    string[,] GetLibraryIcons([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] LibraryIds);
+    string[] GetLibraryIcons([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] LibraryIds);
 }

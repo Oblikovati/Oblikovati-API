@@ -28,7 +28,7 @@ public interface Circle
     /// <param name="AxisVector">AxisVector</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void GetCircleData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [Out] out double Radius);
+    void GetCircleData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [Out] out double Radius);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -36,7 +36,7 @@ public interface Circle
     /// <param name="AxisVector">AxisVector</param>
     /// <param name="Radius">Radius</param>
     [PreserveSig]
-    void PutCircleData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] AxisVector, [In] double Radius);
+    void PutCircleData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] AxisVector, [In] double Radius);
     /// <summary>
     /// Creates a copy of this Circle object.&nbsp;The result is entirely independent and can be edited without affecting the original Circle object.
     /// </summary>

@@ -94,5 +94,5 @@ public interface OGSRenderItem
     /// <param name="VertexIndices">VertexIndices</param>
     /// <param name="TextureCoordinates">TextureCoordinates</param>
     [PreserveSig]
-    void GetVerticesData([Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] TextureCoordinates);
+    void GetVerticesData([Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] TextureCoordinates);
 }

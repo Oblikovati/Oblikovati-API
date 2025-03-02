@@ -15,7 +15,7 @@ public interface IRxCurveEvaluator
     /// </summary>
     /// <param name="pStartPoint">pStartPoint</param>
     /// <param name="pEndPoint">pEndPoint</param>
-    void GetEndPoints([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pStartPoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pEndPoint);
+    void GetEndPoints([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pStartPoint, [Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pEndPoint);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -31,7 +31,7 @@ public interface IRxCurveEvaluator
     /// <param name="pMaxDeviations">pMaxDeviations</param>
     /// <param name="pParams">pParams</param>
     /// <param name="pSolTypes">pSolTypes</param>
-    void GetParamAtPoint([In] uint nPoints, [In] ref double pPoints, [Out] out double pGuessParams, [Out] out double pMaxDeviations, [Out] out double pParams, [Out] out SolutionNatureEnum pSolTypes);
+    void GetParamAtPoint([In] uint nPoints, [In] ref double pPoints, [In] [Out] ref double pGuessParams, [In] [Out] ref double pMaxDeviations, [In] [Out] ref double pParams, [In] [Out] ref SolutionNatureEnum pSolTypes);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -53,7 +53,7 @@ public interface IRxCurveEvaluator
     /// <param name="pParams">pParams</param>
     /// <param name="pDirections">pDirections</param>
     /// <param name="pCurvatures">pCurvatures</param>
-    void GetCurvature([In] uint nParams, [In] ref double pParams, [Out] out double pDirections, [Out] out double pCurvatures);
+    void GetCurvature([In] uint nParams, [In] ref double pParams, [In] [Out] ref double pDirections, [In] [Out] ref double pCurvatures);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -62,7 +62,7 @@ public interface IRxCurveEvaluator
     /// <param name="pFirstDerivs">pFirstDerivs</param>
     /// <param name="pSecondDerivs">pSecondDerivs</param>
     /// <param name="pThirdDerivs">pThirdDerivs</param>
-    void GetDerivatives([In] uint nParams, [In] ref double pParams, [Out] out double pFirstDerivs, [Out] out double pSecondDerivs, [Out] out double pThirdDerivs);
+    void GetDerivatives([In] uint nParams, [In] ref double pParams, [In] [Out] ref double pFirstDerivs, [In] [Out] ref double pSecondDerivs, [In] [Out] ref double pThirdDerivs);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -83,7 +83,7 @@ public interface IRxCurveEvaluator
     /// <param name="pPeriodicity">pPeriodicity</param>
     /// <param name="pIsSingular">pIsSingular</param>
     /// <param name="pUnboundedParam">pUnboundedParam</param>
-    void GetParamAnomaly([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pPeriodicity, [Out] out sbyte pIsSingular, [Out] out sbyte pUnboundedParam);
+    void GetParamAnomaly([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pPeriodicity, [Out] out sbyte pIsSingular, [Out] out sbyte pUnboundedParam);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

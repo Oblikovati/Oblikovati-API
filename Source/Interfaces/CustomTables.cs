@@ -34,7 +34,7 @@ public interface CustomTables : IEnumerable
     /// <param name="RowHeights">RowHeights</param>
     /// <param name="MoreInfo">MoreInfo</param>
     [PreserveSig]
-    CustomTable Add([In] [MarshalAs(UnmanagedType.BStr)] string Title, [In] [MarshalAs(UnmanagedType.Interface)] Point2d PlacementPoint, [In] int NumberOfColumns, [In] int NumberOfRows, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] ColumnTitles, [In] [MarshalAs(UnmanagedType.Struct)] object? Contents = default, [In] [MarshalAs(UnmanagedType.Struct)] object? ColumnWidths = default, [In] [MarshalAs(UnmanagedType.Struct)] object? RowHeights = default, [In] [MarshalAs(UnmanagedType.Struct)] object? MoreInfo = default);
+    CustomTable Add([In] [MarshalAs(UnmanagedType.BStr)] string Title, [In] [MarshalAs(UnmanagedType.Interface)] Point2d PlacementPoint, [In] int NumberOfColumns, [In] int NumberOfRows, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] ColumnTitles, [In] [MarshalAs(UnmanagedType.Struct)] object? Contents = default, [In] [MarshalAs(UnmanagedType.Struct)] object? ColumnWidths = default, [In] [MarshalAs(UnmanagedType.Struct)] object? RowHeights = default, [In] [MarshalAs(UnmanagedType.Struct)] object? MoreInfo = default);
     /// <summary>
     /// Method that creates a TableFormat object.
     /// </summary>

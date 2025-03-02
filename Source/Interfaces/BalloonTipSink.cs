@@ -13,5 +13,5 @@ public interface BalloonTipSink
     /// </summary>
     /// <param name="Cancel">Cancel</param>
     [PreserveSig]
-    void OnDisplay([Out] out bool Cancel);
+    void OnDisplay([In] [Out] ref bool Cancel);
 }

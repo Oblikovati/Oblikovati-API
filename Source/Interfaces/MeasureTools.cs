@@ -36,7 +36,7 @@ public interface MeasureTools
     /// <param name="EntityTwoInferredType">EntityTwoInferredType</param>
     /// <param name="Context">Context</param>
     [PreserveSig]
-    double GetMinimumDistance([In] [MarshalAs(UnmanagedType.IDispatch)] object EntityOne, [In] [MarshalAs(UnmanagedType.IDispatch)] object EntityTwo, [In] InferredTypeEnum EntityOneInferredType, [In] InferredTypeEnum EntityTwoInferredType, [Out] [MarshalAs(UnmanagedType.Struct)] out object Context);
+    double GetMinimumDistance([In] [MarshalAs(UnmanagedType.IDispatch)] object EntityOne, [In] [MarshalAs(UnmanagedType.IDispatch)] object EntityTwo, [In] InferredTypeEnum EntityOneInferredType, [In] InferredTypeEnum EntityTwoInferredType, [In] [Out] [MarshalAs(UnmanagedType.Struct)] ref object Context);
     /// <summary>
     /// Method that returns the angle between the input entities. The input entities must all belong to the same document, unless they are transient objects.
     /// </summary>

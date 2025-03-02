@@ -14,5 +14,5 @@ public interface IRxVertex
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="pPoint">pPoint</param>
-    void GetPoint([Out] [MarshalAs(UnmanagedType.LPArray)] out double[,] pPoint);
+    void GetPoint([Out] [MarshalAs(UnmanagedType.LPArray)] out double[] pPoint);
 }

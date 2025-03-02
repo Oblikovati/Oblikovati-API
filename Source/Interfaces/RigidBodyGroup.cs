@@ -35,5 +35,5 @@ public interface RigidBodyGroup
     /// <param name="Occurrences">Occurrences</param>
     /// <param name="States">States</param>
     [PreserveSig]
-    void GetOccurrencesAndStates([Out] [MarshalAs(UnmanagedType.Interface)] out ComponentOccurrencesEnumerator Occurrences, [Out] [MarshalAs(UnmanagedType.SafeArray)] out OccurrenceDOFStateEnum[,] States);
+    void GetOccurrencesAndStates([Out] [MarshalAs(UnmanagedType.Interface)] out ComponentOccurrencesEnumerator Occurrences, [Out] [MarshalAs(UnmanagedType.SafeArray)] out OccurrenceDOFStateEnum[] States);
 }

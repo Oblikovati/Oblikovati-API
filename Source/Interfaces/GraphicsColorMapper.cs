@@ -39,23 +39,23 @@ public interface GraphicsColorMapper
     /// </summary>
     /// <param name="Colors">Colors</param>
     [PreserveSig]
-    void GetColors([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] Colors);
+    void GetColors([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Colors);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Values">Values</param>
     [PreserveSig]
-    void GetValues([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Values);
+    void GetValues([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Values);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Colors">Colors</param>
     [PreserveSig]
-    void PutColors([In] [MarshalAs(UnmanagedType.SafeArray)] ref byte[,] Colors);
+    void PutColors([In] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] Colors);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Values">Values</param>
     [PreserveSig]
-    void PutValues([In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] Values);
+    void PutValues([In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Values);
 }

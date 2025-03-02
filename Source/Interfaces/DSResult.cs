@@ -30,7 +30,7 @@ public interface DSResult
     /// </summary>
     /// <param name="ResultValues">ResultValues</param>
     [PreserveSig]
-    void GetResultValues([In] [MarshalAs(UnmanagedType.SafeArray)] ref double[,] ResultValues);
+    void GetResultValues([In] [MarshalAs(UnmanagedType.SafeArray)] ref double[] ResultValues);
     /// <summary>
     /// Returns the value of the current result.
     /// </summary>

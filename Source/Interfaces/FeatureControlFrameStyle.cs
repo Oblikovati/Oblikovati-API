@@ -195,17 +195,17 @@ public interface FeatureControlFrameStyle
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="AvailaleAdditionalSymbols">AvailaleAdditionalSymbols</param>
     [PreserveSig]
-    void GetAvailableAdditionalSymbols([Out] [MarshalAs(UnmanagedType.SafeArray)] out FeatureControlFrameAdditionalSymbolsEnum[,] AvailaleAdditionalSymbols);
+    void GetAvailableAdditionalSymbols([Out] [MarshalAs(UnmanagedType.SafeArray)] out FeatureControlFrameAdditionalSymbolsEnum[] AvailaleAdditionalSymbols);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="AvailaleAdditionalSymbols">AvailaleAdditionalSymbols</param>
     [PreserveSig]
-    void SetAvailableAdditionalSymbols([In] [MarshalAs(UnmanagedType.SafeArray)] ref FeatureControlFrameAdditionalSymbolsEnum[,] AvailaleAdditionalSymbols);
+    void SetAvailableAdditionalSymbols([In] [MarshalAs(UnmanagedType.SafeArray)] ref FeatureControlFrameAdditionalSymbolsEnum[] AvailaleAdditionalSymbols);
 }

@@ -35,14 +35,14 @@ public interface Plane
     /// <param name="RootPoint">RootPoint</param>
     /// <param name="Normal">Normal</param>
     [PreserveSig]
-    void GetPlaneData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] RootPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Normal);
+    void GetPlaneData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] RootPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Normal);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="RootPoint">RootPoint</param>
     /// <param name="Normal">Normal</param>
     [PreserveSig]
-    void PutPlaneData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] RootPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Normal);
+    void PutPlaneData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] RootPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Normal);
     /// <summary>
     /// Compute the intersection point of this Plane and the specified Line. If the Plane and the Line are parallel, this method will fail.
     /// </summary>

@@ -110,7 +110,7 @@ public interface MemberManager
     /// <param name="Table">Table</param>
     /// <param name="TemplateParams">TemplateParams</param>
     [PreserveSig]
-    string GetMemberCategorization([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Categories, [In] [MarshalAs(UnmanagedType.BStr)] string FamilyParamMap, [In] [MarshalAs(UnmanagedType.BStr)] string Table, [In] [MarshalAs(UnmanagedType.BStr)] string TemplateParams);
+    string GetMemberCategorization([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Categories, [In] [MarshalAs(UnmanagedType.BStr)] string FamilyParamMap, [In] [MarshalAs(UnmanagedType.BStr)] string Table, [In] [MarshalAs(UnmanagedType.BStr)] string TemplateParams);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -121,7 +121,7 @@ public interface MemberManager
     /// <param name="FamilyParamMap">FamilyParamMap</param>
     /// <param name="TemplateParams">TemplateParams</param>
     [PreserveSig]
-    void GetDefaultTableWithMap([In] [MarshalAs(UnmanagedType.BStr)] string MemberCategorization, [In] [MarshalAs(UnmanagedType.BStr)] string TemplateFile, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Categories, [Out] [MarshalAs(UnmanagedType.BStr)] out string DefaultTable, [Out] [MarshalAs(UnmanagedType.BStr)] out string FamilyParamMap, [Out] [MarshalAs(UnmanagedType.BStr)] out string TemplateParams);
+    void GetDefaultTableWithMap([In] [MarshalAs(UnmanagedType.BStr)] string MemberCategorization, [In] [MarshalAs(UnmanagedType.BStr)] string TemplateFile, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Categories, [Out] [MarshalAs(UnmanagedType.BStr)] out string DefaultTable, [Out] [MarshalAs(UnmanagedType.BStr)] out string FamilyParamMap, [Out] [MarshalAs(UnmanagedType.BStr)] out string TemplateParams);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

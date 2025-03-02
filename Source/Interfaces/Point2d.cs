@@ -18,13 +18,13 @@ public interface Point2d
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void GetPointData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void GetPointData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="Coords">Coords</param>
     [PreserveSig]
-    void PutPointData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coords);
+    void PutPointData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Coords);
     /// <summary>
     /// Method that returns the distance between this point and the specified point.
     /// </summary>

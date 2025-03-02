@@ -39,12 +39,12 @@ public interface DrawingHatchPatternsManager : IEnumerable
     /// <param name="PatternDefinitionNames">PatternDefinitionNames</param>
     /// <param name="Descriptions">Descriptions</param>
     [PreserveSig]
-    void GetHatchPatternDefinitions([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] PatternDefinitionNames, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Descriptions);
+    void GetHatchPatternDefinitions([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] PatternDefinitionNames, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] Descriptions);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="FullFileName">FullFileName</param>
     /// <param name="PatternDefinitionNames">PatternDefinitionNames</param>
     [PreserveSig]
-    void LoadHatchPatterns([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] PatternDefinitionNames);
+    void LoadHatchPatterns([In] [MarshalAs(UnmanagedType.BStr)] string FullFileName, [In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] PatternDefinitionNames);
 }

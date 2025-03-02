@@ -65,7 +65,7 @@ public interface CategoryManager
     /// <param name="CategoryIds">CategoryIds</param>
     /// <param name="LibraryId">LibraryId</param>
     [PreserveSig]
-    string[,] GetCategoryIcons([Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] CategoryIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "");
+    string[] GetCategoryIcons([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] CategoryIds, [In] [MarshalAs(UnmanagedType.BStr)] string? LibraryId = "");
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

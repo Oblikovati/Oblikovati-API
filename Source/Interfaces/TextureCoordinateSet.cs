@@ -30,5 +30,5 @@ public interface TextureCoordinateSet
     /// </summary>
     /// <param name="Coordinates">Coordinates</param>
     [PreserveSig]
-    void GetCoordinates([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Coordinates);
+    void GetCoordinates([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] Coordinates);
 }

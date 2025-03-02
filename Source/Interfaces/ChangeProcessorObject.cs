@@ -58,7 +58,7 @@ public interface ChangeProcessorObject
     /// <param name="FullDocumentNames">FullDocumentNames</param>
     /// <param name="ReasonsForChange">ReasonsForChange</param>
     [PreserveSig]
-    void SetAffectedDocuments([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] FullDocumentNames, [In] [MarshalAs(UnmanagedType.Struct)] object? ReasonsForChange = default);
+    void SetAffectedDocuments([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] FullDocumentNames, [In] [MarshalAs(UnmanagedType.Struct)] object? ReasonsForChange = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -77,5 +77,5 @@ public interface ChangeProcessorObject
     /// <param name="SuppressedEvents">SuppressedEvents</param>
     /// <param name="Suppressed">Suppressed</param>
     [PreserveSig]
-    void SuppressChangeNotifications([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] SuppressedEvents, [In] bool Suppressed);
+    void SuppressChangeNotifications([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] SuppressedEvents, [In] bool Suppressed);
 }

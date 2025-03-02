@@ -69,7 +69,7 @@ public interface FinishDefinition
     /// <param name="PropertyNames">PropertyNames</param>
     /// <param name="Disabled">Disabled</param>
     [PreserveSig]
-    void DisableProperties([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[,] PropertyNames, bool Disabled);
+    void DisableProperties([In] [MarshalAs(UnmanagedType.SafeArray)] ref string[] PropertyNames, bool Disabled);
     /// <summary>
     /// Method that returns whether the specified property is disabled or not.
     /// </summary>

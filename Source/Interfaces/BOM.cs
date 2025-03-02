@@ -71,7 +71,7 @@ public interface BOM
     /// <param name="MergeEnabled">MergeEnabled</param>
     /// <param name="MergeExcludeList">MergeExcludeList</param>
     [PreserveSig]
-    void GetPartNumberMergeSettings([Out] out bool MergeEnabled, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] MergeExcludeList);
+    void GetPartNumberMergeSettings([Out] out bool MergeEnabled, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] MergeExcludeList);
     /// <summary>
     /// Method that sets the part number row merge settings for the BOM.
     /// </summary>
@@ -98,7 +98,7 @@ public interface BOM
     /// <param name="MergeExcludeList">MergeExcludeList</param>
     /// <param name="MergeInstanceRows">MergeInstanceRows</param>
     [PreserveSig]
-    void GetPartNumberMergeSettings2([Out] out bool MergeEnabled, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] MergeExcludeList, [Out] out bool MergeInstanceRows);
+    void GetPartNumberMergeSettings2([Out] out bool MergeEnabled, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[] MergeExcludeList, [Out] out bool MergeInstanceRows);
     /// <summary>
     /// Sets the part number row merge settings for the BOM.
     /// </summary>

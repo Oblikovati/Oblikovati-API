@@ -8,7 +8,7 @@ public interface IRxFileSaveAs
     /// <param name="pDocument">pDocument</param>
     /// <param name="pnOwningDocuments">pnOwningDocuments</param>
     /// <param name="pppOwningDocuments">pppOwningDocuments</param>
-    void _WhereUsed([In] [MarshalAs(UnmanagedType.IUnknown)] object pDocument, [Out] out int pnOwningDocuments, [Out] out IntPtr pppOwningDocuments);
+    void _WhereUsed([In] [MarshalAs(UnmanagedType.IUnknown)] object pDocument, [In] [Out] ref int pnOwningDocuments, [Out] out IntPtr pppOwningDocuments);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

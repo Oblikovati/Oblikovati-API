@@ -59,7 +59,7 @@ public interface PublicationBody
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -70,7 +70,7 @@ public interface PublicationBody
     /// <param name="NormalVectors">NormalVectors</param>
     /// <param name="VertexIndices">VertexIndices</param>
     [PreserveSig]
-    void CalculateFacets([In] double Tolerance, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices);
+    void CalculateFacets([In] double Tolerance, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -81,14 +81,14 @@ public interface PublicationBody
     /// <param name="NormalVectors">NormalVectors</param>
     /// <param name="VertexIndices">VertexIndices</param>
     [PreserveSig]
-    void GetExistingFacets([In] double ToleranceIndex, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices);
+    void GetExistingFacets([In] double ToleranceIndex, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ToleranceCount">ToleranceCount</param>
     /// <param name="ExistingTolerances">ExistingTolerances</param>
     [PreserveSig]
-    void GetExistingFacetTolerances([Out] out int ToleranceCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] ExistingTolerances);
+    void GetExistingFacetTolerances([Out] out int ToleranceCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] ExistingTolerances);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -100,7 +100,7 @@ public interface PublicationBody
     /// <param name="VertexIndices">VertexIndices</param>
     /// <param name="TextureCoordinates">TextureCoordinates</param>
     [PreserveSig]
-    void CalculateFacetsAndTextureMap([In] double Tolerance, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] TextureCoordinates);
+    void CalculateFacetsAndTextureMap([In] double Tolerance, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] TextureCoordinates);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -113,7 +113,7 @@ public interface PublicationBody
     /// <param name="VertexIndices">VertexIndices</param>
     /// <param name="TextureCoordinates">TextureCoordinates</param>
     [PreserveSig]
-    void CalculateFacetsWithOptions([In] double ChordalTolerance, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors);
+    void CalculateFacetsWithOptions([In] double ChordalTolerance, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -126,7 +126,7 @@ public interface PublicationBody
     /// <param name="VertexIndices">VertexIndices</param>
     /// <param name="TextureCoordinates">TextureCoordinates</param>
     [PreserveSig]
-    void CalculateFacetsWithOptions([In] double ChordalTolerance, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices, [Out] [MarshalAs(UnmanagedType.Struct)] out object TextureCoordinates);
+    void CalculateFacetsWithOptions([In] double ChordalTolerance, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices, [Out] [MarshalAs(UnmanagedType.Struct)] out object TextureCoordinates);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -138,7 +138,7 @@ public interface PublicationBody
     /// <param name="VertexIndices">VertexIndices</param>
     /// <param name="TextureCoordinates">TextureCoordinates</param>
     [PreserveSig]
-    void GetExistingFacetsAndTextureMap([In] double ToleranceIndex, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] TextureCoordinates);
+    void GetExistingFacetsAndTextureMap([In] double ToleranceIndex, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] TextureCoordinates);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -151,7 +151,7 @@ public interface PublicationBody
     /// <param name="TextureCoordinates">TextureCoordinates</param>
     /// <param name="IndexCountPerFace">IndexCountPerFace</param>
     [PreserveSig]
-    void GetExistingFacetsAndTextureMap2([In] double ChordalTolerance, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] TextureCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] IndexCountPerFace);
+    void GetExistingFacetsAndTextureMap2([In] double ChordalTolerance, [Out] out int VertexCount, [Out] out int FacetCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] NormalVectors, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] TextureCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] IndexCountPerFace);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -161,7 +161,7 @@ public interface PublicationBody
     /// <param name="VertexCoordinates">VertexCoordinates</param>
     /// <param name="VertexIndices">VertexIndices</param>
     [PreserveSig]
-    void CalculateStrokes([In] double Tolerance, [Out] out int VertexCount, [Out] out int SegmentCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] VertexIndices);
+    void CalculateStrokes([In] double Tolerance, [Out] out int VertexCount, [Out] out int SegmentCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] VertexIndices);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -171,14 +171,14 @@ public interface PublicationBody
     /// <param name="PolylineCount">PolylineCount</param>
     /// <param name="PolylineLengths">PolylineLengths</param>
     [PreserveSig]
-    void GetExistingStrokes([In] double ToleranceIndex, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] out int PolylineCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] PolylineLengths);
+    void GetExistingStrokes([In] double ToleranceIndex, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] out int PolylineCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] PolylineLengths);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ToleranceCount">ToleranceCount</param>
     /// <param name="ExistingTolerances">ExistingTolerances</param>
     [PreserveSig]
-    void GetExistingStrokeTolerances([Out] out int ToleranceCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] ExistingTolerances);
+    void GetExistingStrokeTolerances([Out] out int ToleranceCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] ExistingTolerances);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -189,5 +189,5 @@ public interface PublicationBody
     /// <param name="PolylineCount">PolylineCount</param>
     /// <param name="PolylineLengths">PolylineLengths</param>
     [PreserveSig]
-    void CalculateStrokesWithOptions([In] double ChordalTolerance, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] VertexCoordinates, [Out] out int PolylineCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[,] PolylineLengths);
+    void CalculateStrokesWithOptions([In] double ChordalTolerance, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] out int VertexCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[] VertexCoordinates, [Out] out int PolylineCount, [Out] [MarshalAs(UnmanagedType.SafeArray)] out int[] PolylineLengths);
 }

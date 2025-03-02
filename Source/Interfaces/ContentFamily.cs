@@ -133,7 +133,7 @@ public interface ContentFamily
     /// <param name="InternalName">InternalName</param>
     /// <param name="CustomData">CustomData</param>
     [PreserveSig]
-    void GetCustomData([In] [MarshalAs(UnmanagedType.BStr)] string ClientId, [In] [MarshalAs(UnmanagedType.BStr)] string InternalName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] CustomData);
+    void GetCustomData([In] [MarshalAs(UnmanagedType.BStr)] string ClientId, [In] [MarshalAs(UnmanagedType.BStr)] string InternalName, [Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[] CustomData);
     /// <summary>
     /// Property indicates if the family has the specified custom data. Returns True if the data exists.
     /// </summary>

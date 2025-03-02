@@ -511,7 +511,7 @@ public interface Document
     /// <param name="NumEmbeddings">NumEmbeddings</param>
     /// <param name="Embeddings">Embeddings</param>
     [PreserveSig]
-    void _DeleteUnusedEmbeddings([In] bool Preview, [Out] out int NumEmbeddings, [Out] [MarshalAs(UnmanagedType.SafeArray)] out string[,] Embeddings);
+    void _DeleteUnusedEmbeddings([In] bool Preview, [Out] out int NumEmbeddings, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref string[] Embeddings);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

@@ -51,7 +51,7 @@ public interface TranslatorAddInServer
     /// <param name="Options">Options</param>
     /// <param name="TargetObject">TargetObject</param>
     [PreserveSig]
-    void Open([In] [MarshalAs(UnmanagedType.Interface)] DataMedium SourceData, [In] [MarshalAs(UnmanagedType.Interface)] TranslationContext Context, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [Out] [MarshalAs(UnmanagedType.IDispatch)] out object TargetObject);
+    void Open([In] [MarshalAs(UnmanagedType.Interface)] DataMedium SourceData, [In] [MarshalAs(UnmanagedType.Interface)] TranslationContext Context, [In] [MarshalAs(UnmanagedType.Interface)] NameValueMap Options, [In] [Out] [MarshalAs(UnmanagedType.IDispatch)] ref object TargetObject);
     /// <summary>
     /// Show the save options for the specified data-source. This method is only called if True was returned from HasSaveCopyAsOptions.
     /// </summary>

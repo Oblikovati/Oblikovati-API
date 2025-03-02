@@ -123,7 +123,7 @@ public interface WeldSymbolStyle
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -144,25 +144,25 @@ public interface WeldSymbolStyle
     /// </summary>
     /// <param name="BackingSymbolFilter">BackingSymbolFilter</param>
     [PreserveSig]
-    void GetBackingSymbolsFilter([Out] [MarshalAs(UnmanagedType.SafeArray)] out BackingSymbolTypeEnum[,] BackingSymbolFilter);
+    void GetBackingSymbolsFilter([Out] [MarshalAs(UnmanagedType.SafeArray)] out BackingSymbolTypeEnum[] BackingSymbolFilter);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="BackingSymbolFilter">BackingSymbolFilter</param>
     [PreserveSig]
-    void SetBackingSymbolsFilter([In] [MarshalAs(UnmanagedType.SafeArray)] ref BackingSymbolTypeEnum[,] BackingSymbolFilter);
+    void SetBackingSymbolsFilter([In] [MarshalAs(UnmanagedType.SafeArray)] ref BackingSymbolTypeEnum[] BackingSymbolFilter);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ContourSymbolFilter">ContourSymbolFilter</param>
     [PreserveSig]
-    void GetContourSymbolsFilter([Out] [MarshalAs(UnmanagedType.SafeArray)] out ContourSymbolTypeEnum[,] ContourSymbolFilter);
+    void GetContourSymbolsFilter([Out] [MarshalAs(UnmanagedType.SafeArray)] out ContourSymbolTypeEnum[] ContourSymbolFilter);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="ContourSymbolFilter">ContourSymbolFilter</param>
     [PreserveSig]
-    void SetContourSymbolsFilter([In] [MarshalAs(UnmanagedType.SafeArray)] ref ContourSymbolTypeEnum[,] ContourSymbolFilter);
+    void SetContourSymbolsFilter([In] [MarshalAs(UnmanagedType.SafeArray)] ref ContourSymbolTypeEnum[] ContourSymbolFilter);
     /// <summary>
     /// Gets the variation type of a contour symbol filter.
     /// </summary>
@@ -182,13 +182,13 @@ public interface WeldSymbolStyle
     /// </summary>
     /// <param name="WeldingSymbolFilter">WeldingSymbolFilter</param>
     [PreserveSig]
-    void GetWeldingSymbolsFilter([Out] [MarshalAs(UnmanagedType.SafeArray)] out WeldSymbolTypeEnum[,] WeldingSymbolFilter);
+    void GetWeldingSymbolsFilter([Out] [MarshalAs(UnmanagedType.SafeArray)] out WeldSymbolTypeEnum[] WeldingSymbolFilter);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="WeldingSymbolFilter">WeldingSymbolFilter</param>
     [PreserveSig]
-    void SetWeldingSymbolsFilter([In] [MarshalAs(UnmanagedType.SafeArray)] ref WeldSymbolTypeEnum[,] WeldingSymbolFilter);
+    void SetWeldingSymbolsFilter([In] [MarshalAs(UnmanagedType.SafeArray)] ref WeldSymbolTypeEnum[] WeldingSymbolFilter);
     /// <summary>
     /// Gets the variation type of a welding symbol filter.
     /// </summary>

@@ -19,14 +19,14 @@ public interface Box2d
     /// <param name="MinPoint">MinPoint</param>
     /// <param name="MaxPoint">MaxPoint</param>
     [PreserveSig]
-    void GetBoxData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MinPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MaxPoint);
+    void GetBoxData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MinPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MaxPoint);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
     /// <param name="MinPoint">MinPoint</param>
     /// <param name="MaxPoint">MaxPoint</param>
     [PreserveSig]
-    void PutBoxData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MinPoint, [Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] MaxPoint);
+    void PutBoxData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MinPoint, [In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] MaxPoint);
     /// <summary>
     /// Extends the Box to include the specified point.
     /// </summary>

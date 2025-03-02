@@ -100,7 +100,7 @@ public interface PartsList
     /// <summary>
     /// Gets and sets the names of the iPart/iAssembly members to include as columns in the parts list.
     /// </summary>
-    string[,] MembersToInclude { get; set; }
+    string[] MembersToInclude { get; set; }
     /// <summary>
     /// Gets and sets whether to hide rows of zero quantity.
     /// </summary>
@@ -143,7 +143,7 @@ public interface PartsList
     /// <param name="ReferenceKey">ReferenceKey</param>
     /// <param name="KeyContext">KeyContext</param>
     [PreserveSig]
-    void GetReferenceKey([Out] [MarshalAs(UnmanagedType.SafeArray)] out byte[,] ReferenceKey, [In] int? KeyContext = default);
+    void GetReferenceKey([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref byte[] ReferenceKey, [In] int? KeyContext = default);
     /// <summary>
     /// Method that deletes this PartsList.
     /// </summary>

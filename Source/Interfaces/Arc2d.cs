@@ -45,7 +45,7 @@ public interface Arc2d
     /// <param name="StartAngle">StartAngle</param>
     /// <param name="SweepAngle">SweepAngle</param>
     [PreserveSig]
-    void GetArcData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [Out] out double Radius, [Out] out double StartAngle, [Out] out double SweepAngle);
+    void GetArcData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [Out] out double Radius, [Out] out double StartAngle, [Out] out double SweepAngle);
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
@@ -54,7 +54,7 @@ public interface Arc2d
     /// <param name="StartAngle">StartAngle</param>
     /// <param name="SweepAngle">SweepAngle</param>
     [PreserveSig]
-    void PutArcData([Out] [MarshalAs(UnmanagedType.SafeArray)] out double[,] Center, [In] double Radius, [In] double StartAngle, [In] double SweepAngle);
+    void PutArcData([In] [Out] [MarshalAs(UnmanagedType.SafeArray)] ref double[] Center, [In] double Radius, [In] double StartAngle, [In] double SweepAngle);
     /// <summary>
     /// Creates a copy of this Arc2d object.&nbsp;The result is entirely independent and can be edited without affecting the original Arc2d object.
     /// </summary>
