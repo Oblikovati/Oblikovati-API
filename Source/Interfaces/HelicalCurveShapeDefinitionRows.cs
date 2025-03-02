@@ -20,7 +20,7 @@ public interface HelicalCurveShapeDefinitionRows : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    HelicalCurveShapeDefinitionRow Item { get; }
+    HelicalCurveShapeDefinitionRow this[object Index] { get; }
     /// <summary>
     /// Adds a new HelicalCurveShapeDefinitionRow.
     /// </summary>

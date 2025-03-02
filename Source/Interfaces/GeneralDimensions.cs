@@ -16,7 +16,7 @@ public interface GeneralDimensions : IEnumerable
     /// <summary>
     /// Method that returns the specified dimension object from the collection.
     /// </summary>
-    GeneralDimension Item { get; }
+    GeneralDimension this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

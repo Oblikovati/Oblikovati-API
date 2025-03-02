@@ -16,7 +16,7 @@ public interface PresentationSequences
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationSequence Item { get; }
+    PresentationSequence this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

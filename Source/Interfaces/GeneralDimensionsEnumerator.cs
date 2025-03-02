@@ -16,5 +16,5 @@ public interface GeneralDimensionsEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified DrawingStandardStyle object from the collection.
     /// </summary>
-    GeneralDimension Item { get; }
+    GeneralDimension this[int Index] { get; }
 }

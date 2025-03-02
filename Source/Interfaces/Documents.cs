@@ -8,7 +8,7 @@ public interface Documents : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection. This is the default property of the DocumentsEnumerator object.
     /// </summary>
-    _Document Item { get; }
+    _Document this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

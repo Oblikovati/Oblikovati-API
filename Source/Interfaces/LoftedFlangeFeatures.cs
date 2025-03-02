@@ -16,7 +16,7 @@ public interface LoftedFlangeFeatures : IEnumerable
     /// <summary>
     /// Returns the specified LoftedFlangeFeature object from the collection.
     /// </summary>
-    LoftedFlangeFeature Item { get; }
+    LoftedFlangeFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

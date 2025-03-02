@@ -16,7 +16,7 @@ public interface DrawingCurveSegments : IEnumerable
     /// <summary>
     /// Method that returns the specified DrawingCurveSegment object from the collection. This is the default property of the DrawingCurveSegments collection object.
     /// </summary>
-    DrawingCurveSegment Item { get; }
+    DrawingCurveSegment this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

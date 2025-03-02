@@ -16,7 +16,7 @@ public interface PresentationMeshFeatureSet : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationMeshFeature Item { get; }
+    PresentationMeshFeature this[int Index] { get; }
     /// <summary>
     /// Read-only property that gets the name of the object.
     /// </summary>

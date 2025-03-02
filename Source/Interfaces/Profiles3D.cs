@@ -20,7 +20,7 @@ public interface Profiles3D : IEnumerable
     /// <summary>
     /// Method that returns the specified Profile3D object from the collection.
     /// </summary>
-    Profile3D Item { get; }
+    Profile3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a new profile by examining the contents of the sketch and creating as many closed paths as possible. The resulting Profile3D is returned.
     /// </summary>

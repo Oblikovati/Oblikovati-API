@@ -20,7 +20,7 @@ public interface BIMConnectors : IEnumerable
     /// <summary>
     /// Returns the specified BIMConnector object from the collection.
     /// </summary>
-    BIMConnector Item { get; }
+    BIMConnector this[object Index] { get; }
     /// <summary>
     /// Method that creates a new BIMConnector.&nbsp;The type of connector definition supplied will determine the type of connector created.&nbsp;The new BIMConnector is returned.
     /// </summary>

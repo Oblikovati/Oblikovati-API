@@ -20,7 +20,7 @@ public interface ClientGraphicsCollection : IEnumerable
     /// <summary>
     /// Returns an existing ClientGraphics object.
     /// </summary>
-    ClientGraphics Item { get; }
+    ClientGraphics this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of ClientGraphics objects associated with the graphic container.
     /// </summary>

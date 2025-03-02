@@ -16,7 +16,7 @@ public interface OrdinateDimensionSets : IEnumerable
     /// <summary>
     /// Method that returns the specified dimension set object from the collection.
     /// </summary>
-    OrdinateDimensionSet Item { get; }
+    OrdinateDimensionSet this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

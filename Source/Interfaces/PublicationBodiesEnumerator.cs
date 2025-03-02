@@ -16,7 +16,7 @@ public interface PublicationBodiesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationBody Item { get; }
+    PublicationBody this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

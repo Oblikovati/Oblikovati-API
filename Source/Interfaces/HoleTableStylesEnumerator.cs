@@ -16,7 +16,7 @@ public interface HoleTableStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified HoleTableStyle object from the collection.
     /// </summary>
-    HoleTableStyle Item { get; }
+    HoleTableStyle this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

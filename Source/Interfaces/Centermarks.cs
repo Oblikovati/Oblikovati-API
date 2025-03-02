@@ -16,7 +16,7 @@ public interface Centermarks : IEnumerable
     /// <summary>
     /// Method that returns the specified Centermark object from the collection.
     /// </summary>
-    Centermark Item { get; }
+    Centermark this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

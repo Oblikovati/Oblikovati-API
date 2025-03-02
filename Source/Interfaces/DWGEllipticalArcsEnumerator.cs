@@ -20,5 +20,5 @@ public interface DWGEllipticalArcsEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    DWGEllipticalArc Item { get; }
+    DWGEllipticalArc this[object Index] { get; }
 }

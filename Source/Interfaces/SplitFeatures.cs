@@ -16,7 +16,7 @@ public interface SplitFeatures : IEnumerable
     /// <summary>
     /// Returns the specified SplitFeature object from the collection.
     /// </summary>
-    SplitFeature Item { get; }
+    SplitFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

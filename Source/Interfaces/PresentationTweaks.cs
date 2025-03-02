@@ -16,7 +16,7 @@ public interface PresentationTweaks
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationTweak Item { get; }
+    PresentationTweak this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

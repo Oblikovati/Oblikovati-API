@@ -16,7 +16,7 @@ public interface DimensionStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    DimensionStyle Item { get; }
+    DimensionStyle this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

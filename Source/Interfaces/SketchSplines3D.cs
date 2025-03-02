@@ -20,7 +20,7 @@ public interface SketchSplines3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchSpline3D object from the collection.
     /// </summary>
-    SketchSpline3D Item { get; }
+    SketchSpline3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a sketch spline through the set of input points.
     /// </summary>

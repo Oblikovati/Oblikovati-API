@@ -8,7 +8,7 @@ public interface ReferenceParameters : IEnumerable
     /// <summary>
     /// Returns the specified ReferenceParameter object from the collection. This is the default property of the ReferenceParameters collection object.
     /// </summary>
-    ReferenceParameter Item { get; }
+    ReferenceParameter this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

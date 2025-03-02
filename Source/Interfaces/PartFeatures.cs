@@ -16,7 +16,7 @@ public interface PartFeatures : IEnumerable
     /// <summary>
     /// Returns the specified PartFeature object from the collection. It accesses all of the features regardless of their type. If you increment through the features in the collection they are returned in the same order as they appear in the feature browser.
     /// </summary>
-    PartFeature Item { get; }
+    PartFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

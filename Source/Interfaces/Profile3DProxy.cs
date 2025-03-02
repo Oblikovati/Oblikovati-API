@@ -20,7 +20,7 @@ public interface Profile3DProxy : IEnumerable
     /// <summary>
     /// Method that returns the specified ProfilePath3D object from the collection.
     /// </summary>
-    ProfilePath3D Item { get; }
+    ProfilePath3D this[int Index] { get; }
     /// <summary>
     /// Property that returns the 3D sketch that the profile was derived from.
     /// </summary>

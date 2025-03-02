@@ -20,7 +20,7 @@ public interface AssetLibraries : IEnumerable
     /// <summary>
     /// Read-only property that returns the specified AssetLibrary object from the collection.
     /// </summary>
-    AssetLibrary Item { get; }
+    AssetLibrary this[object Index] { get; }
     /// <summary>
     /// Method that creates a new asset library. The newly created AssetLibrary object is returned. The library can contain both appearance and material assets.
     /// </summary>

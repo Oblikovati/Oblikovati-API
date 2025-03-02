@@ -16,7 +16,7 @@ public interface PresentationSnapshotViews : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationSnapshotView Item { get; }
+    PresentationSnapshotView this[object Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

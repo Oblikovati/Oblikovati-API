@@ -20,5 +20,5 @@ public interface SketchOffsetSplines : IEnumerable
     /// <summary>
     /// Method that returns the specified SketchOffsetSpline object from the collection.
     /// </summary>
-    SketchOffsetSpline Item { get; }
+    SketchOffsetSpline this[int Index] { get; }
 }

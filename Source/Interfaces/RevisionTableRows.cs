@@ -16,7 +16,7 @@ public interface RevisionTableRows : IEnumerable
     /// <summary>
     /// Returns the specified row object from the collection.
     /// </summary>
-    RevisionTableRow Item { get; }
+    RevisionTableRow this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

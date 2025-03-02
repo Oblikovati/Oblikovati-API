@@ -20,5 +20,5 @@ public interface BIMComponentPropertySets : IEnumerable
     /// <summary>
     /// Returns the specified BIMComponentPropertySet object from the collection.&nbsp;This collection is empty until the component type is defined using the ComponentType property of the BIMComponentDescription object.
     /// </summary>
-    BIMComponentPropertySet Item { get; }
+    BIMComponentPropertySet this[object Index] { get; }
 }

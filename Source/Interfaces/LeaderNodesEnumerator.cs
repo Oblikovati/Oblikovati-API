@@ -20,5 +20,5 @@ public interface LeaderNodesEnumerator : IEnumerable
     /// <summary>
     /// Method that returns the specified LeaderNode object from the collection.
     /// </summary>
-    LeaderNode Item { get; }
+    LeaderNode this[object Index] { get; }
 }

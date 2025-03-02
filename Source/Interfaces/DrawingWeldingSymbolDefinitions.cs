@@ -20,7 +20,7 @@ public interface DrawingWeldingSymbolDefinitions : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    DrawingWeldingSymbolDefinition Item { get; }
+    DrawingWeldingSymbolDefinition this[int Index] { get; }
     /// <summary>
     /// Method that creates a new DrawingWeldingSymbolDefinition. The newly created DrawingWeldingSymbolDefinition object is returned.
     /// </summary>

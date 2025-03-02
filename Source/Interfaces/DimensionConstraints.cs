@@ -16,7 +16,7 @@ public interface DimensionConstraints : IEnumerable
     /// <summary>
     /// Returns the specified sketch dimension constraint object from the collection.
     /// </summary>
-    DimensionConstraint Item { get; }
+    DimensionConstraint this[int Index] { get; }
     /// <summary>
     /// Returns the top-level parent application object.  When used the context of Inventor, an Application object is returned.  When used in the context of Apprentice, an ApprenticeServer object is returned.
     /// </summary>

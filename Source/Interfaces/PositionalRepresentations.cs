@@ -20,7 +20,7 @@ public interface PositionalRepresentations : IEnumerable
     /// <summary>
     /// Returns the specified PositionalRepresentation object from the collection.
     /// </summary>
-    PositionalRepresentation Item { get; }
+    PositionalRepresentation this[object Index] { get; }
     /// <summary>
     /// Property that returns the Excel spreadsheet that contains the positional representations data.
     /// </summary>

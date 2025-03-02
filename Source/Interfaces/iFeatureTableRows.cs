@@ -20,5 +20,5 @@ public interface iFeatureTableRows : IEnumerable
     /// <summary>
     /// Method that returns the specified iFeatureTableRow object from the collection.
     /// </summary>
-    iFeatureTableRow Item { get; }
+    iFeatureTableRow this[object Index] { get; }
 }

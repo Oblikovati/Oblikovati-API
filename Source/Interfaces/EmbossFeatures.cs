@@ -16,7 +16,7 @@ public interface EmbossFeatures : IEnumerable
     /// <summary>
     /// Returns the specified EmbossFeature object from the collection.
     /// </summary>
-    EmbossFeature Item { get; }
+    EmbossFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

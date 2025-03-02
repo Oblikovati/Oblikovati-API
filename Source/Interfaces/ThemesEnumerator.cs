@@ -12,7 +12,7 @@ public interface ThemesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    Theme Item { get; }
+    Theme this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

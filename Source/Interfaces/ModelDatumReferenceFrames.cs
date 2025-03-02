@@ -24,7 +24,7 @@ public interface ModelDatumReferenceFrames : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    ModelDatumReferenceFrame Item { get; }
+    ModelDatumReferenceFrame this[object Index] { get; }
     /// <summary>
     /// Adds a new ModelDatumReferenceFrame object.
     /// </summary>

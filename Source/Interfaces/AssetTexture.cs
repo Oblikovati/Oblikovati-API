@@ -20,7 +20,7 @@ public interface AssetTexture : IEnumerable
     /// <summary>
     /// Read-only property that returns the specified AssetValue object from the asset.
     /// </summary>
-    AssetValue Item { get; }
+    AssetValue this[object Index] { get; }
     /// <summary>
     /// Gets the current texture type.
     /// </summary>

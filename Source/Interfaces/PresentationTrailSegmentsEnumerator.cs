@@ -12,7 +12,7 @@ public interface PresentationTrailSegmentsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationTrailSegment Item { get; }
+    PresentationTrailSegment this[object Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

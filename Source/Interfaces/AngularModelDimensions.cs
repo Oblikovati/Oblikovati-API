@@ -24,7 +24,7 @@ public interface AngularModelDimensions : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    AngularModelDimension Item { get; }
+    AngularModelDimension this[object Index] { get; }
     /// <summary>
     /// Method that creates an angular dimension.
     /// </summary>

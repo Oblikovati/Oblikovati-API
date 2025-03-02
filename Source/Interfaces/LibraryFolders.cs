@@ -20,7 +20,7 @@ public interface LibraryFolders : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    LibraryFolder Item { get; }
+    LibraryFolder this[object Index] { get; }
     /// <summary>
     /// creates a new library folder.
     /// </summary>

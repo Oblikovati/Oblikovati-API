@@ -16,7 +16,7 @@ public interface ContentTreeViewNodesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified ContentTreeViewNode object from the collection.
     /// </summary>
-    ContentTreeViewNode Item { get; }
+    ContentTreeViewNode this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

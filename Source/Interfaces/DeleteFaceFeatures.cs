@@ -16,7 +16,7 @@ public interface DeleteFaceFeatures : IEnumerable
     /// <summary>
     /// Returns the specified DeleteFaceFeature object from the collection.
     /// </summary>
-    DeleteFaceFeature Item { get; }
+    DeleteFaceFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -20,7 +20,7 @@ public interface SketchEquationCurves3D : IEnumerable
     /// <summary>
     /// Method that returns the specified SketchEquationCurve3D object from the collection.
     /// </summary>
-    SketchEquationCurve3D Item { get; }
+    SketchEquationCurve3D this[int Index] { get; }
     /// <summary>
     /// Creates a new sketch equation curve in a 3D sketch.
     /// </summary>

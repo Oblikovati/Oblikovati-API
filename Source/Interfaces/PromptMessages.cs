@@ -13,7 +13,7 @@ public interface PromptMessages : IEnumerable
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
-    PromptMessage Item { get; }
+    PromptMessage this[object Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

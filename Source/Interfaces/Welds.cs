@@ -20,7 +20,7 @@ public interface Welds : IEnumerable
     /// <summary>
     /// Returns the specified Weld object from the collection.
     /// </summary>
-    Weld Item { get; }
+    Weld this[object Index] { get; }
     /// <summary>
     /// Property that returns the CosmeticWelds object.
     /// </summary>

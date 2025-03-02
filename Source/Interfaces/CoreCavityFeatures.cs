@@ -16,7 +16,7 @@ public interface CoreCavityFeatures : IEnumerable
     /// <summary>
     /// Property that returns specified CoreCavityFeature object from the collection.
     /// </summary>
-    CoreCavityFeature Item { get; }
+    CoreCavityFeature this[object Index] { get; }
     /// <summary>
     /// Property that specifies the number of items in the collection.
     /// </summary>

@@ -16,5 +16,5 @@ public interface iMateDefinitionsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    iMateDefinition Item { get; }
+    iMateDefinition this[int Index] { get; }
 }

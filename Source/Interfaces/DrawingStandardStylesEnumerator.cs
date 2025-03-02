@@ -16,7 +16,7 @@ public interface DrawingStandardStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection.
     /// </summary>
-    DrawingStandardStyle Item { get; }
+    DrawingStandardStyle this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

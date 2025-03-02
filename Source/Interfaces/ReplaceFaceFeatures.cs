@@ -16,7 +16,7 @@ public interface ReplaceFaceFeatures : IEnumerable
     /// <summary>
     /// Method that returns the specified ReplaceFaceFeature object from the collection.
     /// </summary>
-    ReplaceFaceFeature Item { get; }
+    ReplaceFaceFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

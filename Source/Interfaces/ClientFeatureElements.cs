@@ -16,7 +16,7 @@ public interface ClientFeatureElements : IEnumerable
     /// <summary>
     /// Method that returns the specified ClientFeatureElement object from the collection. This is the default method of the ClientFeatureElement collection object.
     /// </summary>
-    ClientFeatureElement Item { get; }
+    ClientFeatureElement this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

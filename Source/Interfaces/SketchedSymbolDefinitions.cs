@@ -16,7 +16,7 @@ public interface SketchedSymbolDefinitions : IEnumerable
     /// <summary>
     /// Method that returns the specified SketchedSymbolDefinition object from the collection.
     /// </summary>
-    SketchedSymbolDefinition Item { get; }
+    SketchedSymbolDefinition this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

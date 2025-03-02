@@ -16,7 +16,7 @@ public interface PunchNotes : IEnumerable
     /// <summary>
     /// Returns the specified PunchNote object from the collection.
     /// </summary>
-    PunchNote Item { get; }
+    PunchNote this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

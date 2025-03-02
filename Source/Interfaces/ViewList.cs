@@ -12,7 +12,7 @@ public interface ViewList : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection.
     /// </summary>
-    View Item { get; }
+    View this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

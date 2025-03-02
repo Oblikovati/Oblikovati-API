@@ -16,7 +16,7 @@ public interface FilletFeatures : IEnumerable
     /// <summary>
     /// Returns the specified FilletFeature object from the collection.
     /// </summary>
-    FilletFeature Item { get; }
+    FilletFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

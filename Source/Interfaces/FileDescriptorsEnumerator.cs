@@ -16,7 +16,7 @@ public interface FileDescriptorsEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified FileDescriptor object from the collection.
     /// </summary>
-    FileDescriptor Item { get; }
+    FileDescriptor this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

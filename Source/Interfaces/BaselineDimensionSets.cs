@@ -16,7 +16,7 @@ public interface BaselineDimensionSets : IEnumerable
     /// <summary>
     /// Method that returns the specified dimension set object from the collection.
     /// </summary>
-    BaselineDimensionSet Item { get; }
+    BaselineDimensionSet this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

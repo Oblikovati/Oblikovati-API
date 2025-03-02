@@ -16,7 +16,7 @@ public interface DerivedAssemblyComponents : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    DerivedAssemblyComponent Item { get; }
+    DerivedAssemblyComponent this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

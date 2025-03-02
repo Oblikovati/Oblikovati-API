@@ -20,5 +20,5 @@ public interface iAssemblyTableColumns : IEnumerable
     /// <summary>
     /// Returns the specified iAssemblyTableColumn object from the collection.
     /// </summary>
-    iAssemblyTableColumn Item { get; }
+    iAssemblyTableColumn this[object Index] { get; }
 }

@@ -16,7 +16,7 @@ public interface WeldSymbolStylesEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    WeldSymbolStyle Item { get; }
+    WeldSymbolStyle this[object Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

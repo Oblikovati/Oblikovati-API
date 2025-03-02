@@ -20,7 +20,7 @@ public interface SketchCircles3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchCircle3D object from the collection.
     /// </summary>
-    SketchCircle3D Item { get; }
+    SketchCircle3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch circle at a specified location and radius.
     /// </summary>

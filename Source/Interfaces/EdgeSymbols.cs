@@ -20,7 +20,7 @@ public interface EdgeSymbols : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    EdgeSymbol Item { get; }
+    EdgeSymbol this[int Index] { get; }
     /// <summary>
     /// Method that creates a new edge symbol definition.
     /// </summary>

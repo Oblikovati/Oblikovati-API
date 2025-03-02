@@ -16,7 +16,7 @@ public interface FeaturePatternElements : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection. This is the default property of the FeaturePatternElements collection object.
     /// </summary>
-    FeaturePatternElement Item { get; }
+    FeaturePatternElement this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

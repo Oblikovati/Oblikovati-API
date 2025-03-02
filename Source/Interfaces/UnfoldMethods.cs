@@ -16,7 +16,7 @@ public interface UnfoldMethods : IEnumerable
     /// <summary>
     /// Returns the specified UnfoldMethod object from the collection.
     /// </summary>
-    UnfoldMethod Item { get; }
+    UnfoldMethod this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

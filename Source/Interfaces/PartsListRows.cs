@@ -16,7 +16,7 @@ public interface PartsListRows : IEnumerable
     /// <summary>
     /// Returns the specified PartsListRows object from the collection. This is the default property of the PartsListRows collection object.
     /// </summary>
-    PartsListRow Item { get; }
+    PartsListRow this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

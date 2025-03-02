@@ -12,7 +12,7 @@ public interface WorkSurfaces : IEnumerable
     /// <summary>
     /// Returns the specified WorkSurface object from the collection. This is the default property of the WorkSurfaces collection object.
     /// </summary>
-    WorkSurface Item { get; }
+    WorkSurface this[object Index] { get; }
     /// <summary>
     /// Property that returns the parent <link Inventor::ComponentDefinition, ComponentDefinition> object from whom this object can logically be reached.
     /// </summary>

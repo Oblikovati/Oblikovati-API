@@ -16,7 +16,7 @@ public interface WorkPoints : IEnumerable
     /// <summary>
     /// Returns the specified WorkPoint object from the collection. This is the default property of the WorkPoints collection object.
     /// </summary>
-    WorkPoint Item { get; }
+    WorkPoint this[object Index] { get; }
     /// <summary>
     /// Property returning the parent <link Inventor::ComponentDefinition, ComponentDefinition> object.
     /// </summary>

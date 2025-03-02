@@ -20,5 +20,5 @@ public interface BOMViews : IEnumerable
     /// <summary>
     /// Returns the specified BOMView object from the collection.
     /// </summary>
-    BOMView Item { get; }
+    BOMView this[object Index] { get; }
 }

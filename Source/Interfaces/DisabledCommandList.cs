@@ -20,7 +20,7 @@ public interface DisabledCommandList : IEnumerable
     /// <summary>
     /// Returns the specified ControlDefinition from the list.
     /// </summary>
-    ControlDefinition Item { get; }
+    ControlDefinition this[int Index] { get; }
     /// <summary>
     /// Method that adds the specified command to the list.
     /// </summary>

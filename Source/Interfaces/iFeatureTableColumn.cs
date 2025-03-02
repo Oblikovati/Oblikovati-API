@@ -24,7 +24,7 @@ public interface iFeatureTableColumn : IEnumerable
     /// <summary>
     /// Method that returns the specified iFeatureTableCell object from the row.
     /// </summary>
-    iFeatureTableCell Item { get; }
+    iFeatureTableCell this[object Index] { get; }
     /// <summary>
     /// Property that returns the heading of the column as seen in the iFeature author command.
     /// </summary>

@@ -16,7 +16,7 @@ public interface RevisionCloudControlPoints : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    RevisionCloudControlPoint Item { get; }
+    RevisionCloudControlPoint this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

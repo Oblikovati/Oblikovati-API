@@ -16,7 +16,7 @@ public interface PropertySets : IEnumerable
     /// <summary>
     /// Gets the set in this collection in a sequences fashion; by index, or by its name -- Display or Internal.
     /// </summary>
-    PropertySet Item { get; }
+    PropertySet this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

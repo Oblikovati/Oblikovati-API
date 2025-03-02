@@ -8,7 +8,7 @@ public interface Sheets : IEnumerable
     /// <summary>
     /// Returns the specified Sheet object from the collection.
     /// </summary>
-    Sheet Item { get; }
+    Sheet this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

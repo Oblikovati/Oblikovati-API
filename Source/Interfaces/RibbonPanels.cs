@@ -16,7 +16,7 @@ public interface RibbonPanels : IEnumerable
     /// <summary>
     /// Returns the specified RibbonPanel object from the collection.
     /// </summary>
-    RibbonPanel Item { get; }
+    RibbonPanel this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

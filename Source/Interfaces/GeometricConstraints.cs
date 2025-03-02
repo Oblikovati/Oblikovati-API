@@ -16,7 +16,7 @@ public interface GeometricConstraints : IEnumerable
     /// <summary>
     /// Returns the specified geometric sketch constraint object from the collection.
     /// </summary>
-    GeometricConstraint Item { get; }
+    GeometricConstraint this[int Index] { get; }
     /// <summary>
     /// Returns the top-level parent application object.  When used the context of Inventor, an Application object is returned.  When used in the context of Apprentice, an ApprenticeServer object is returned.
     /// </summary>

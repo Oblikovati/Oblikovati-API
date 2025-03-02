@@ -8,7 +8,7 @@ public interface CheckPointsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    CheckPoint Item { get; }
+    CheckPoint this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

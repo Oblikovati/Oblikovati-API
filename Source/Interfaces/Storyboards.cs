@@ -16,7 +16,7 @@ public interface Storyboards : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    Storyboard Item { get; }
+    Storyboard this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

@@ -20,7 +20,7 @@ public interface AttributeSets : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection. This is the default property of the AttributeSets collection object.
     /// </summary>
-    AttributeSet Item { get; }
+    AttributeSet this[object Index] { get; }
     /// <summary>
     /// Property that returns whether an existing attribute set has the specified name or not. Multiple AttributeSets with the same name are not allowed within this collection. Returns True if the name is already being used.
     /// </summary>

@@ -16,7 +16,7 @@ public interface DerivedPartComponents : IEnumerable
     /// <summary>
     /// Returns the specified DerivedPartComponent object from the collection.
     /// </summary>
-    DerivedPartComponent Item { get; }
+    DerivedPartComponent this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

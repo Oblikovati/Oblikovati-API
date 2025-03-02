@@ -16,7 +16,7 @@ public interface DrawingBOMColumns : IEnumerable
     /// <summary>
     /// Returns the specified DrawingBOMColumn object from the collection.
     /// </summary>
-    DrawingBOMColumn Item { get; }
+    DrawingBOMColumn this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

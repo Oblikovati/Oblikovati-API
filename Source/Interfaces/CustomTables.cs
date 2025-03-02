@@ -16,7 +16,7 @@ public interface CustomTables : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection.
     /// </summary>
-    CustomTable Item { get; }
+    CustomTable this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

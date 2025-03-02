@@ -16,7 +16,7 @@ public interface NonParametricBaseFeatures : IEnumerable
     /// <summary>
     /// Returns the specified NonParametricBaseFeature object from the collection.
     /// </summary>
-    NonParametricBaseFeature Item { get; }
+    NonParametricBaseFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

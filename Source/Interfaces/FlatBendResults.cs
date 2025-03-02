@@ -16,7 +16,7 @@ public interface FlatBendResults : IEnumerable
     /// <summary>
     /// Returns the specified FlatBendResultobject from the collection.
     /// </summary>
-    FlatBendResult Item { get; }
+    FlatBendResult this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

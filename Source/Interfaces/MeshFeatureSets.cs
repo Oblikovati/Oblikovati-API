@@ -20,7 +20,7 @@ public interface MeshFeatureSets : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    MeshFeatureSet Item { get; }
+    MeshFeatureSet this[object Index] { get; }
     /// <summary>
     /// Method that creates a new MeshFeatureSet object. The newly created MeshFeatureSet object is returned.
     /// </summary>

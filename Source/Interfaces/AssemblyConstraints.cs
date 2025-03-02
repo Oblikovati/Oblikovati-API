@@ -20,7 +20,7 @@ public interface AssemblyConstraints : IEnumerable
     /// <summary>
     /// Returns the specified AssemblyConstraint object from the collection. This is the default property of the AssemblyConstraints collection object.
     /// </summary>
-    AssemblyConstraint Item { get; }
+    AssemblyConstraint this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

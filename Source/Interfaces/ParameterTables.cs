@@ -8,7 +8,7 @@ public interface ParameterTables : IEnumerable
     /// <summary>
     /// Returns the specified ParameterTable object from the collection. This is the default property of the ParameterTables collection object.
     /// </summary>
-    ParameterTable Item { get; }
+    ParameterTable this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

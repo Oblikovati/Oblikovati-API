@@ -16,7 +16,7 @@ public interface TitleBlockDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified TitleBlockDefinition object from the collection.
     /// </summary>
-    TitleBlockDefinition Item { get; }
+    TitleBlockDefinition this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

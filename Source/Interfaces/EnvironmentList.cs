@@ -20,7 +20,7 @@ public interface EnvironmentList : IEnumerable
     /// <summary>
     /// Returns the specified Environment object from the list.
     /// </summary>
-    Environment Item { get; }
+    Environment this[int Index] { get; }
     /// <summary>
     /// Method that adds an Environment object to the list. The method returns an error if a built-in Environment is supplied.
     /// </summary>

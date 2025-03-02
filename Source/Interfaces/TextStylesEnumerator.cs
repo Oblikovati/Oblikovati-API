@@ -16,7 +16,7 @@ public interface TextStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection.
     /// </summary>
-    TextStyle Item { get; }
+    TextStyle this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

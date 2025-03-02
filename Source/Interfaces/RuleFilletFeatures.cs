@@ -16,7 +16,7 @@ public interface RuleFilletFeatures : IEnumerable
     /// <summary>
     /// Returns the specified RuleFilletFeature object from the collection.
     /// </summary>
-    RuleFilletFeature Item { get; }
+    RuleFilletFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

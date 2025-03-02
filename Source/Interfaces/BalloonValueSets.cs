@@ -16,7 +16,7 @@ public interface BalloonValueSets : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    BalloonValueSet Item { get; }
+    BalloonValueSet this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

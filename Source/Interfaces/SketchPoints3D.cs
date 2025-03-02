@@ -20,7 +20,7 @@ public interface SketchPoints3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchPoint3D object from the collection.
     /// </summary>
-    SketchPoint3D Item { get; }
+    SketchPoint3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a new 3D sketch point at the specified coordinate.
     /// </summary>

@@ -20,7 +20,7 @@ public interface Lights : IEnumerable
     /// <summary>
     /// Returns the specified Light from the collection.
     /// </summary>
-    Light Item { get; }
+    Light this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of Light objects in the collection.
     /// </summary>

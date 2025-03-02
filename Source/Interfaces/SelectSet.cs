@@ -8,7 +8,7 @@ public interface SelectSet : IEnumerable
     /// <summary>
     /// Returns the specified object from the select set.
     /// </summary>
-    object Item { get; }
+    object this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

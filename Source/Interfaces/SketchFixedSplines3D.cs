@@ -8,7 +8,7 @@ public interface SketchFixedSplines3D : IEnumerable
     /// <summary>
     /// Method that returns the specified SketchFixedSpline3D object from the collection.
     /// </summary>
-    SketchFixedSpline3D Item { get; }
+    SketchFixedSpline3D this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

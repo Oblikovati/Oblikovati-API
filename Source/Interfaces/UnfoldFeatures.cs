@@ -16,7 +16,7 @@ public interface UnfoldFeatures : IEnumerable
     /// <summary>
     /// Returns the specified UnfoldFeature object from the collection.
     /// </summary>
-    UnfoldFeature Item { get; }
+    UnfoldFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of UnfoldFeature objects in the collection.
     /// </summary>

@@ -8,7 +8,7 @@ public interface ApplicationAddIns : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ApplicationAddIn Item { get; }
+    ApplicationAddIn this[int Index] { get; }
     /// <summary>
     /// Returns the specified ApplicationAddIn object from the collection. Retrieves an ApplicationAddIn object based on the Client Id.
     /// </summary>

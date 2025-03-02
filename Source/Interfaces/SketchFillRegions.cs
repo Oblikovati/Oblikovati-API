@@ -16,7 +16,7 @@ public interface SketchFillRegions : IEnumerable
     /// <summary>
     /// Method that returns the specified object from the collection.
     /// </summary>
-    SketchFillRegion Item { get; }
+    SketchFillRegion this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

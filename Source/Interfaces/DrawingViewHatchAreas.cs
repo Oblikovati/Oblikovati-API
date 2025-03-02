@@ -16,7 +16,7 @@ public interface DrawingViewHatchAreas : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    DrawingViewHatchArea Item { get; }
+    DrawingViewHatchArea this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

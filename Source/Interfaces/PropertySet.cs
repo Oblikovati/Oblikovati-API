@@ -24,7 +24,7 @@ public interface PropertySet : IEnumerable
     /// <summary>
     /// Gets the Property given either its name or its sequential index.
     /// </summary>
-    Property Item { get; }
+    Property this[object Index] { get; }
     /// <summary>
     /// Gets the Property in this set by its PropId.
     /// </summary>

@@ -20,5 +20,5 @@ public interface BOMRowsEnumerator : IEnumerable
     /// <summary>
     /// Returns an item in the collection.
     /// </summary>
-    BOMRow Item { get; }
+    BOMRow this[int Index] { get; }
 }

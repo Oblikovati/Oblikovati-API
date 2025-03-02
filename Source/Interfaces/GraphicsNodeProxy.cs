@@ -24,7 +24,7 @@ public interface GraphicsNodeProxy : IEnumerable
     /// <summary>
     /// Returns the specified graphic entity from the collection.
     /// </summary>
-    GraphicsPrimitive Item { get; }
+    GraphicsPrimitive this[int Index] { get; }
     /// <summary>
     /// Returns the specified GraphicsPrimitive from the collection using its Id as index.
     /// </summary>

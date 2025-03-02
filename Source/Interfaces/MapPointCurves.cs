@@ -16,7 +16,7 @@ public interface MapPointCurves : IEnumerable
     /// <summary>
     /// Method that returns the specified MapPointCurve object from the collection.
     /// </summary>
-    MapPointCurve Item { get; }
+    MapPointCurve this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of MapPointCurve objects in the collection.
     /// </summary>

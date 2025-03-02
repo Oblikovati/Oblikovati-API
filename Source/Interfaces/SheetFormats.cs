@@ -16,7 +16,7 @@ public interface SheetFormats : IEnumerable
     /// <summary>
     /// Returns the specified SheetFormat object from the collection.
     /// </summary>
-    SheetFormat Item { get; }
+    SheetFormat this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

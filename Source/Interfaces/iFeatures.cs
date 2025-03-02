@@ -20,7 +20,7 @@ public interface iFeatures : IEnumerable
     /// <summary>
     /// Returns the specified iFeature object from the collection..
     /// </summary>
-    iFeature Item { get; }
+    iFeature this[object Index] { get; }
     /// <summary>
     /// Method that creates a new iFeature using the input placement information. If successfully created the new iFeature is returned.
     /// </summary>

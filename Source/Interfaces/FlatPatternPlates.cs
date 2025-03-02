@@ -20,5 +20,5 @@ public interface FlatPatternPlates : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    FlatPatternPlate Item { get; }
+    FlatPatternPlate this[int Index] { get; }
 }

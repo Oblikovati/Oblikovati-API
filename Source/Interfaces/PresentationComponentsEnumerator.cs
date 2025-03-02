@@ -16,7 +16,7 @@ public interface PresentationComponentsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationComponent Item { get; }
+    PresentationComponent this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

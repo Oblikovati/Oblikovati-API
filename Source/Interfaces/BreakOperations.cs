@@ -16,7 +16,7 @@ public interface BreakOperations : IEnumerable
     /// <summary>
     /// Method that returns the specified break operation object from the collection.
     /// </summary>
-    BreakOperation Item { get; }
+    BreakOperation this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

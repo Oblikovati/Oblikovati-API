@@ -20,5 +20,5 @@ public interface iFeatureTableColumns : IEnumerable
     /// <summary>
     /// Returns the specified iFeatureTableColumn object from the collection.
     /// </summary>
-    iFeatureTableColumn Item { get; }
+    iFeatureTableColumn this[object Index] { get; }
 }

@@ -16,5 +16,5 @@ public interface AttributesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    Attribute Item { get; }
+    Attribute this[int Index] { get; }
 }

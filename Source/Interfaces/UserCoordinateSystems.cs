@@ -20,7 +20,7 @@ public interface UserCoordinateSystems : IEnumerable
     /// <summary>
     /// Returns the specified UserCoordinateSystem object from the collection.
     /// </summary>
-    UserCoordinateSystem Item { get; }
+    UserCoordinateSystem this[object Index] { get; }
     /// <summary>
     /// Method that creates a new User Coordinate System. The newly created UserCoordinateSystem object is returned.
     /// </summary>

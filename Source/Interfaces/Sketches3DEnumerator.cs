@@ -16,5 +16,5 @@ public interface Sketches3DEnumerator : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  The index of the first item in the collection is 1.
     /// </summary>
-    Sketch3D Item { get; }
+    Sketch3D this[int Index] { get; }
 }

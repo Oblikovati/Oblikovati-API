@@ -16,7 +16,7 @@ public interface Centerlines : IEnumerable
     /// <summary>
     /// Method that returns the specified Centerline object from the collection.
     /// </summary>
-    Centerline Item { get; }
+    Centerline this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

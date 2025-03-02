@@ -20,5 +20,5 @@ public interface MeshFeatureEntitiesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    MeshFeatureEntity Item { get; }
+    MeshFeatureEntity this[int Index] { get; }
 }

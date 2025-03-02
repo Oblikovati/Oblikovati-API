@@ -12,7 +12,7 @@ public interface ComponentDefinitions : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to objects in the collection.
     /// </summary>
-    ComponentDefinition Item { get; }
+    ComponentDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

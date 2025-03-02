@@ -16,7 +16,7 @@ public interface Columns : IEnumerable
     /// <summary>
     /// Returns the specified Column object from the collection.
     /// </summary>
-    Column Item { get; }
+    Column this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

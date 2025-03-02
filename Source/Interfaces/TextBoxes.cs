@@ -16,7 +16,7 @@ public interface TextBoxes : IEnumerable
     /// <summary>
     /// Returns a TextBox from the collection.
     /// </summary>
-    TextBox Item { get; }
+    TextBox this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

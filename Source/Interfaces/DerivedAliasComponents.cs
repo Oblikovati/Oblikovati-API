@@ -16,7 +16,7 @@ public interface DerivedAliasComponents : IEnumerable
     /// <summary>
     /// Method that returns the specified DerivedAliasComponent object from the collection.
     /// </summary>
-    DerivedAliasComponent Item { get; }
+    DerivedAliasComponent this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

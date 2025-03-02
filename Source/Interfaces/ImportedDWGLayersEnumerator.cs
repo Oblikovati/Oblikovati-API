@@ -16,5 +16,5 @@ public interface ImportedDWGLayersEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    ImportedDWGLayer Item { get; }
+    ImportedDWGLayer this[object Index] { get; }
 }

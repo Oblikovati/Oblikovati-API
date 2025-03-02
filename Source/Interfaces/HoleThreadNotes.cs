@@ -16,7 +16,7 @@ public interface HoleThreadNotes : IEnumerable
     /// <summary>
     /// Returns the specified HoleThreadNote object from the collection.
     /// </summary>
-    HoleThreadNote Item { get; }
+    HoleThreadNote this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -16,7 +16,7 @@ public interface AutoCADBlocks : IEnumerable
     /// <summary>
     /// Returns the specified AutoCADBlock object from the collection.
     /// </summary>
-    AutoCADBlock Item { get; }
+    AutoCADBlock this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -8,7 +8,7 @@ public interface AssemblyConstraintsEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified AssemblyConstraint object from the collection. This is the default property of the AssemblyConstraintsEnumerator collection object.
     /// </summary>
-    AssemblyConstraint Item { get; }
+    AssemblyConstraint this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

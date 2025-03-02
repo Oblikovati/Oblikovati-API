@@ -20,7 +20,7 @@ public interface SurfaceGraphicsEdgeList : IEnumerable
     /// <summary>
     /// Returns a SurfaeGraphicsEdge object.
     /// </summary>
-    SurfaceGraphicsEdge Item { get; }
+    SurfaceGraphicsEdge this[object Index] { get; }
     /// <summary>
     /// Method that specifies additional edges to be displayed.
     /// </summary>

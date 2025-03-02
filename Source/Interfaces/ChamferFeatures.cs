@@ -16,7 +16,7 @@ public interface ChamferFeatures : IEnumerable
     /// <summary>
     /// Method that returns the specified ChamferFeature object from the collection
     /// </summary>
-    ChamferFeature Item { get; }
+    ChamferFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

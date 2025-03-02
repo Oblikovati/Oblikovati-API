@@ -16,5 +16,5 @@ public interface SketchBlockDefinitionsEnumerator : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  The index of the first item in the collection is 1.
     /// </summary>
-    SketchBlockDefinition Item { get; }
+    SketchBlockDefinition this[int Index] { get; }
 }

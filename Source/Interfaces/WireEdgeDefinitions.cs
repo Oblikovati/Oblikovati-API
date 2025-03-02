@@ -16,7 +16,7 @@ public interface WireEdgeDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified WireEdgeDefinition object from the collection.
     /// </summary>
-    WireEdgeDefinition Item { get; }
+    WireEdgeDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

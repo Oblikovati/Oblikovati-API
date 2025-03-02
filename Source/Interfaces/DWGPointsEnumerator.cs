@@ -20,5 +20,5 @@ public interface DWGPointsEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    DWGPoint Item { get; }
+    DWGPoint this[object Index] { get; }
 }

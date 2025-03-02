@@ -20,7 +20,7 @@ public interface LevelOfDetailRepresentations : IEnumerable
     /// <summary>
     /// Returns the specified LevelOfDetailRepresentation object from the collection.
     /// </summary>
-    LevelOfDetailRepresentation Item { get; }
+    LevelOfDetailRepresentation this[object Index] { get; }
     /// <summary>
     /// Method that creates a new LevelOfDetailRepresentation. The newly created LevelOfDetailRepresentation is returned.
     /// </summary>

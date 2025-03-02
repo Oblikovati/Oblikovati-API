@@ -16,7 +16,7 @@ public interface GeneralNotes : IEnumerable
     /// <summary>
     /// Returns the specified GeneralNote object from the collection.
     /// </summary>
-    GeneralNote Item { get; }
+    GeneralNote this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

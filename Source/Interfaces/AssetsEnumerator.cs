@@ -20,5 +20,5 @@ public interface AssetsEnumerator : IEnumerable
     /// <summary>
     /// Read-only property that returns the specified Asset object from the collection.
     /// </summary>
-    Asset Item { get; }
+    Asset this[object Index] { get; }
 }

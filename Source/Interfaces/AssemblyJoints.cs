@@ -16,7 +16,7 @@ public interface AssemblyJoints : IEnumerable
     /// <summary>
     /// Read-only property that returns the specified AssemblyJoint object from the collection.
     /// </summary>
-    AssemblyJoint Item { get; }
+    AssemblyJoint this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

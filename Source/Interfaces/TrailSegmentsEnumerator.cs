@@ -16,7 +16,7 @@ public interface TrailSegmentsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    TrailSegment Item { get; }
+    TrailSegment this[object Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

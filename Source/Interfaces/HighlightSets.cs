@@ -11,7 +11,7 @@ public interface HighlightSets : IEnumerable
     /// <summary>
     /// Property that returns the specified HighlightSet from the collection.
     /// </summary>
-    HighlightSet Item { get; }
+    HighlightSet this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of HighlightSet objects in the collection.
     /// </summary>

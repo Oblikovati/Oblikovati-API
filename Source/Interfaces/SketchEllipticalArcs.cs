@@ -20,7 +20,7 @@ public interface SketchEllipticalArcs : IEnumerable
     /// <summary>
     /// Returns the specified SketchEllipticalArc object from the collection.
     /// </summary>
-    SketchEllipticalArc Item { get; }
+    SketchEllipticalArc this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch elliptical arc.
     /// </summary>

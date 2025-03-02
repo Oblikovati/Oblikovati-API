@@ -8,7 +8,7 @@ public interface Parameters : IEnumerable
     /// <summary>
     /// Returns the specified Parameter object from the collection. This is the default property of the Parameters collection object.
     /// </summary>
-    Parameter Item { get; }
+    Parameter this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

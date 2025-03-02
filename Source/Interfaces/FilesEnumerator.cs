@@ -16,7 +16,7 @@ public interface FilesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified File object from the collection.
     /// </summary>
-    File Item { get; }
+    File this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

@@ -20,7 +20,7 @@ public interface Materials : IEnumerable
     /// <summary>
     /// Returns the specified Material object from the collection.
     /// </summary>
-    Material Item { get; }
+    Material this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of Material objects in the collection.
     /// </summary>

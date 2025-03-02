@@ -20,5 +20,5 @@ public interface SketchEllipticalArcs3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchEllipticalArc3D object from the collection.
     /// </summary>
-    SketchEllipticalArc3D Item { get; }
+    SketchEllipticalArc3D this[int Index] { get; }
 }

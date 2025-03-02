@@ -24,7 +24,7 @@ public interface OccurrencePatterns : IEnumerable
     /// <summary>
     /// Method that returns the specified OccurrencePattern object from the collection.
     /// </summary>
-    OccurrencePattern Item { get; }
+    OccurrencePattern this[object Index] { get; }
     /// <summary>
     /// Method that creates a new circular occurrence pattern of input component(s).
     /// </summary>

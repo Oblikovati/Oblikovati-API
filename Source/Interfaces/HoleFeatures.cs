@@ -16,7 +16,7 @@ public interface HoleFeatures : IEnumerable
     /// <summary>
     /// Returns the specified HoleFeature object from the collection. This is the default property of the HoleFeatures collection object.
     /// </summary>
-    HoleFeature Item { get; }
+    HoleFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

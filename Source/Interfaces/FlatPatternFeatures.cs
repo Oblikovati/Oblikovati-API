@@ -16,7 +16,7 @@ public interface FlatPatternFeatures : IEnumerable
     /// <summary>
     /// Returns the specified PartFeature object from the collection. This is limited to the features within the flat pattern.
     /// </summary>
-    PartFeature Item { get; }
+    PartFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of features in the flat pattern.
     /// </summary>

@@ -20,7 +20,7 @@ public interface RenderStyles : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection. The index can be numeric or the object name.
     /// </summary>
-    RenderStyle Item { get; }
+    RenderStyle this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

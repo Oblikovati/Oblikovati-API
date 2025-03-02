@@ -16,7 +16,7 @@ public interface RestFeatures : IEnumerable
     /// <summary>
     /// Returns the specified RestFeature object from the collection.
     /// </summary>
-    RestFeature Item { get; }
+    RestFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface LoftFeatures : IEnumerable
     /// <summary>
     /// Returns the specified LoftFeature object from the collection.
     /// </summary>
-    LoftFeature Item { get; }
+    LoftFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

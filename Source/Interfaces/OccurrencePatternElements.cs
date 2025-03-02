@@ -24,5 +24,5 @@ public interface OccurrencePatternElements : IEnumerable
     /// <summary>
     /// Method that returns the specified OccurrencePatternElement object from the collection. This is the default method of the OccurrencePatternElements collection object.
     /// </summary>
-    OccurrencePatternElement Item { get; }
+    OccurrencePatternElement this[object Index] { get; }
 }

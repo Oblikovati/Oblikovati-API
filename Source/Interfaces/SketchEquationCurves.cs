@@ -20,7 +20,7 @@ public interface SketchEquationCurves : IEnumerable
     /// <summary>
     /// Returns the specified SketchEquationCurve object from the collection
     /// </summary>
-    SketchEquationCurve Item { get; }
+    SketchEquationCurve this[int Index] { get; }
     /// <summary>
     /// Creates a new sketch equation curve.
     /// </summary>

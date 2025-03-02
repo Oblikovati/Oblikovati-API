@@ -20,7 +20,7 @@ public interface SketchArcs : IEnumerable
     /// <summary>
     /// Returns the specified SketchArcobject from the collection.
     /// </summary>
-    SketchArc Item { get; }
+    SketchArc this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch arc defined by a center point and two points defining the start and end. The input points can be a combination of existing sketch points or Point2d objects. In the case where a sketch points is input, the arc will be attached to the sketch point. The sweep direction of the arc from the start to end point is determined by the CounterClockwise argument. The radius of the arc is determined by the start point. If the input for the start point is a sketch point, the arc will be tied to the sketch point. The second point, whether it is a sketch point or coordinate point defines the sweep of the arc. In the case where a sketch point is input and it is on the arc, the arc will be tied to the sketch point.
     /// </summary>

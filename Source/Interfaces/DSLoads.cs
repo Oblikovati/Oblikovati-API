@@ -20,5 +20,5 @@ public interface DSLoads : IEnumerable
     /// <summary>
     /// Input Variant value that specifies the DSLoad to return.&nbsp;This can be either a numeric value indicating the index of the item in the collection or it can be a string indicating the DSLoad name.&nbsp;If an out of range index or a name of a non-existent DSLoad is provided, an error will occur.
     /// </summary>
-    DSLoad Item { get; }
+    DSLoad this[object Index] { get; }
 }

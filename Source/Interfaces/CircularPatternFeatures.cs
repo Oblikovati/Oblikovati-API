@@ -16,7 +16,7 @@ public interface CircularPatternFeatures : IEnumerable
     /// <summary>
     /// Returns the specified CircularPatternFeature object from the collection. This is the default property of the CircularPatternFeatures collection object.
     /// </summary>
-    CircularPatternFeature Item { get; }
+    CircularPatternFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface CombineFeatures : IEnumerable
     /// <summary>
     /// Method that returns the specified CombineFeature object from the collection.
     /// </summary>
-    CombineFeature Item { get; }
+    CombineFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

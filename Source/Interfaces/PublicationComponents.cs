@@ -16,7 +16,7 @@ public interface PublicationComponents : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationComponent Item { get; }
+    PublicationComponent this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

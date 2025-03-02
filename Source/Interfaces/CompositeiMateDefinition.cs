@@ -56,7 +56,7 @@ public interface CompositeiMateDefinition : IEnumerable
     /// <summary>
     /// Returns the specified iMateDefinition object.
     /// </summary>
-    iMateDefinition Item { get; }
+    iMateDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of iMateDefinitions in this composite iMate.
     /// </summary>

@@ -16,7 +16,7 @@ public interface RectangularPatternFeatures : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection. This is the default property of the RectangularPatternFeatures collection object.
     /// </summary>
-    RectangularPatternFeature Item { get; }
+    RectangularPatternFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

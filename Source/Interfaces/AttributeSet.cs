@@ -24,7 +24,7 @@ public interface AttributeSet : IEnumerable
     /// <summary>
     /// Returns the specified Attribute object from the attribute set. This is the default property of the AttributeSet object.
     /// </summary>
-    Attribute Item { get; }
+    Attribute this[object Index] { get; }
     /// <summary>
     /// Gets the Boolean flag that controls the behavior of whether this set will copied onto this Inventor Object's copy.
     /// </summary>

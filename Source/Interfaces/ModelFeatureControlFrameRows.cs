@@ -16,7 +16,7 @@ public interface ModelFeatureControlFrameRows : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ModelFeatureControlFrameRow Item { get; }
+    ModelFeatureControlFrameRow this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

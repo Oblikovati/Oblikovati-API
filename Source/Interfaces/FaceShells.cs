@@ -8,7 +8,7 @@ public interface FaceShells : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to objects in the collection.
     /// </summary>
-    FaceShell Item { get; }
+    FaceShell this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

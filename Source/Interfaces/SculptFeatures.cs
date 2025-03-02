@@ -16,7 +16,7 @@ public interface SculptFeatures : IEnumerable
     /// <summary>
     /// Method that returns the specified SculptFeature object from the collection.
     /// </summary>
-    SculptFeature Item { get; }
+    SculptFeature this[object Index] { get; }
     /// <summary>
     /// Property that specifies the number of items in the collection.
     /// </summary>

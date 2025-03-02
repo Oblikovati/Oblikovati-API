@@ -8,7 +8,7 @@ public interface UserParameters : IEnumerable
     /// <summary>
     /// Returns the specified UserParameter object from the collection. This is the default property of the UserParameters collection object.
     /// </summary>
-    UserParameter Item { get; }
+    UserParameter this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

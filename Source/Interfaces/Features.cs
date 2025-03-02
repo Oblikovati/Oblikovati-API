@@ -16,7 +16,7 @@ public interface Features : IEnumerable
     /// <summary>
     /// Returns the specified feature from the collection.
     /// </summary>
-    PartFeature Item { get; }
+    PartFeature this[object Index] { get; }
     /// <summary>
     /// </summary>
     int Count { get; }

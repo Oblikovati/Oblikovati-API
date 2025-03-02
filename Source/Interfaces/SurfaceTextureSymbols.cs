@@ -16,7 +16,7 @@ public interface SurfaceTextureSymbols : IEnumerable
     /// <summary>
     /// Method that returns the specified SurfaceTextureSymbol object from the collection.
     /// </summary>
-    SurfaceTextureSymbol Item { get; }
+    SurfaceTextureSymbol this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

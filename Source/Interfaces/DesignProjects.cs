@@ -20,7 +20,7 @@ public interface DesignProjects : IEnumerable
     /// <summary>
     /// Returns the specified DesignProject object from the collection.
     /// </summary>
-    DesignProject Item { get; }
+    DesignProject this[int Index] { get; }
     /// <summary>
     /// Returns the specified DesignProject object from the collection.
     /// </summary>

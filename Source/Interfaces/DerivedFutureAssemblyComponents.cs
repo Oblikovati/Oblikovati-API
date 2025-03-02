@@ -16,7 +16,7 @@ public interface DerivedFutureAssemblyComponents : IEnumerable
     /// <summary>
     /// Method that returns the specified DerivedFutureAssemblyComponent object from the collection.
     /// </summary>
-    DerivedFutureAssemblyComponent Item { get; }
+    DerivedFutureAssemblyComponent this[int Index] { get; }
     /// <summary>
     /// Read-only property returning kDerivedFutureAssemblyComponentsObject indicating the type of object.
     /// </summary>

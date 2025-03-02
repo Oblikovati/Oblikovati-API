@@ -20,7 +20,7 @@ public interface ModelHoleThreadNotes : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  You can provide either the index of the item in the collection, where the first item is index 1, or you can provide the name of the object.
     /// </summary>
-    ModelHoleThreadNote Item { get; }
+    ModelHoleThreadNote this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

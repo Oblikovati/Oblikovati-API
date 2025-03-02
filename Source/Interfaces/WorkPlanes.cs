@@ -12,7 +12,7 @@ public interface WorkPlanes : IEnumerable
     /// <summary>
     /// Returns the specified WorkPlane object from the collection. This is the default property of the WorkPlanes collection object.
     /// </summary>
-    WorkPlane Item { get; }
+    WorkPlane this[object Index] { get; }
     /// <summary>
     /// Property returning the parent <link Inventor::ComponentDefinition, ComponentDefinition> object.
     /// </summary>

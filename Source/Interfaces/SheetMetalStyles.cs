@@ -16,7 +16,7 @@ public interface SheetMetalStyles : IEnumerable
     /// <summary>
     /// Method that returns the specified SheetMetalStyle object from the collection.
     /// </summary>
-    SheetMetalStyle Item { get; }
+    SheetMetalStyle this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

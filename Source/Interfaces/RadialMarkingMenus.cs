@@ -16,7 +16,7 @@ public interface RadialMarkingMenus : IEnumerable
     /// <summary>
     /// Returns the specified RadialMarkingMenu from the collection.
     /// </summary>
-    RadialMarkingMenu Item { get; }
+    RadialMarkingMenu this[object Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

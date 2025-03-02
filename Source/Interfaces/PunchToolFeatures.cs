@@ -16,7 +16,7 @@ public interface PunchToolFeatures : IEnumerable
     /// <summary>
     /// Returns the specified PunchToolFeature object from the collection. This is the default property of the PunchToolFeatures collection object.
     /// </summary>
-    PunchToolFeature Item { get; }
+    PunchToolFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

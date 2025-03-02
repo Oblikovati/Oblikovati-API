@@ -20,7 +20,7 @@ public interface SurfaceGraphicsVertexList : IEnumerable
     /// <summary>
     /// Returns a SurfaeGraphicsVertex object.
     /// </summary>
-    SurfaceGraphicsVertex Item { get; }
+    SurfaceGraphicsVertex this[object Index] { get; }
     /// <summary>
     /// Method that specifies additional vertices to be displayed.
     /// </summary>

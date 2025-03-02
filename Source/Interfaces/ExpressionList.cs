@@ -24,7 +24,7 @@ public interface ExpressionList : IEnumerable
     /// <summary>
     /// Property that gets the specified expression in the list.
     /// </summary>
-    string Item { get; }
+    string this[int Index] { get; }
     /// <summary>
     /// Gets/Sets whether to allow users to specify custom values.
     /// </summary>

@@ -20,7 +20,7 @@ public interface ProjectToSurfaceCurves : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ProjectToSurfaceCurve Item { get; }
+    ProjectToSurfaceCurve this[object Index] { get; }
     /// <summary>
     /// Method that creates a project to surface curve.
     /// </summary>

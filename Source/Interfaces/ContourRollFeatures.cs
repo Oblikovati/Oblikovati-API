@@ -16,7 +16,7 @@ public interface ContourRollFeatures : IEnumerable
     /// <summary>
     /// Returns the specified ContourRollFeature object from the collection.
     /// </summary>
-    ContourRollFeature Item { get; }
+    ContourRollFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of ContourRollFeature objects in the collection.
     /// </summary>

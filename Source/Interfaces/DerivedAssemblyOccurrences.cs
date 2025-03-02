@@ -12,7 +12,7 @@ public interface DerivedAssemblyOccurrences : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    DerivedAssemblyOccurrence Item { get; }
+    DerivedAssemblyOccurrence this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

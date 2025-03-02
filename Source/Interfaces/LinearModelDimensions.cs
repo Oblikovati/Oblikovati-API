@@ -24,7 +24,7 @@ public interface LinearModelDimensions : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  You can provide either the index of the item in the collection, where the first item is index 1, or you can provide the name of the object.
     /// </summary>
-    LinearModelDimension Item { get; }
+    LinearModelDimension this[object Index] { get; }
     /// <summary>
     /// Method that creates a linear dimension.
     /// </summary>

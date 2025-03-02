@@ -16,7 +16,7 @@ public interface SurfaceTextureStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified SurfaceTextureStyle object from the collection.
     /// </summary>
-    SurfaceTextureStyle Item { get; }
+    SurfaceTextureStyle this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -20,7 +20,7 @@ public interface DSResults : IEnumerable
     /// <summary>
     /// Returns the specified DSResult object from the collection
     /// </summary>
-    DSResult Item { get; }
+    DSResult this[int Index] { get; }
     /// <summary>
     /// Gets the specified DSResult object from the collection.
     /// </summary>

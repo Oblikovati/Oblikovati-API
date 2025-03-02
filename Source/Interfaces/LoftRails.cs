@@ -16,7 +16,7 @@ public interface LoftRails : IEnumerable
     /// <summary>
     /// Method that returns the specified LoftRail object from the collection.
     /// </summary>
-    LoftRail Item { get; }
+    LoftRail this[int Index] { get; }
     /// <summary>
     /// Property that specifies the number of LoftRail objects in the collection.
     /// </summary>

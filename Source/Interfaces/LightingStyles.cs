@@ -20,7 +20,7 @@ public interface LightingStyles : IEnumerable
     /// <summary>
     /// Returns the specified from the collection.
     /// </summary>
-    LightingStyle Item { get; }
+    LightingStyle this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of objects in the collection.
     /// </summary>

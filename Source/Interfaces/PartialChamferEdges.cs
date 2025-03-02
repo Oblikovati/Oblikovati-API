@@ -20,7 +20,7 @@ public interface PartialChamferEdges : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PartialChamferEdge Item { get; }
+    PartialChamferEdge this[int Index] { get; }
     /// <summary>
     /// Gets and sets which&nbsp;partial chamfer dimension is driven dimension.
     /// </summary>

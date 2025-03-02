@@ -8,7 +8,7 @@ public interface ModelParameters : IEnumerable
     /// <summary>
     /// Returns the specified ModelParameter object from the collection.
     /// </summary>
-    ModelParameter Item { get; }
+    ModelParameter this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

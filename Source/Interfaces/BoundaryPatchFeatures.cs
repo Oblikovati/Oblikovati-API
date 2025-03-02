@@ -16,7 +16,7 @@ public interface BoundaryPatchFeatures : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection. The index can be numeric or the object name.
     /// </summary>
-    BoundaryPatchFeature Item { get; }
+    BoundaryPatchFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

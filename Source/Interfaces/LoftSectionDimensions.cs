@@ -16,7 +16,7 @@ public interface LoftSectionDimensions : IEnumerable
     /// <summary>
     /// Returns the specified LoftSectionDimension object from the collection
     /// </summary>
-    LoftSectionDimension Item { get; }
+    LoftSectionDimension this[int Index] { get; }
     /// <summary>
     /// Property that specifies the number of LoftSectionDimension objects in the collection.
     /// </summary>

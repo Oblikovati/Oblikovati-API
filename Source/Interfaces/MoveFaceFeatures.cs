@@ -16,7 +16,7 @@ public interface MoveFaceFeatures : IEnumerable
     /// <summary>
     /// Returns the specified feature object from the collection. This is the default property of this collection object.
     /// </summary>
-    MoveFaceFeature Item { get; }
+    MoveFaceFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

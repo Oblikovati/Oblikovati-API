@@ -16,7 +16,7 @@ public interface RibbonTabs : IEnumerable
     /// <summary>
     /// Returns the specified RibbonTab object from the collection.
     /// </summary>
-    RibbonTab Item { get; }
+    RibbonTab this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

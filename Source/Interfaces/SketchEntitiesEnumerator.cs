@@ -16,5 +16,5 @@ public interface SketchEntitiesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified SketchEntity object from the collection.
     /// </summary>
-    SketchEntity Item { get; }
+    SketchEntity this[int Index] { get; }
 }

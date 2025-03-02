@@ -8,7 +8,7 @@ public interface Sketches3D : IEnumerable
     /// <summary>
     /// Returns the specified Sketch3D object from the collection.
     /// </summary>
-    Sketch3D Item { get; }
+    Sketch3D this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

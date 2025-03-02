@@ -16,7 +16,7 @@ public interface Styles : IEnumerable
     /// <summary>
     /// Returns the specified Style object from the collection.
     /// </summary>
-    Style Item { get; }
+    Style this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

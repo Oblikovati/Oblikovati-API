@@ -16,7 +16,7 @@ public interface ShrinkwrapComponents : IEnumerable
     /// <summary>
     /// Method that returns the specified ShrinkwrapComponent object from the collection.
     /// </summary>
-    ShrinkwrapComponent Item { get; }
+    ShrinkwrapComponent this[int Index] { get; }
     /// <summary>
     /// Read-only property returning kShrinkwrapComponentsObject indicating the type of object.
     /// </summary>

@@ -16,7 +16,7 @@ public interface DecalFeatures : IEnumerable
     /// <summary>
     /// Returns the specified DecalFeature object from the collection. This is the default property of the Decals collection object.
     /// </summary>
-    DecalFeature Item { get; }
+    DecalFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface RipFeatures : IEnumerable
     /// <summary>
     /// Returns the specified RipFeature object from the collection.
     /// </summary>
-    RipFeature Item { get; }
+    RipFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

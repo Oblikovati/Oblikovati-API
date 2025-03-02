@@ -20,7 +20,7 @@ public interface IntersectionCurves : IEnumerable
     /// <summary>
     /// returns the specified IntersectionCurve object from the collection.
     /// </summary>
-    IntersectionCurve Item { get; }
+    IntersectionCurve this[int Index] { get; }
     /// <summary>
     /// Creates a new intersection curve.
     /// </summary>

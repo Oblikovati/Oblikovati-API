@@ -12,7 +12,7 @@ public interface WebViews : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    WebView Item { get; }
+    WebView this[object Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

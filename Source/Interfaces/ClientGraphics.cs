@@ -24,7 +24,7 @@ public interface ClientGraphics : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    GraphicsNode Item { get; }
+    GraphicsNode this[int Index] { get; }
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface ThickenFeatures : IEnumerable
     /// <summary>
     /// Returns the specified ThickenFeature object from the collection.
     /// </summary>
-    ThickenFeature Item { get; }
+    ThickenFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

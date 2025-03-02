@@ -16,7 +16,7 @@ public interface ClientFeatures : IEnumerable
     /// <summary>
     /// Returns the specified ClientFeature object from the collection.
     /// </summary>
-    ClientFeature Item { get; }
+    ClientFeature this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

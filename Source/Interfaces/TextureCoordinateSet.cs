@@ -20,7 +20,7 @@ public interface TextureCoordinateSet
     /// <summary>
     /// Returns the specified coordinates from the set.
     /// </summary>
-    Point Item { get; }
+    Point this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of coordinates in this set.
     /// </summary>

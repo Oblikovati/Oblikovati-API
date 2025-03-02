@@ -16,7 +16,7 @@ public interface PublicationTweakPaths : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationTweakPath Item { get; }
+    PublicationTweakPath this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

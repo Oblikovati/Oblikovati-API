@@ -24,7 +24,7 @@ public interface ModelWeldingSymbolDefinitions : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ModelWeldingSymbolDefinition Item { get; }
+    ModelWeldingSymbolDefinition this[int Index] { get; }
     /// <summary>
     /// Gets and sets the annotation plane for the welding symbol.
     /// </summary>

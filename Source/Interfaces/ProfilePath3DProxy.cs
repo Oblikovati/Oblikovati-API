@@ -24,7 +24,7 @@ public interface ProfilePath3DProxy : IEnumerable
     /// <summary>
     /// Method that returns the specified ProfileEntity3D object from the collection.
     /// </summary>
-    ProfileEntity3D Item { get; }
+    ProfileEntity3D this[int Index] { get; }
     /// <summary>
     /// Property that returns a Boolean indicating if the path is closed or not. Returns True in the case of a closed path.
     /// </summary>

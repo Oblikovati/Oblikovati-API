@@ -8,7 +8,7 @@ public interface ComponentOccurrences : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to objects in the collection.
     /// </summary>
-    ComponentOccurrence Item { get; }
+    ComponentOccurrence this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -12,7 +12,7 @@ public interface ReferencedOLEFileDescriptors : IEnumerable
     /// <summary>
     /// Returns the specified ReferencedOLEFileDescriptor object from the collection. This is the default property of the ReferencedOLEFileDescriptors collection object.
     /// </summary>
-    ReferencedOLEFileDescriptor Item { get; }
+    ReferencedOLEFileDescriptor this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

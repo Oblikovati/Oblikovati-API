@@ -24,5 +24,5 @@ public interface RigidBodyGroups : IEnumerable
     /// <summary>
     /// Property that returns the specified RigidBodyGroup object from the collection.
     /// </summary>
-    RigidBodyGroup Item { get; }
+    RigidBodyGroup this[int Index] { get; }
 }

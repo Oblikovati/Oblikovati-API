@@ -16,5 +16,5 @@ public interface OrdinateDimensionsEnumerator : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  The index of the first item in the collection is 1.
     /// </summary>
-    OrdinateDimension Item { get; }
+    OrdinateDimension this[int Index] { get; }
 }

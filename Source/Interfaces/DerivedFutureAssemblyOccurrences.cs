@@ -12,7 +12,7 @@ public interface DerivedFutureAssemblyOccurrences : IEnumerable
     /// <summary>
     /// Method that returns the specified DerivedFutureAssemblyOccurrence object from the collection.
     /// </summary>
-    DerivedFutureAssemblyOccurrence Item { get; }
+    DerivedFutureAssemblyOccurrence this[object Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

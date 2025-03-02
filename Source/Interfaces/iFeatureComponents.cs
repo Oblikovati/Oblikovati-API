@@ -16,7 +16,7 @@ public interface iFeatureComponents : IEnumerable
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
-    iFeatureComponent Item { get; }
+    iFeatureComponent this[int Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

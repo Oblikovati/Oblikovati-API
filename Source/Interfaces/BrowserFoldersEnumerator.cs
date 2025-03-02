@@ -20,5 +20,5 @@ public interface BrowserFoldersEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified BrowserFolder object from the collection.
     /// </summary>
-    BrowserFolder Item { get; }
+    BrowserFolder this[object Index] { get; }
 }

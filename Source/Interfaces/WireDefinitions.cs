@@ -16,7 +16,7 @@ public interface WireDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified WireDefinition object from the collection
     /// </summary>
-    WireDefinition Item { get; }
+    WireDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

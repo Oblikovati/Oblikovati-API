@@ -16,7 +16,7 @@ public interface Rows : IEnumerable
     /// <summary>
     /// Returns the specified Row object from the collection.
     /// </summary>
-    Row Item { get; }
+    Row this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface ContentTableRows : IEnumerable
     /// <summary>
     /// Returns the specified ContentTableRow object from the collection.
     /// </summary>
-    ContentTableRow Item { get; }
+    ContentTableRow this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

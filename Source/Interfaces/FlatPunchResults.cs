@@ -16,7 +16,7 @@ public interface FlatPunchResults : IEnumerable
     /// <summary>
     /// Returns the specified FlatPunchResult object from the collection
     /// </summary>
-    FlatPunchResult Item { get; }
+    FlatPunchResult this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

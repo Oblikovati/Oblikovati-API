@@ -20,5 +20,5 @@ public interface DWGArcsEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    DWGArc Item { get; }
+    DWGArc this[object Index] { get; }
 }

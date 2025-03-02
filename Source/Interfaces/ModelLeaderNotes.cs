@@ -20,7 +20,7 @@ public interface ModelLeaderNotes : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  You can provide either the index of the item in the collection, where the first item is index 1, or you can provide the name of the object.
     /// </summary>
-    ModelLeaderNote Item { get; }
+    ModelLeaderNote this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

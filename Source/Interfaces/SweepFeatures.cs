@@ -16,7 +16,7 @@ public interface SweepFeatures : IEnumerable
     /// <summary>
     /// Method that returns the specified SweepFeature object from the collection.
     /// </summary>
-    SweepFeature Item { get; }
+    SweepFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

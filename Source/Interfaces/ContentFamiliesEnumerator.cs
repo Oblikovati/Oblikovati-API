@@ -16,7 +16,7 @@ public interface ContentFamiliesEnumerator : IEnumerable
     /// <summary>
     /// Returns the constant that indicates the type of this object.
     /// </summary>
-    ContentFamily Item { get; }
+    ContentFamily this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

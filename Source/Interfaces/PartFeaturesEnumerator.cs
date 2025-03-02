@@ -16,5 +16,5 @@ public interface PartFeaturesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection. The index can be numeric or the object name.
     /// </summary>
-    PartFeature Item { get; }
+    PartFeature this[object Index] { get; }
 }

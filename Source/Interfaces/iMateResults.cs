@@ -12,7 +12,7 @@ public interface iMateResults : IEnumerable
     /// <summary>
     /// Returns the specified iMateResult object from the collection.
     /// </summary>
-    iMateResult Item { get; }
+    iMateResult this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -20,7 +20,7 @@ public interface SketchControlPointSplines3D : IEnumerable
     /// <summary>
     /// Method that returns the specified SketchControlPointSpline3D object from the collection.
     /// </summary>
-    SketchControlPointSpline3D Item { get; }
+    SketchControlPointSpline3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a control point spline based on the set of input points that define the vertices of the control polygon.&nbsp;A closed spline is created when the start and end points have the same coordinate.
     /// </summary>

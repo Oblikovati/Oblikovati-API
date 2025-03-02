@@ -16,7 +16,7 @@ public interface iPartTableRow : IEnumerable
     /// <summary>
     /// Returns the specified iPartTableCell object from the collection. This is the default property of the iPartTableRow object.
     /// </summary>
-    iPartTableCell Item { get; }
+    iPartTableCell this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

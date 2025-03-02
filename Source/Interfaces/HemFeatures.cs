@@ -16,7 +16,7 @@ public interface HemFeatures : IEnumerable
     /// <summary>
     /// Returns the specified HemFeature object from the collection. This is the default property of the HemFeatures collection object.
     /// </summary>
-    HemFeature Item { get; }
+    HemFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -20,7 +20,7 @@ public interface ModelAnnotationsEnumerator : IEnumerable
     /// <summary>
     /// Method that returns the specified ModelAnnotation object from the collection.
     /// </summary>
-    ModelAnnotation Item { get; }
+    ModelAnnotation this[object Index] { get; }
     /// <summary>
     /// Read-only property returning kModelAnnotationsEnumeratorObject indicating this objects type.
     /// </summary>

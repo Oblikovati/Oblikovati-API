@@ -20,7 +20,7 @@ public interface ModelStateTableColumn : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    ModelStateTableCell Item { get; }
+    ModelStateTableCell this[object Index] { get; }
     /// <summary>
     /// Gets the parent object from whom this object can logically be reached.
     /// </summary>

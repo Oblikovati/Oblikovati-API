@@ -16,7 +16,7 @@ public interface Environments : IEnumerable
     /// <summary>
     /// Returns the specified Environment object from the collection.
     /// </summary>
-    Environment Item { get; }
+    Environment this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of Environments in the collection.
     /// </summary>

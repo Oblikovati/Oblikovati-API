@@ -20,7 +20,7 @@ public interface RevisionTableRow : IEnumerable
     /// <summary>
     /// Returns the specified Cell object from the collection.
     /// </summary>
-    RevisionTableCell Item { get; }
+    RevisionTableCell this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

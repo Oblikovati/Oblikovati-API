@@ -20,7 +20,7 @@ public interface DesignViewRepresentations : IEnumerable
     /// <summary>
     /// Returns the specified DesignViewRepresentation object from the collection.
     /// </summary>
-    DesignViewRepresentation Item { get; }
+    DesignViewRepresentation this[object Index] { get; }
     /// <summary>
     /// Method that creates a new DesignViewRepresentation. The new created DesignViewRepresentation is returned.
     /// </summary>

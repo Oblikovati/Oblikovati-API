@@ -20,5 +20,5 @@ public interface DynamicSimulations : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    DynamicSimulation Item { get; }
+    DynamicSimulation this[int Index] { get; }
 }

@@ -24,7 +24,7 @@ public interface ContentTableRow : IEnumerable
     /// <summary>
     /// Returns the specified ContentTableCell object from the collection.
     /// </summary>
-    ContentTableCell Item { get; }
+    ContentTableCell this[object Index] { get; }
     /// <summary>
     /// Property that returns the parent ContentFamily object.
     /// </summary>

@@ -61,7 +61,7 @@ public interface MiniToolbarComboBoxObject
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
-    MiniToolbarListItem Item { get; }
+    MiniToolbarListItem this[object Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

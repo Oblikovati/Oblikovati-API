@@ -20,7 +20,7 @@ public interface Assets : IEnumerable
     /// <summary>
     /// Read-only property that returns the specified Asset object from the collection.
     /// </summary>
-    Asset Item { get; }
+    Asset this[object Index] { get; }
     /// <summary>
     /// Method that creates a new asset. The new created Asset object is returned. Currently only material and appearance assets can be created. When a material asset is created a physical asset is automatically created that is associated with it that you can edit.
     /// </summary>

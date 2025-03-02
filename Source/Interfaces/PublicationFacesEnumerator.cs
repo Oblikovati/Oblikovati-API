@@ -16,7 +16,7 @@ public interface PublicationFacesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationFace Item { get; }
+    PublicationFace this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

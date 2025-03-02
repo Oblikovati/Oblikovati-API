@@ -16,7 +16,7 @@ public interface iFeatureTemplateDescriptors : IEnumerable
     /// <summary>
     /// Returns the specified iFeatureTemplateDescriptor object from the collection.
     /// </summary>
-    iFeatureTemplateDescriptor Item { get; }
+    iFeatureTemplateDescriptor this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

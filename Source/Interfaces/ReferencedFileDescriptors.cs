@@ -16,7 +16,7 @@ public interface ReferencedFileDescriptors : IEnumerable
     /// <summary>
     /// Property that returns the specified ReferencedFileDescriptor object from the collection. This is the default property of the ReferencedFileDescriptors collection object.
     /// </summary>
-    ReferencedFileDescriptor Item { get; }
+    ReferencedFileDescriptor this[int Index] { get; }
     /// <summary>
     /// Allows string-indexed access to items in the collection. Usually found when this ability has been added to an pre-existing collection.
     /// </summary>

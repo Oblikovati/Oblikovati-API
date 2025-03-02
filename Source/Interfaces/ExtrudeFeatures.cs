@@ -16,7 +16,7 @@ public interface ExtrudeFeatures : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    ExtrudeFeature Item { get; }
+    ExtrudeFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

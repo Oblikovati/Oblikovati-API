@@ -16,7 +16,7 @@ public interface CommandBarList : IEnumerable
     /// <summary>
     /// Property that returns the specified object in the collection. The index can be numeric or the object name.
     /// </summary>
-    CommandBar Item { get; }
+    CommandBar this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of command bars currently in the list.
     /// </summary>

@@ -16,7 +16,7 @@ public interface TableStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified TableStyle object from the collection.
     /// </summary>
-    TableStyle Item { get; }
+    TableStyle this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

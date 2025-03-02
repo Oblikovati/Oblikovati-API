@@ -16,7 +16,7 @@ public interface ProjectAssetLibraries : IEnumerable
     /// <summary>
     /// Returns the specified ProjectAssetLibrary object from the collection.
     /// </summary>
-    ProjectAssetLibrary Item { get; }
+    ProjectAssetLibrary this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

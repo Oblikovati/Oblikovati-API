@@ -16,7 +16,7 @@ public interface CornerFeatures : IEnumerable
     /// <summary>
     /// Returns the specified CornerFeature object from the collection. This is the default property of the CornerFeatures collection object.
     /// </summary>
-    CornerFeature Item { get; }
+    CornerFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

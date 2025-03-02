@@ -8,7 +8,7 @@ public interface DrawingViews : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    DrawingView Item { get; }
+    DrawingView this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

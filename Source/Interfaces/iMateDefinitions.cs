@@ -12,7 +12,7 @@ public interface iMateDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified iMateDefinition object from the collection.
     /// </summary>
-    iMateDefinition Item { get; }
+    iMateDefinition this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

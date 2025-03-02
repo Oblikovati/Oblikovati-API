@@ -20,7 +20,7 @@ public interface AuxiliaryFeatureIndicators : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    AuxiliaryFeatureIndicator Item { get; }
+    AuxiliaryFeatureIndicator this[int Index] { get; }
     /// <summary>
     /// Method that creates a new AuxiliaryFeatureIndicator. The newly created AuxiliaryFeatureIndicator object is returned.
     /// </summary>

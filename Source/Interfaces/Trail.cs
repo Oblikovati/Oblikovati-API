@@ -24,7 +24,7 @@ public interface Trail : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    TrailSegment Item { get; }
+    TrailSegment this[int Index] { get; }
     /// <summary>
     /// Method that sets the visibility of the entire trail in the presentation view.
     /// </summary>

@@ -16,7 +16,7 @@ public interface DraftAnalyses : IEnumerable
     /// <summary>
     /// Method that returns the specified DraftAnalysis object from the collection.
     /// </summary>
-    DraftAnalysis Item { get; }
+    DraftAnalysis this[object Index] { get; }
     /// <summary>
     /// Property that specifies the number of items in the collection.
     /// </summary>

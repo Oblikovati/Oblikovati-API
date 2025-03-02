@@ -20,5 +20,5 @@ public interface DSDegreesOfFreedom : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    DSDegreeOfFreedom Item { get; }
+    DSDegreeOfFreedom this[int Index] { get; }
 }

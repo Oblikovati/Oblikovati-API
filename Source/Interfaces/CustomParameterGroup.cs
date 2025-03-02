@@ -32,7 +32,7 @@ public interface CustomParameterGroup : IEnumerable
     /// <summary>
     /// Returns the specified Parameter object.
     /// </summary>
-    Parameter Item { get; }
+    Parameter this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -16,7 +16,7 @@ public interface PublicationVerticesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationVertex Item { get; }
+    PublicationVertex this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

@@ -20,5 +20,5 @@ public interface LeaderStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified LeaderStyle object from the collection.
     /// </summary>
-    LeaderStyle Item { get; }
+    LeaderStyle this[object Index] { get; }
 }

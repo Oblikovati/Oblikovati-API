@@ -8,7 +8,7 @@ public interface DerivedParameters : IEnumerable
     /// <summary>
     /// Method that returns the specified DerivedParameter object from the collection. This is the default method of the DerivedParameters collection object.
     /// </summary>
-    DerivedParameter Item { get; }
+    DerivedParameter this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

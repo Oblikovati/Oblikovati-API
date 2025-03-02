@@ -20,7 +20,7 @@ public interface SketchLines3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchLine3D object from the collection.
     /// </summary>
-    SketchLine3D Item { get; }
+    SketchLine3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch line based on the two input points. The new sketch line is returned.
     /// </summary>

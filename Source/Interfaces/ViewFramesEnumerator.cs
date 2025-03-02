@@ -20,5 +20,5 @@ public interface ViewFramesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ViewFrame Item { get; }
+    ViewFrame this[int Index] { get; }
 }

@@ -20,7 +20,7 @@ public interface OrdinateDimensions : IEnumerable
     /// <summary>
     /// Method that returns the specified dimension object from the collection.
     /// </summary>
-    OrdinateDimension Item { get; }
+    OrdinateDimension this[int Index] { get; }
     /// <summary>
     /// Method that creates an ordinate dimension.
     /// </summary>

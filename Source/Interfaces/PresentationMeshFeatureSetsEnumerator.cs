@@ -16,7 +16,7 @@ public interface PresentationMeshFeatureSetsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PresentationMeshFeatureSet Item { get; }
+    PresentationMeshFeatureSet this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

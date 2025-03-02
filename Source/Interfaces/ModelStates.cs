@@ -24,7 +24,7 @@ public interface ModelStates : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    ModelState Item { get; }
+    ModelState this[object Index] { get; }
     /// <summary>
     /// Read-only property that returns the excel spreadsheet that represents the model states table.
     /// </summary>

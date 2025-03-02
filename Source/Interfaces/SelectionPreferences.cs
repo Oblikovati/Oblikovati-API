@@ -8,7 +8,7 @@ public interface SelectionPreferences : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ObjectTypeEnum Item { get; }
+    ObjectTypeEnum this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

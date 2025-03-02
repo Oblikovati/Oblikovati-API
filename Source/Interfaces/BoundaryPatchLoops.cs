@@ -16,7 +16,7 @@ public interface BoundaryPatchLoops : IEnumerable
     /// <summary>
     /// Method that returns the specified BoundaryPatchLoop object from the collection.
     /// </summary>
-    BoundaryPatchLoop Item { get; }
+    BoundaryPatchLoop this[int Index] { get; }
     /// <summary>
     /// Property that specifies the number of BoundaryPatchLoop objects in the collection.
     /// </summary>

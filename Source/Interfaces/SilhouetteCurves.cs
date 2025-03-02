@@ -20,7 +20,7 @@ public interface SilhouetteCurves : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    SilhouetteCurve Item { get; }
+    SilhouetteCurve this[object Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

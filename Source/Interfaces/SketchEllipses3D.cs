@@ -20,5 +20,5 @@ public interface SketchEllipses3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchEllipse3D object from the collection.
     /// </summary>
-    SketchEllipse3D Item { get; }
+    SketchEllipse3D this[int Index] { get; }
 }

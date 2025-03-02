@@ -16,7 +16,7 @@ public interface ChamferNotes : IEnumerable
     /// <summary>
     /// Returns the specified ChamferNote object from the collection.
     /// </summary>
-    ChamferNote Item { get; }
+    ChamferNote this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

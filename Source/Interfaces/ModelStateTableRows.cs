@@ -20,5 +20,5 @@ public interface ModelStateTableRows : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    ModelStateTableRow Item { get; }
+    ModelStateTableRow this[object Index] { get; }
 }

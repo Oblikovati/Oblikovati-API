@@ -16,7 +16,7 @@ public interface MirrorFeatures : IEnumerable
     /// <summary>
     /// Returns the specified MirrorFeature objects from the collection. This is the default property of the MirrorFeatures collection object.
     /// </summary>
-    MirrorFeature Item { get; }
+    MirrorFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

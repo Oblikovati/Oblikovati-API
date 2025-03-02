@@ -20,5 +20,5 @@ public interface LayersEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified Layer object from the collection.
     /// </summary>
-    Layer Item { get; }
+    Layer this[object Index] { get; }
 }

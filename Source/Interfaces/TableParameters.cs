@@ -8,7 +8,7 @@ public interface TableParameters : IEnumerable
     /// <summary>
     /// Returns the specified TableParameter object from the collection. This is the default property of the TableParameters collection object.
     /// </summary>
-    TableParameter Item { get; }
+    TableParameter this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

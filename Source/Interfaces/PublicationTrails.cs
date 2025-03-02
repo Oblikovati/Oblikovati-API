@@ -16,7 +16,7 @@ public interface PublicationTrails : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationTrail Item { get; }
+    PublicationTrail this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

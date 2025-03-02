@@ -20,7 +20,7 @@ public interface SketchedSymbolDefinitionLibraries : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    SketchedSymbolDefinitionLibrary Item { get; }
+    SketchedSymbolDefinitionLibrary this[object Index] { get; }
     /// <summary>
     /// Creates a new sketch symbol library.
     /// </summary>

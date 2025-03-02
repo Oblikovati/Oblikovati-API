@@ -20,7 +20,7 @@ public interface MaterialAsset : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    AssetValue Item { get; }
+    AssetValue this[object Index] { get; }
     /// <summary>
     /// Read-only property that returns the parent object of this asset.&nbsp;This can return an AssetLibrary, or Document object.
     /// </summary>

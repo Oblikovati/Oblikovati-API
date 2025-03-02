@@ -12,7 +12,7 @@ public interface PresentationExplodedViews : IEnumerable
     /// <summary>
     /// roperty that returns the specified object from the collection.
     /// </summary>
-    PresentationExplodedView Item { get; }
+    PresentationExplodedView this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

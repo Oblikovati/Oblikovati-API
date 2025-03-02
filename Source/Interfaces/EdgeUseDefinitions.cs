@@ -16,7 +16,7 @@ public interface EdgeUseDefinitions : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  The index of the first item in the collection is 1.
     /// </summary>
-    EdgeUseDefinition Item { get; }
+    EdgeUseDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

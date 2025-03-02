@@ -20,5 +20,5 @@ public interface FeatureControlFrameStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified FeatureControlFrameStyle object from the collection.
     /// </summary>
-    FeatureControlFrameStyle Item { get; }
+    FeatureControlFrameStyle this[object Index] { get; }
 }

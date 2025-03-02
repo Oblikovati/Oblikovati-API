@@ -31,7 +31,7 @@ public interface DrawingBOMRow : IEnumerable
     bool Virtual { get; }
     /// <summary>
     /// </summary>
-    DrawingBOMCell Item { get; }
+    DrawingBOMCell this[object Index] { get; }
     /// <summary>
     /// Property that returns the parent DrawingBOM object.
     /// </summary>

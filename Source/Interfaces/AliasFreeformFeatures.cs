@@ -16,7 +16,7 @@ public interface AliasFreeformFeatures : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    AliasFreeformFeature Item { get; }
+    AliasFreeformFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

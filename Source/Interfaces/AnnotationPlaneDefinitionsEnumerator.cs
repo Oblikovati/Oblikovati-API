@@ -20,7 +20,7 @@ public interface AnnotationPlaneDefinitionsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    AnnotationPlaneDefinition Item { get; }
+    AnnotationPlaneDefinition this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

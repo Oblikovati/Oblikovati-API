@@ -20,5 +20,5 @@ public interface DWGSplinesEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    DWGSpline Item { get; }
+    DWGSpline this[object Index] { get; }
 }

@@ -16,5 +16,5 @@ public interface PublicationTrailSegmentsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PublicationTrailSegment Item { get; }
+    PublicationTrailSegment this[int Index] { get; }
 }

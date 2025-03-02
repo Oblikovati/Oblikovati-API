@@ -16,7 +16,7 @@ public interface ProjectPaths : IEnumerable
     /// <summary>
     /// Returns the specified ProjectPath object from the collection.
     /// </summary>
-    ProjectPath Item { get; }
+    ProjectPath this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

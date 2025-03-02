@@ -16,7 +16,7 @@ public interface NameValueMap : IEnumerable
     /// <summary>
     /// Gets the value at the specified index number or key name.
     /// </summary>
-    object Item { get; }
+    object this[object Index] { get; }
     /// <summary>
     /// Property that returns the name associated with the specified integer index.
     /// </summary>

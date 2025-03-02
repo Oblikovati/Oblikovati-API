@@ -20,5 +20,5 @@ public interface iAssemblyTableRows : IEnumerable
     /// <summary>
     /// Returns an item from the collection.
     /// </summary>
-    iAssemblyTableRow Item { get; }
+    iAssemblyTableRow this[object Index] { get; }
 }

@@ -16,5 +16,5 @@ public interface SketchConstraints3DEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified SketchConstraint object from the collection.
     /// </summary>
-    object Item { get; }
+    object this[int Index] { get; }
 }

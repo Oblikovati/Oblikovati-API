@@ -16,7 +16,7 @@ public interface BorderDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified BorderDefinition object from the collection.
     /// </summary>
-    BorderDefinition Item { get; }
+    BorderDefinition this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

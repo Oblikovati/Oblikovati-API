@@ -8,7 +8,7 @@ public interface SketchBlockDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified SketchBlockDefinition object from the collection.
     /// </summary>
-    SketchBlockDefinition Item { get; }
+    SketchBlockDefinition this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

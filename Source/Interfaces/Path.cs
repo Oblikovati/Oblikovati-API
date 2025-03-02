@@ -20,7 +20,7 @@ public interface Path : IEnumerable
     /// <summary>
     /// Returns the specified PathEntity object from the collection.
     /// </summary>
-    PathEntity Item { get; }
+    PathEntity this[int Index] { get; }
     /// <summary>
     /// Property that returns a Boolean indicating if the path is closed or not. Returns True in the case of a closed path.
     /// </summary>

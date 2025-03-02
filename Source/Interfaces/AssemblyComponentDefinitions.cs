@@ -16,7 +16,7 @@ public interface AssemblyComponentDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection. Currently Autodesk Inventor supports a single component definition within a document, so this collection will always be a collection of one.
     /// </summary>
-    AssemblyComponentDefinition Item { get; }
+    AssemblyComponentDefinition this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

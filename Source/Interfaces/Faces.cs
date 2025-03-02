@@ -8,7 +8,7 @@ public interface Faces : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to objects in the collection.
     /// </summary>
-    Face Item { get; }
+    Face this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

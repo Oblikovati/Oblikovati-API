@@ -16,7 +16,7 @@ public interface FeatureControlFrameRows : IEnumerable
     /// <summary>
     /// Method that returns the specified FeatureControlFrameRow object from the collection.
     /// </summary>
-    FeatureControlFrameRow Item { get; }
+    FeatureControlFrameRow this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

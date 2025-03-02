@@ -16,7 +16,7 @@ public interface BendNotes : IEnumerable
     /// <summary>
     /// Returns the specified BendNote object from the collection.
     /// </summary>
-    BendNote Item { get; }
+    BendNote this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

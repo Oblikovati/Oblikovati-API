@@ -16,7 +16,7 @@ public interface CornerRoundFeatures : IEnumerable
     /// <summary>
     /// Returns the specified CornerRoundFeature object from the collection. This is the default property of the CornerRoundFeatures collection object.
     /// </summary>
-    CornerRoundFeature Item { get; }
+    CornerRoundFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

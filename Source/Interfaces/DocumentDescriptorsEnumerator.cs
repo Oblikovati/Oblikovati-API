@@ -16,7 +16,7 @@ public interface DocumentDescriptorsEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified DocumentDescriptor object from the collection.
     /// </summary>
-    DocumentDescriptor Item { get; }
+    DocumentDescriptor this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

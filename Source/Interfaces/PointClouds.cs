@@ -12,7 +12,7 @@ public interface PointClouds : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    PointCloud Item { get; }
+    PointCloud this[object Index] { get; }
     /// <summary>
     /// Gets the parent object from whom this object can logically be reached.
     /// </summary>

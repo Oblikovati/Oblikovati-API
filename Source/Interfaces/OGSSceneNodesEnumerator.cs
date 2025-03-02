@@ -16,5 +16,5 @@ public interface OGSSceneNodesEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    OGSSceneNode Item { get; }
+    OGSSceneNode this[object Index] { get; }
 }

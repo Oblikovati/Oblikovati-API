@@ -36,7 +36,7 @@ public interface CommandCategory : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection.
     /// </summary>
-    object Item { get; }
+    object this[int Index] { get; }
     /// <summary>
     /// Property that returns the string that uniquely identifies the client.
     /// </summary>

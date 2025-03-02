@@ -16,7 +16,7 @@ public interface KnitFeatures : IEnumerable
     /// <summary>
     /// Returns the specified KnitFeature object from the collection. This is the default property of the KnitFeatures collection object.
     /// </summary>
-    KnitFeature Item { get; }
+    KnitFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface SketchHatchRegions : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    SketchHatchRegion Item { get; }
+    SketchHatchRegion this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

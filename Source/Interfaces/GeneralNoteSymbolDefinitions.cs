@@ -16,7 +16,7 @@ public interface GeneralNoteSymbolDefinitions : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    GeneralNoteSymbolDefinition Item { get; }
+    GeneralNoteSymbolDefinition this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

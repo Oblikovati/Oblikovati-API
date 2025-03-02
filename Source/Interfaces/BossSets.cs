@@ -20,7 +20,7 @@ public interface BossSets : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  You can provide either the index of the item in the collection, where the first item is index 1, or you can provide the name of the object.
     /// </summary>
-    BossSet Item { get; }
+    BossSet this[int Index] { get; }
     /// <summary>
     /// Method that creates a new Boss set. The newly created BossSet object is returned.
     /// </summary>

@@ -16,7 +16,7 @@ public interface iFeatureInputs : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection.
     /// </summary>
-    iFeatureInput Item { get; }
+    iFeatureInput this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -20,7 +20,7 @@ public interface DocumentInterests : IEnumerable
     /// <summary>
     /// Returns the specified DocumentInterest object from the collection
     /// </summary>
-    DocumentInterest Item { get; }
+    DocumentInterest this[object Index] { get; }
     /// <summary>
     /// Method that returns whether an AddIn with the input ClientId/Name has expressed interest in this document.
     /// </summary>

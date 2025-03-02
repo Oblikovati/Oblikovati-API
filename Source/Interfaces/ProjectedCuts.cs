@@ -16,7 +16,7 @@ public interface ProjectedCuts : IEnumerable
     /// <summary>
     /// Method that returns the specified ProjectedCut object from the collection.
     /// </summary>
-    ProjectedCut Item { get; }
+    ProjectedCut this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

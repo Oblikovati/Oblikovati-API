@@ -20,7 +20,7 @@ public interface SketchLines : IEnumerable
     /// <summary>
     /// Returns the specified SketchLine object from the collection.
     /// </summary>
-    SketchLine Item { get; }
+    SketchLine this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch line based on the two input points. The new sketch line is returned.
     /// </summary>

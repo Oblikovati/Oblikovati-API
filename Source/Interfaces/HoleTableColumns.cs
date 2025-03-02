@@ -16,7 +16,7 @@ public interface HoleTableColumns : IEnumerable
     /// <summary>
     /// Returns the specified Column object from the collection.
     /// </summary>
-    HoleTableColumn Item { get; }
+    HoleTableColumn this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

@@ -24,5 +24,5 @@ public interface AnnotationPlanes : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    AnnotationPlane Item { get; }
+    AnnotationPlane this[object Index] { get; }
 }

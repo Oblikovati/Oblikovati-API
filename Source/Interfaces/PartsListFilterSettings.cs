@@ -16,7 +16,7 @@ public interface PartsListFilterSettings : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    PartsListFilterItem Item { get; }
+    PartsListFilterItem this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

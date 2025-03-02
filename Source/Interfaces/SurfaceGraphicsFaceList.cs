@@ -20,7 +20,7 @@ public interface SurfaceGraphicsFaceList : IEnumerable
     /// <summary>
     /// Returns a SurfaeGraphicsFace object.
     /// </summary>
-    SurfaceGraphicsFace Item { get; }
+    SurfaceGraphicsFace this[object Index] { get; }
     /// <summary>
     /// Method that specifies additional faces to be displayed.
     /// </summary>

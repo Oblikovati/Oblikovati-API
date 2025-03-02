@@ -20,7 +20,7 @@ public interface SketchSplines : IEnumerable
     /// <summary>
     /// Returns the specified SketchSpline object from the collection.
     /// </summary>
-    SketchSpline Item { get; }
+    SketchSpline this[int Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

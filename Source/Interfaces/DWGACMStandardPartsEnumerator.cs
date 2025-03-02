@@ -20,5 +20,5 @@ public interface DWGACMStandardPartsEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    DWGACMStandardPart Item { get; }
+    DWGACMStandardPart this[object Index] { get; }
 }

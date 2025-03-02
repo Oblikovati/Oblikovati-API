@@ -20,5 +20,5 @@ public interface DSJoints : IEnumerable
     /// <summary>
     /// Returns the specified DSJoint object from the collection.
     /// </summary>
-    DSJoint Item { get; }
+    DSJoint this[object Index] { get; }
 }

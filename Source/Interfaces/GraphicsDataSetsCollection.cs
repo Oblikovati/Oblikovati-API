@@ -20,7 +20,7 @@ public interface GraphicsDataSetsCollection : IEnumerable
     /// <summary>
     /// Returns an existing GraphicsDataSets object.
     /// </summary>
-    GraphicsDataSets Item { get; }
+    GraphicsDataSets this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of coordinates defined within the set.
     /// </summary>

@@ -8,7 +8,7 @@ public interface InterferenceResults : IEnumerable
     /// <summary>
     /// Returns the specified InterferenceResult object from the collection.
     /// </summary>
-    InterferenceResult Item { get; }
+    InterferenceResult this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

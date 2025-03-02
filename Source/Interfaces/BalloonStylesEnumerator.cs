@@ -20,5 +20,5 @@ public interface BalloonStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified BalloonStyle object from the collection.
     /// </summary>
-    BalloonStyle Item { get; }
+    BalloonStyle this[object Index] { get; }
 }

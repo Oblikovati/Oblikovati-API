@@ -24,7 +24,7 @@ public interface GraphicsDataSets : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    GraphicsDataSet Item { get; }
+    GraphicsDataSet this[int Index] { get; }
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface CentermarkStylesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified CentermarkStyle object from the collection.
     /// </summary>
-    CentermarkStyle Item { get; }
+    CentermarkStyle this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

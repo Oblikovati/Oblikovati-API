@@ -24,7 +24,7 @@ public interface ImportedComponents : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ImportedComponent Item { get; }
+    ImportedComponent this[object Index] { get; }
     /// <summary>
     /// Method that creates a new ImportedComponent object using the information supplied by the input ImportedComponentDefinition object. Returns the imported component.
     /// </summary>

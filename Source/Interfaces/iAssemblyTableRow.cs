@@ -24,7 +24,7 @@ public interface iAssemblyTableRow : IEnumerable
     /// <summary>
     /// Returns the specified iAssemblyTableCell object from the collection.
     /// </summary>
-    iAssemblyTableCell Item { get; }
+    iAssemblyTableCell this[object Index] { get; }
     /// <summary>
     /// Property that returns the index of this row within the iAssembly factory table.
     /// </summary>

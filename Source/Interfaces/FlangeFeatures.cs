@@ -16,7 +16,7 @@ public interface FlangeFeatures : IEnumerable
     /// <summary>
     /// Returns the specified FlangeFeature object from the collection. This is the default property of the FlangeFeatures collection object.
     /// </summary>
-    FlangeFeature Item { get; }
+    FlangeFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

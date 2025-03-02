@@ -16,7 +16,7 @@ public interface DrawingHatchPatternsManager : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    DrawingHatchPattern Item { get; }
+    DrawingHatchPattern this[object Index] { get; }
     /// <summary>
     /// Gets the parent object from whom this object can logically be reached.
     /// </summary>

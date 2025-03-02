@@ -16,7 +16,7 @@ public interface FeatureDimensions : IEnumerable
     /// <summary>
     /// Returns the specified FeatureDimension object from the collection.
     /// </summary>
-    FeatureDimension Item { get; }
+    FeatureDimension this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

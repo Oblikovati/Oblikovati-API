@@ -16,7 +16,7 @@ public interface DrawingBOMRows : IEnumerable
     /// <summary>
     /// Returns the specified DrawingBOMRow object from the collection.
     /// </summary>
-    DrawingBOMRow Item { get; }
+    DrawingBOMRow this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

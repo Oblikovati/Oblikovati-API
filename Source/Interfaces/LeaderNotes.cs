@@ -16,7 +16,7 @@ public interface LeaderNotes : IEnumerable
     /// <summary>
     /// Returns the specified LeaderNote object from the collection.
     /// </summary>
-    LeaderNote Item { get; }
+    LeaderNote this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

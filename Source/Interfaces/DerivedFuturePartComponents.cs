@@ -16,7 +16,7 @@ public interface DerivedFuturePartComponents : IEnumerable
     /// <summary>
     /// Method that returns the specified DerivedFuturePartComponent object from the collection.
     /// </summary>
-    DerivedFuturePartComponent Item { get; }
+    DerivedFuturePartComponent this[int Index] { get; }
     /// <summary>
     /// Read-only property returning kDerivedFuturePartComponentsObject indicating the type of object.
     /// </summary>

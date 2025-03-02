@@ -16,7 +16,7 @@ public interface DrawingNotes : IEnumerable
     /// <summary>
     /// Returns the specified DrawingNote object from the collection.
     /// </summary>
-    DrawingNote Item { get; }
+    DrawingNote this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

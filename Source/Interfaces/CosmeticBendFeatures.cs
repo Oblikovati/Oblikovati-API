@@ -16,7 +16,7 @@ public interface CosmeticBendFeatures : IEnumerable
     /// <summary>
     /// Returns the specified CosmeticBendFeature object from the collection.
     /// </summary>
-    CosmeticBendFeature Item { get; }
+    CosmeticBendFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of LoftedFlangeFeature objects in the collection.
     /// </summary>

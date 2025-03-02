@@ -16,7 +16,7 @@ public interface MeshFeatureSet : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    MeshFeature Item { get; }
+    MeshFeature this[object Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface DimensionConstraints3D : IEnumerable
     /// <summary>
     /// Returns the specified 3D sketch dimension constraint object from the collection.
     /// </summary>
-    DimensionConstraint3D Item { get; }
+    DimensionConstraint3D this[int Index] { get; }
     /// <summary>
     /// Returns the top-level parent application object.  When used the context of Inventor, an Application object is returned.  When used in the context of Apprentice, an ApprenticeServer object is returned.
     /// </summary>

@@ -20,7 +20,7 @@ public interface CosmeticWelds : IEnumerable
     /// <summary>
     /// Returns the specified CosmeticWeld object from the collection.
     /// </summary>
-    CosmeticWeld Item { get; }
+    CosmeticWeld this[object Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

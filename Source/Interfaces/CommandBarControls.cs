@@ -16,7 +16,7 @@ public interface CommandBarControls : IEnumerable
     /// <summary>
     /// Property that returns the specified object from the collection.
     /// </summary>
-    CommandBarControl Item { get; }
+    CommandBarControl this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of CommandBarControls in the collection.
     /// </summary>

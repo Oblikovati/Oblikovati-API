@@ -16,7 +16,7 @@ public interface WorkAxes : IEnumerable
     /// <summary>
     /// Returns the specified WorkAxis object from the collection. This is the default property of the WorkAxes collection object.
     /// </summary>
-    WorkAxis Item { get; }
+    WorkAxis this[object Index] { get; }
     /// <summary>
     /// Property returning the parent <link Inventor::ComponentDefinition, ComponentDefinition> object.
     /// </summary>

@@ -20,7 +20,7 @@ public interface SketchPoints : IEnumerable
     /// <summary>
     /// Returns the specified SketchPoint object from the collection.
     /// </summary>
-    SketchPoint Item { get; }
+    SketchPoint this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch point at the specified coordinate.
     /// </summary>

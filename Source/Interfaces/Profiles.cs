@@ -20,7 +20,7 @@ public interface Profiles : IEnumerable
     /// <summary>
     /// Returns the specified Profile object from the collection.
     /// </summary>
-    Profile Item { get; }
+    Profile this[int Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

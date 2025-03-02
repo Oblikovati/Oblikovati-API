@@ -16,7 +16,7 @@ public interface FaceShellDefinitions : IEnumerable
     /// <summary>
     /// Property that returns an item from the collection.  The index of the first item in the collection is 1.
     /// </summary>
-    FaceShellDefinition Item { get; }
+    FaceShellDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

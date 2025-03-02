@@ -16,5 +16,5 @@ public interface AttributeSetsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to objects in the collection.
     /// </summary>
-    AttributeSet Item { get; }
+    AttributeSet this[int Index] { get; }
 }

@@ -20,7 +20,7 @@ public interface SketchCircles : IEnumerable
     /// <summary>
     /// Returns the specified SketchCircle object from the collection.
     /// </summary>
-    SketchCircle Item { get; }
+    SketchCircle this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch circle at a specified location and radius.
     /// </summary>

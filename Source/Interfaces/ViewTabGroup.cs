@@ -20,7 +20,7 @@ public interface ViewTabGroup
     /// <summary>
     /// Read-only property that returns the specified ViewTab object from the collection.
     /// </summary>
-    ViewTab Item { get; }
+    ViewTab this[int Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

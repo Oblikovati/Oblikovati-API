@@ -12,7 +12,7 @@ public interface ViewTabsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    ViewTab Item { get; }
+    ViewTab this[int Index] { get; }
     /// <summary>
     /// Read-only property that returns the number of view tabs in this view tab group.
     /// </summary>

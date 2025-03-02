@@ -16,7 +16,7 @@ public interface ContourFlangeFeatures : IEnumerable
     /// <summary>
     /// Returns the specified ContourFlangeFeature object from the collection. This is the default property of the ContourFlangeFeatures collection object.
     /// </summary>
-    ContourFlangeFeature Item { get; }
+    ContourFlangeFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface FoldFeatures : IEnumerable
     /// <summary>
     /// Returns the specified FoldFeature object from the collection. This is the default property of the FoldFeatures collection object.
     /// </summary>
-    FoldFeature Item { get; }
+    FoldFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

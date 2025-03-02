@@ -16,7 +16,7 @@ public interface BreakOutOperations : IEnumerable
     /// <summary>
     /// Method that returns the specified break out operation object from the collection.
     /// </summary>
-    BreakOutOperation Item { get; }
+    BreakOutOperation this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

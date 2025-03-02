@@ -20,7 +20,7 @@ public interface ModelDatumTargets : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    ModelDatumTarget Item { get; }
+    ModelDatumTarget this[object Index] { get; }
     /// <summary>
     /// Gets the constant that indicates the type of this object.
     /// </summary>

@@ -24,7 +24,7 @@ public interface ModelAnnotations : IEnumerable
     /// <summary>
     /// Method that returns the specified model annotation object from the collection.
     /// </summary>
-    ModelAnnotation Item { get; }
+    ModelAnnotation this[object Index] { get; }
     /// <summary>
     /// Read-only property that returns the ModelFeatureControlFrames collection object.&nbsp;This object provides access to all of the feature controls frames in the part or assembly.
     /// </summary>

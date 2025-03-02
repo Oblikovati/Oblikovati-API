@@ -16,7 +16,7 @@ public interface CutFeatures : IEnumerable
     /// <summary>
     /// Returns the specified CutFeature object from the collection. This is the default property of the CutFeatures collection object.
     /// </summary>
-    CutFeature Item { get; }
+    CutFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

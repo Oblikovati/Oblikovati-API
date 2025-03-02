@@ -20,7 +20,7 @@ public interface iFeatureTableRow : IEnumerable
     /// <summary>
     /// Method that returns the specified iFeatureTableCell object from the row.
     /// </summary>
-    iFeatureTableCell Item { get; }
+    iFeatureTableCell this[object Index] { get; }
     /// <summary>
     /// Property that specifies the number of columns in the row.
     /// </summary>

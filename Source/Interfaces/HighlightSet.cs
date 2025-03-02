@@ -8,7 +8,7 @@ public interface HighlightSet : IEnumerable
     /// <summary>
     /// Returns the specified object from the highlight set.
     /// </summary>
-    object Item { get; }
+    object this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -20,7 +20,7 @@ public interface SketchEllipses : IEnumerable
     /// <summary>
     /// Returns the specified SketchEllipse object from the collection.
     /// </summary>
-    SketchEllipse Item { get; }
+    SketchEllipse this[int Index] { get; }
     /// <summary>
     /// Method that creates a new sketch ellipse.
     /// </summary>

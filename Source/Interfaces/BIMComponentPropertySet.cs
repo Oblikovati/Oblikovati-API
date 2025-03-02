@@ -24,7 +24,7 @@ public interface BIMComponentPropertySet : IEnumerable
     /// <summary>
     /// Returns the specified BIMComponentProperty object from the collection.
     /// </summary>
-    BIMComponentProperty Item { get; }
+    BIMComponentProperty this[object Index] { get; }
     /// <summary>
     /// Read-only property that gets the internal name of this property set.&nbsp;This name is consistent and can be used as a reliable index for this property set.
     /// </summary>

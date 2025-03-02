@@ -20,7 +20,7 @@ public interface Profile : IEnumerable
     /// <summary>
     /// Returns the specified ProfilePath object from the collection.
     /// </summary>
-    ProfilePath Item { get; }
+    ProfilePath this[int Index] { get; }
     /// <summary>
     /// Property that returns the sketch that the profile was derived from.
     /// </summary>

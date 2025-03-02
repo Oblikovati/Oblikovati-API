@@ -20,5 +20,5 @@ public interface WeldBeads : IEnumerable
     /// <summary>
     /// Returns the specified WeldBead object from the collection
     /// </summary>
-    WeldBead Item { get; }
+    WeldBead this[object Index] { get; }
 }

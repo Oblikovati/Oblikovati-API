@@ -8,7 +8,7 @@ public interface PointInferenceEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified PointInference object from the collection.
     /// </summary>
-    PointInference Item { get; }
+    PointInference this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

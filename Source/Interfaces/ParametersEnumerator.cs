@@ -16,5 +16,5 @@ public interface ParametersEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified Parameter object from the collection. This is the default property of the ParametersEnumerator collection object.
     /// </summary>
-    Parameter Item { get; }
+    Parameter this[int Index] { get; }
 }

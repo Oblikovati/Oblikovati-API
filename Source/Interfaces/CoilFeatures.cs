@@ -16,7 +16,7 @@ public interface CoilFeatures : IEnumerable
     /// <summary>
     /// Returns the specified CoilFeature object from the collection.
     /// </summary>
-    CoilFeature Item { get; }
+    CoilFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

@@ -15,7 +15,7 @@ public interface LumpDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified LumpDefinition object from the collection.
     /// </summary>
-    LumpDefinition Item { get; }
+    LumpDefinition this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of LumpDefinition objects in the collection.
     /// </summary>

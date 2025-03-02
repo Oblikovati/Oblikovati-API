@@ -16,7 +16,7 @@ public interface RevolveFeatures : IEnumerable
     /// <summary>
     /// Returns the specified RevolveFeature object from the collection.
     /// </summary>
-    RevolveFeature Item { get; }
+    RevolveFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

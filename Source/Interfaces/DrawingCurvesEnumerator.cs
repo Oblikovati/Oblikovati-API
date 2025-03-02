@@ -16,7 +16,7 @@ public interface DrawingCurvesEnumerator : IEnumerable
     /// <summary>
     /// Method that returns the specified DrawingCurve object from the collection. This is the default property of the DrawingCurves collection object.
     /// </summary>
-    DrawingCurve Item { get; }
+    DrawingCurve this[int Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

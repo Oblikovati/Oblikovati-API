@@ -8,7 +8,7 @@ public interface TestPrograms : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    TestProgram Item { get; }
+    TestProgram this[object Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

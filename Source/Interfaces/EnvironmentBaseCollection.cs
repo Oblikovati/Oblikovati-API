@@ -16,7 +16,7 @@ public interface EnvironmentBaseCollection : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    EnvironmentBase Item { get; }
+    EnvironmentBase this[object Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

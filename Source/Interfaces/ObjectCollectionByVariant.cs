@@ -8,7 +8,7 @@ public interface ObjectCollectionByVariant : IEnumerable
     /// <summary>
     /// Returns the specified object in the collection. The index can be numeric or the object name.
     /// </summary>
-    object Item { get; }
+    object this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

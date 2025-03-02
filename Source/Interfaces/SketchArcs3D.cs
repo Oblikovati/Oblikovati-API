@@ -20,7 +20,7 @@ public interface SketchArcs3D : IEnumerable
     /// <summary>
     /// Returns the specified SketchArc3D object from the collection.
     /// </summary>
-    SketchArc3D Item { get; }
+    SketchArc3D this[int Index] { get; }
     /// <summary>
     /// Method that creates a new bend feature based on the two input lines.
     /// </summary>

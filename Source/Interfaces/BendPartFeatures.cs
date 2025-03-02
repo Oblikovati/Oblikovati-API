@@ -16,7 +16,7 @@ public interface BendPartFeatures : IEnumerable
     /// <summary>
     /// Returns the specified BendPartFeature object from the collection. This is the default property of the BendPartFeatures collection object.
     /// </summary>
-    BendPartFeature Item { get; }
+    BendPartFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

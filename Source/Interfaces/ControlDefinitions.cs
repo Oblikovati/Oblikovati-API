@@ -12,7 +12,7 @@ public interface ControlDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified ControlDefinitionobject from the collection.
     /// </summary>
-    ControlDefinition Item { get; }
+    ControlDefinition this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

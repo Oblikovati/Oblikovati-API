@@ -16,7 +16,7 @@ public interface FaceFeatures : IEnumerable
     /// <summary>
     /// Returns the specified FaceFeature object from the collection. This is the default property of the FaceFeatures collection object.
     /// </summary>
-    FaceFeature Item { get; }
+    FaceFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in this collection.
     /// </summary>

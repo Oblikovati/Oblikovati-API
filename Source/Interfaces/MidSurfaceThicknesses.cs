@@ -16,7 +16,7 @@ public interface MidSurfaceThicknesses : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    MidSurfaceThickness Item { get; }
+    MidSurfaceThickness this[int Index] { get; }
     /// <summary>
     /// Gets the number of items in this collection.
     /// </summary>

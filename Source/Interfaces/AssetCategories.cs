@@ -20,7 +20,7 @@ public interface AssetCategories : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    AssetCategory Item { get; }
+    AssetCategory this[object Index] { get; }
     /// <summary>
     /// Method that creates a new asset category in the library.
     /// </summary>

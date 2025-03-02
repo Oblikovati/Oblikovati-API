@@ -20,7 +20,7 @@ public interface HelicalCurves : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    HelicalCurve Item { get; }
+    HelicalCurve this[object Index] { get; }
     /// <summary>
     /// Creates a helical curve shape definition which can be used to create a helical curve.
     /// </summary>

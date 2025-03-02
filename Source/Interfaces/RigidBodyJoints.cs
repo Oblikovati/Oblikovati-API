@@ -24,5 +24,5 @@ public interface RigidBodyJoints : IEnumerable
     /// <summary>
     /// Property that returns the specified RigidBodyJoint object from the collection.
     /// </summary>
-    RigidBodyJoint Item { get; }
+    RigidBodyJoint this[int Index] { get; }
 }

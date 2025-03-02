@@ -17,7 +17,7 @@ public interface ModelDatumFeaturesEnumerator : IEnumerable
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>
-    ModelDatumFeature Item { get; }
+    ModelDatumFeature this[object Index] { get; }
     /// <summary>
     /// Missing documentation! Help us documenting it!
     /// </summary>

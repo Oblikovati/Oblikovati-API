@@ -20,7 +20,7 @@ public interface OnFaceCurves : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    OnFaceCurve Item { get; }
+    OnFaceCurve this[int Index] { get; }
     /// <summary>
     /// Creates a new on face curve.
     /// </summary>

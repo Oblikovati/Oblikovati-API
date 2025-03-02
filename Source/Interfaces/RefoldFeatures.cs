@@ -16,7 +16,7 @@ public interface RefoldFeatures : IEnumerable
     /// <summary>
     /// Returns the specified RefoldFeature object from the collection.
     /// </summary>
-    RefoldFeature Item { get; }
+    RefoldFeature this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of RefoldFeature objects in the collection.
     /// </summary>

@@ -16,7 +16,7 @@ public interface AutoCADBlockDefinitionsEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified AutoCADBlockDefinition object from the collection.
     /// </summary>
-    AutoCADBlockDefinition Item { get; }
+    AutoCADBlockDefinition this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

@@ -8,7 +8,7 @@ public interface DerivedParameterTables : IEnumerable
     /// <summary>
     /// Method that returns the specified DerivedParameterTable object from the collection. This is the default method of the DerivedParameterTables collection object.
     /// </summary>
-    DerivedParameterTable Item { get; }
+    DerivedParameterTable this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

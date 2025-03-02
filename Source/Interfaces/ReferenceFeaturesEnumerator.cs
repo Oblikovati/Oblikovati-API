@@ -16,5 +16,5 @@ public interface ReferenceFeaturesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified ReferenceFeature object from the collection.
     /// </summary>
-    ReferenceFeature Item { get; }
+    ReferenceFeature this[int Index] { get; }
 }

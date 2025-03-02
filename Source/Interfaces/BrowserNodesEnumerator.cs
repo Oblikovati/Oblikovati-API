@@ -20,7 +20,7 @@ public interface BrowserNodesEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    BrowserNode Item { get; }
+    BrowserNode this[object Index] { get; }
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>

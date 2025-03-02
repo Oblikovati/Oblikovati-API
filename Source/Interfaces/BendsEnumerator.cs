@@ -16,7 +16,7 @@ public interface BendsEnumerator : IEnumerable
     /// <summary>
     /// Returns the specified Bend object from the collection.
     /// </summary>
-    Bend Item { get; }
+    Bend this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of Bend objects in the collection.
     /// </summary>

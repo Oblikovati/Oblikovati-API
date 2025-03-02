@@ -12,7 +12,7 @@ public interface DerivedPartEntities : IEnumerable
     /// <summary>
     /// Returns the specified DerivedPartEntity object from the collection.
     /// </summary>
-    DerivedPartEntity Item { get; }
+    DerivedPartEntity this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

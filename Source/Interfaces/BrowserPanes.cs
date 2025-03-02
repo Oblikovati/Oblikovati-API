@@ -20,7 +20,7 @@ public interface BrowserPanes : IEnumerable
     /// <summary>
     /// Returns the specified object from the collection.
     /// </summary>
-    BrowserPane Item { get; }
+    BrowserPane this[object Index] { get; }
     /// <summary>
     /// Property that returns the that is currently being displayed.
     /// </summary>

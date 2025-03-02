@@ -16,5 +16,5 @@ public interface SketchConstraintsEnumerator : IEnumerable
     /// <summary>
     /// Allows integer-indexed access to items in the collection.
     /// </summary>
-    object Item { get; }
+    object this[int Index] { get; }
 }

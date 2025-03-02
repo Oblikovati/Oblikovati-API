@@ -16,7 +16,7 @@ public interface DockableWindows : IEnumerable
     /// <summary>
     /// Returns the specified DockableWindow object from the collection.
     /// </summary>
-    DockableWindow Item { get; }
+    DockableWindow this[object Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>

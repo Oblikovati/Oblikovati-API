@@ -20,7 +20,7 @@ public interface ClientNodeResources : IEnumerable
     /// <summary>
     /// Returns the specified NodeResource object from the collection.
     /// </summary>
-    ClientNodeResource Item { get; }
+    ClientNodeResource this[int Index] { get; }
     /// <summary>
     /// Returns the specified NodeResource object from the collection.
     /// </summary>

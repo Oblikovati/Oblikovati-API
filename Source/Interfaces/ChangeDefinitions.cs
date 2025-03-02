@@ -20,7 +20,7 @@ public interface ChangeDefinitions : IEnumerable
     /// <summary>
     /// Returns the specified ChangeDefinition object from the collection.
     /// </summary>
-    ChangeDefinition Item { get; }
+    ChangeDefinition this[object Index] { get; }
     /// <summary>
     /// Property that returns the number of items in the collection.
     /// </summary>

@@ -20,5 +20,5 @@ public interface DWGAcadSupportedProxiesEnumerator : IEnumerable
     /// <summary>
     /// Allows VARIANT-indexed access to items in the collection. You can use names as indexes as well.
     /// </summary>
-    DWGAcadSupportedProxy Item { get; }
+    DWGAcadSupportedProxy this[object Index] { get; }
 }

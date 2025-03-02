@@ -8,7 +8,7 @@ public interface ApprenticeServerDocuments : IEnumerable
     /// <summary>
     /// Returns the specified ApprenticeServerDocument object from the collection. This is the default property of the ApprenticeServerDocuments object.
     /// </summary>
-    ApprenticeServerDocument Item { get; }
+    ApprenticeServerDocument this[int Index] { get; }
     /// <summary>
     /// Returns an ObjectTypeEnum indicating this object's type.
     /// </summary>
