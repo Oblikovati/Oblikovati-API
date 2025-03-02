@@ -1,0 +1,24 @@
+namespace Oblikovati.API;
+
+/// <summary>
+/// The FlatPunchResults collection object contains information about all the resulting punches in the flat pattern.
+/// </summary>
+public interface FlatPunchResults : IEnumerable
+{
+    /// <summary>
+    /// Returns an ObjectTypeEnum indicating this object's type.
+    /// </summary>
+    ObjectTypeEnum Type { get; }
+    /// <summary>
+    /// Returns the top-level parent application object.  When used the context of Inventor, an Application object is returned.  When used in the context of Apprentice, an ApprenticeServer object is returned.
+    /// </summary>
+    object Application { get; }
+    /// <summary>
+    /// Returns the specified FlatPunchResult object from the collection
+    /// </summary>
+    FlatPunchResult Item { get; }
+    /// <summary>
+    /// Property that returns the number of items in the collection.
+    /// </summary>
+    int Count { get; }
+}

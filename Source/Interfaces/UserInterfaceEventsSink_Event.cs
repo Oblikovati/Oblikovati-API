@@ -1,0 +1,12 @@
+namespace Oblikovati.API;
+
+public interface UserInterfaceEventsSink_Event
+{
+    event UserInterfaceEventsSink_OnResetEnvironmentsEventHandler OnResetEnvironments;
+    event UserInterfaceEventsSink_OnResetCommandBarsEventHandler OnResetCommandBars;
+    event UserInterfaceEventsSink_OnEnvironmentChangeEventHandler OnEnvironmentChange;
+    event UserInterfaceEventsSink_OnResetShortcutsEventHandler OnResetShortcuts;
+    event UserInterfaceEventsSink_OnResetRibbonInterfaceEventHandler OnResetRibbonInterface;
+    event UserInterfaceEventsSink_OnResetMarkingMenuEventHandler OnResetMarkingMenu;
+    event UserInterfaceEventsSink_OnResetInventorLayoutEventHandler OnResetInventorLayout;
+}

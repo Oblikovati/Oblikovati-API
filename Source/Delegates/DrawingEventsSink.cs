@@ -1,0 +1,3 @@
+﻿namespace Oblikovati.API;
+
+public delegate void DrawingEventsSink_OnRetrieveDimensionsEventHandler( ObjectsEnumerator SketchDimensions, GeneralDimensionsEnumerator DrawingDimensions, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);

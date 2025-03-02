@@ -1,0 +1,15 @@
+namespace Oblikovati.API;
+
+public interface RepresentationEventsSink_Event
+{
+    event RepresentationEventsSink_OnDeleteEventHandler OnDelete;
+    event RepresentationEventsSink_OnNewDesignViewRepresentationEventHandler OnNewDesignViewRepresentation;
+    event RepresentationEventsSink_OnActivateDesignViewRepresentationEventHandler OnActivateDesignViewRepresentation;
+    event RepresentationEventsSink_OnNewDesignViewEventHandler OnNewDesignView;
+    event RepresentationEventsSink_OnActivateDesignViewEventHandler OnActivateDesignView;
+    event RepresentationEventsSink_OnNewPositionalRepresentationEventHandler OnNewPositionalRepresentation;
+    event RepresentationEventsSink_OnActivatePositionalRepresentationEventHandler OnActivatePositionalRepresentation;
+    event RepresentationEventsSink_OnNewLevelOfDetailRepresentationEventHandler OnNewLevelOfDetailRepresentation;
+    event RepresentationEventsSink_OnActivateLevelOfDetailRepresentationEventHandler OnActivateLevelOfDetailRepresentation;
+    event RepresentationEventsSink_OnNewSectionViewEventHandler OnNewSectionView;
+}

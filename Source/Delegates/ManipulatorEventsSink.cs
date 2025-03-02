@@ -1,0 +1,9 @@
+﻿namespace Oblikovati.API;
+
+public delegate void ManipulatorEventsSink_OnDragEventHandler( ManipulatorElementEnum SelectedManipulatorElement, object DragValue, Matrix ManipulatorTransform, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void ManipulatorEventsSink_OnEndDragEventHandler( ManipulatorElementEnum SelectedManipulatorElement, object DragValue, Matrix ManipulatorTransform, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void ManipulatorEventsSink_OnManipulatorElementSelectionChangeEventHandler( ManipulatorElementEnum SelectedManipulatorElement, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void ManipulatorEventsSink_OnStartDragEventHandler( ManipulatorElementEnum SelectedManipulatorElement, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);

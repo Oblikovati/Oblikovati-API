@@ -1,0 +1,15 @@
+﻿namespace Oblikovati.API;
+
+public delegate void UserInterfaceEventsSink_OnEnvironmentChangeEventHandler( Environment Environment, EnvironmentStateEnum EnvironmentState, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void UserInterfaceEventsSink_OnResetCommandBarsEventHandler( ObjectsEnumerator CommandBars, NameValueMap Context);
+
+public delegate void UserInterfaceEventsSink_OnResetEnvironmentsEventHandler( ObjectsEnumerator Environments, NameValueMap Context);
+
+public delegate void UserInterfaceEventsSink_OnResetInventorLayoutEventHandler( NameValueMap Context);
+
+public delegate void UserInterfaceEventsSink_OnResetMarkingMenuEventHandler( string MarkingMenuInternalName, NameValueMap Context);
+
+public delegate void UserInterfaceEventsSink_OnResetRibbonInterfaceEventHandler( NameValueMap Context);
+
+public delegate void UserInterfaceEventsSink_OnResetShortcutsEventHandler( NameValueMap Context);

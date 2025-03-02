@@ -1,0 +1,13 @@
+namespace Oblikovati.API;
+
+public interface PresentationEventsSink_Event
+{
+    event PresentationEventsSink_OnNewPublicationMarkedViewEventHandler OnNewPublicationMarkedView;
+    event PresentationEventsSink_OnDeleteEventHandler OnDelete;
+    event PresentationEventsSink_OnStoryboardChangeEventHandler OnStoryboardChange;
+    event PresentationEventsSink_OnPublicationDesignViewChangeEventHandler OnPublicationDesignViewChange;
+    event PresentationEventsSink_OnPublicationComponentChangeEventHandler OnPublicationComponentChange;
+    event PresentationEventsSink_OnNewPublicationEventHandler OnNewPublication;
+    event PresentationEventsSink_OnPublicationModelingDataUpdateEventHandler OnPublicationModelingDataUpdate;
+    event PresentationEventsSink_OnPublicationNameChangeEventHandler OnPublicationNameChange;
+}

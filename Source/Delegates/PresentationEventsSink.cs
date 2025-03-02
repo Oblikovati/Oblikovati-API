@@ -1,0 +1,17 @@
+﻿namespace Oblikovati.API;
+
+public delegate void PresentationEventsSink_OnDeleteEventHandler( _PresentationDocument DocumentObject, Publication PublicationObj, object pEntity, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnNewPublicationEventHandler( _PresentationDocument DocumentObject, Publication PublicationObject, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnNewPublicationMarkedViewEventHandler( _PresentationDocument DocumentObject, Publication PublicationObj, PublicationMarkedView PublicationMarkedViewObj, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnPublicationComponentChangeEventHandler( _PresentationDocument DocumentObject, PublicationComponent PublicationComponent, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnPublicationDesignViewChangeEventHandler( _PresentationDocument DocumentObject, Publication PublicationObj, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnPublicationModelingDataUpdateEventHandler( Publication Publication, CommandTypesEnum ReasonsForChange, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnPublicationNameChangeEventHandler( _PresentationDocument DocumentObject, Publication PublicationObj, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
+
+public delegate void PresentationEventsSink_OnStoryboardChangeEventHandler( Publication PublicationObj, Storyboard StoryboardObj, CommandTypesEnum ReasonsForChange, EventTimingEnum BeforeOrAfter, NameValueMap Context,out HandlingCodeEnum HandlingCode);
