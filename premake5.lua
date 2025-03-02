@@ -1,7 +1,5 @@
 OblikovatiRootDirectory = os.getenv("OBLIKOVATI_DIR")
 
-include (path.join(OblikovatiRootDirectory, "lib_vendor_source", "Coral", "Coral.Managed"))
-
 project "Oblikovati.API"
 	kind "SharedLib"
 	language "C#"
@@ -9,10 +7,6 @@ project "Oblikovati.API"
 	clr "Unsafe"
 	targetdir "%{OblikovatiRootDirectory}/Oblikovati/Resources/Scripts"
 	objdir "%{OblikovatiRootDirectory}/Oblikovati/Resources/Scripts/Intermediates"
-
-	links {
-		"Coral.Managed"
-	}
 
 	vsprops {
 		AppendTargetFrameworkToOutputPath = "false",
